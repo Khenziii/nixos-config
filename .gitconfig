@@ -15,4 +15,8 @@
 [commit]
 	gpgsign = true
 [credential]
-	helper = store
+    helper = store
+[rebase]
+    # Display authors on rebase -i
+    instructionFormat = (%an <%ae>) %s
+

@@ -1,0 +1,18 @@
+[user]
+	email = khenzii.was.taken@gmail.com
+	name = Khenziii
+	signingkey = AB2FD4A1FDBB707D
+[http]
+	postBuffer = 2097152000
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	editor = nvim
+	excludesfile = /home/khenzii/.gitignore_global
+[commit]
+	gpgsign = true
+[credential]
+	helper = store

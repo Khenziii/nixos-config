@@ -11,7 +11,7 @@
 	required = true
 [core]
 	editor = nvim
-	excludesfile = /home/khenzii/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [commit]
 	gpgsign = true
 [credential]

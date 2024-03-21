@@ -1,18 +1,18 @@
-### dotfiles
+## dotfiles
 
 This repository contains some of my config files.
 
-### What exactly are dotfiles?
+## What exactly are dotfiles?
 
 In many operating systems, files / directories starting with a dot (`.`) are considered hidden.
 
-This is particular useful, as it makes them a good place for programs to store theirs settings in.
+This is particularly useful, as it makes them a good place for programs to store theirs settings in.
 
 The tradition of storing config in dotfiles is widely adopted in Unix-based systems (most notably Linux & macOS).
 
 Putting dotfiles online makes it very convenient, to quickly set up new work environments.
 
-### Installation
+## Installation
 
 To manage my dotfiles, I use [stow](https://www.gnu.org/software/stow/).
 

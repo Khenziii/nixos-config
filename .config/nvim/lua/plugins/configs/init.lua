@@ -1,6 +1,8 @@
-local catppuccin = require("plugins.configs.catppuccin")
+local catppuccin = require("plugins.configs.catppuccin") 
+local treesitter = require("plugins.configs.treesitter") 
 
 return {
- catpuccin = catpuccin,
+ catppuccin = catppuccin,
+ treesitter = treesitter,
 }
 

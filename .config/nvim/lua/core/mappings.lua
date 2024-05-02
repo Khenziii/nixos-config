@@ -9,6 +9,6 @@ tree = {
 }
 
 return {
- tree = tree,
+ tree,
 }
 

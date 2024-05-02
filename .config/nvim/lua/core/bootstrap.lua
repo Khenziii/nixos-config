@@ -1,4 +1,4 @@
-local plugins = require("plugins").plugins
+local plugins = require("plugins")
 local mappings = require("core.mappings")
 
 local function setup_plugins()

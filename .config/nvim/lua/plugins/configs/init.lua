@@ -3,8 +3,8 @@ local treesitter = require("plugins.configs.treesitter")
 local tree = require("plugins.configs.tree")
 
 return {
- catppuccin = catppuccin,
- treesitter = treesitter,
- tree = tree,
+ catppuccin,
+ treesitter,
+ tree,
 }
 

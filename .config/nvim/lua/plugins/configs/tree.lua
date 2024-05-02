@@ -3,7 +3,12 @@ local function setup()
 end
 
 return {
- setup = setup,
+  "nvim-tree/nvim-tree.lua",
+  version = "*",
+  lazy = false,
+  dependencies = {
+    "nvim-tree/nvim-web-devicons",
+  },
+  config = setup,
 }
-
 

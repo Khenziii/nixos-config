@@ -52,7 +52,9 @@ local function setup()
  vim.cmd.colorscheme "catppuccin"
 end
 
-return {
- setup = setup, 
+return { 
+  "catppuccin/nvim",
+  name = "catppuccin",
+  config = setup, 
 }
 

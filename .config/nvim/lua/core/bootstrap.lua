@@ -1,7 +1,7 @@
 local plugins = require("plugins").plugins
 local mappings = require("core.mappings")
 
-local function install_lazy_nvim()
+local function setup_plugins()
  local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
  if not (vim.uv or vim.loop).fs_stat(lazypath) then
     vim.fn.system({
@@ -20,12 +20,17 @@ end
 
 local function setup_key_mappings()
  for _, mapping in pairs(mappings) do
-  vim.api.nvim_set_keymap(mapping.mode, mapping.key, mapping.command, mapping.options)
+  vim.api.nvim_set_keymap(
+   mapping.mode,
+   mapping.key,
+   mapping.command,
+   mapping.options
+  )
  end
 end
 
 return {
- install_lazy_nvim = install_lazy_nvim,
+ setup_plugins = setup_plugins,
  setup_key_mappings = setup_key_mappings,
 }
 

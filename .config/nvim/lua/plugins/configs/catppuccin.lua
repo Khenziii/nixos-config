@@ -1,3 +1,5 @@
+-- https://github.com/catppuccin/nvim
+
 local function setup()
  require("catppuccin").setup({
     flavour = "auto", -- latte, frappe, macchiato, mocha

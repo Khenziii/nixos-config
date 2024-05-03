@@ -4,5 +4,6 @@
   "nvim-tree.lua": { "branch": "master", "commit": "76db7ed0da3027882dd0a72de18643c2e26956dc" },
   "nvim-web-devicons": { "branch": "master", "commit": "794bba734ec95eaff9bb82fbd112473be2087283" },
   "presence.nvim": { "branch": "main", "commit": "87c857a56b7703f976d3a5ef15967d80508df6e6" },
-  "treesitter": { "branch": "master", "commit": "cbf9090a4c715fa9eb38be71062bf19194b45bd2" }
+  "treesitter": { "branch": "master", "commit": "cbf9090a4c715fa9eb38be71062bf19194b45bd2" },
+  "vim-wakatime": { "branch": "master", "commit": "3cb40867cb5a3120f9bef76eff88edc7f1dc1a23" }
 }

@@ -4,6 +4,7 @@ local tree = require("plugins.configs.tree")
 local presence = require("plugins.configs.presence")
 local wakatime = require("plugins.configs.wakatime")
 local fugitive = require("plugins.configs.fugitive")
+local startup = require("plugins.configs.startup")
 
 return {
  catppuccin,
@@ -12,5 +13,6 @@ return {
  presence,
  wakatime,
  fugitive,
+ startup,
 }
 

@@ -1,4 +1,4 @@
-tree = {
+tree_focus = {
  mode = "n",
  key = "f",
  command = ":NvimTreeFocus<CR>",
@@ -9,6 +9,6 @@ tree = {
 }
 
 return {
- tree,
+ tree_focus,
 }
 

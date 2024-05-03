@@ -10,13 +10,13 @@ local function setup()
   show_time = true,
   enable_line_number = true,
   log_level = nil,
-  editing_text = "Working on %s.",
-  file_explorer_text = "Browsing using %s.",
-  git_commit_text = "Writing a git commit.",
-  plugin_manager_text = "Managing plugins.",
-  reading_text = "Reading %s.",
-  workspace_text = "Playing around with %s.",
-  line_number_text = "Line: %s/%s.",
+  editing_text = "Working on %s",
+  file_explorer_text = "Browsing using %s",
+  git_commit_text = "Writing a git commit",
+  plugin_manager_text = "Managing plugins",
+  reading_text = "Reading %s",
+  workspace_text = "Playing around with %s",
+  line_number_text = "Line: %s/%s",
  })
 end
 

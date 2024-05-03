@@ -3,6 +3,7 @@ local treesitter = require("plugins.configs.treesitter")
 local tree = require("plugins.configs.tree")
 local presence = require("plugins.configs.presence")
 local wakatime = require("plugins.configs.wakatime")
+local fugitive = require("plugins.configs.fugitive")
 
 return {
  catppuccin,
@@ -10,5 +11,6 @@ return {
  tree,
  presence,
  wakatime,
+ fugitive,
 }
 

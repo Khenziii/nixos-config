@@ -29,8 +29,13 @@ local function setup_key_mappings()
  end
 end
 
+local function setup_vim_settings()
+ vim.wo.relativenumber = true
+end
+
 return {
  setup_plugins = setup_plugins,
  setup_key_mappings = setup_key_mappings,
+ setup_vim_settings = setup_vim_settings,
 }
 

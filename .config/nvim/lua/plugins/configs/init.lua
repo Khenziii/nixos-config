@@ -5,6 +5,7 @@ local presence = require("plugins.configs.presence")
 local wakatime = require("plugins.configs.wakatime")
 local fugitive = require("plugins.configs.fugitive")
 local startup = require("plugins.configs.startup")
+local autopairs = require("plugins.configs.autopairs")
 
 return {
 	catppuccin,
@@ -14,5 +15,6 @@ return {
 	wakatime,
 	fugitive,
 	startup,
+	autopairs,
 }
 

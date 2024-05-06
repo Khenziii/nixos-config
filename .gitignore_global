@@ -1,3 +1,4 @@
 .idea/
 vite.config.ts.timestamp
+__pycache__
 

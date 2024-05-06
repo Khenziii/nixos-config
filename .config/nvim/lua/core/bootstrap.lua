@@ -17,6 +17,7 @@ local function setup_plugins()
 	end
 	vim.opt.rtp:prepend(lazypath)
 
+	local config = {}
 	require("lazy").setup(plugins, config)
 end
 
@@ -30,6 +31,10 @@ local function setup_vim_settings()
 	vim.wo.relativenumber = true
 	vim.opt.tabstop = 4
 	vim.opt.shiftwidth = 4
+
+	vim.diagnostic.config {
+  		update_in_insert = true,
+	}
 end
 
 return {

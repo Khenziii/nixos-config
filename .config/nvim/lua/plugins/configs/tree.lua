@@ -1,7 +1,13 @@
 -- https://github.com/nvim-tree/nvim-tree.lua
 
 local function setup()
-	require("nvim-tree").setup()
+	require("nvim-tree").setup({
+		git = {
+			enable = true,
+			ignore = false,
+			timeout = 500,
+		},
+	})
 end
 
 return {

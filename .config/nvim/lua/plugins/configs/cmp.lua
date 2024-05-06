@@ -18,6 +18,7 @@ local function setup()
 		sources = {
 			{
 				name = "path",
+				keyword_length = 5,
 			},
   			{
 				name = "nvim_lsp",
@@ -30,6 +31,26 @@ local function setup()
   			{
 				name = "luasnip",
 				keyword_length = 2,
+			},
+			{
+				name = "spell",
+				keyword_length = 5,
+			},
+			{
+				name = "crates",
+				keyword_length = 4,
+			},
+			{
+				name = "npm",
+				keyword_length = 4,
+			},
+			{
+				name = "html-css",
+				keyword_length = 5,
+			},
+			{
+				name = "conventionalcommits",
+				keyword_length = 1,
 			},
 		},
 		window = {
@@ -60,6 +81,11 @@ return {
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-nvim-lsp",
 		"saadparwaiz1/cmp_luasnip",
+		"f3fora/cmp-spell",
+		"saecki/crates.nvim",
+		"david-kunz/cmp-npm",
+		"jezda1337/nvim-html-css",
+		"davidsierradz/cmp-conventionalcommits",
 	},
 	config = setup,
 }

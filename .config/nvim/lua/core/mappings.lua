@@ -1,4 +1,4 @@
-tree_focus = {
+local tree_focus = {
 	mode = "n",
 	key = "f",
 	command = ":NvimTreeFocus<CR>",

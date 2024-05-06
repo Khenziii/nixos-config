@@ -1,4 +1,5 @@
 -- https://github.com/catppuccin/nvim
+
 local function setup()
 	require("catppuccin").setup(
 		{

@@ -1,4 +1,5 @@
 -- https://github.com/nvim-tree/nvim-tree.lua
+
 local function setup()
 	require("nvim-tree").setup()
 end

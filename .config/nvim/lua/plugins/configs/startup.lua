@@ -1,4 +1,5 @@
 -- https://github.com/startup-nvim/startup.nvim
+
 local settings = {
 	logo = {
 		type = "text",

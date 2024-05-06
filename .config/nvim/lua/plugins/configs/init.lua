@@ -10,6 +10,7 @@ local lspconfig = require("plugins.configs.lspconfig")
 local cmp = require("plugins.configs.cmp")
 local luasnip = require("plugins.configs.luasnip")
 local mason = require("plugins.configs.mason")
+local gitgutter = require("plugins.configs.gitgutter")
 
 return {
 	catppuccin,
@@ -24,5 +25,6 @@ return {
 	cmp,
 	luasnip,
 	mason,
+	gitgutter,
 }
 

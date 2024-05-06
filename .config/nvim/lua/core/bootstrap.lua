@@ -30,7 +30,7 @@ end
 local function setup_vim_settings()
 	vim.wo.relativenumber = true
 
-	vim.opt.spell = true
+	-- vim.opt.spell = true
 	vim.opt.spelllang = {
 		"en_us",
 	}

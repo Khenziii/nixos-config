@@ -34,10 +34,10 @@ local function setup()
 				name = "luasnip",
 				keyword_length = 2,
 			},
-			{
-				name = "spell",
-				keyword_length = 5,
-			},
+			-- {
+			--		name = "spell",
+			--		keyword_length = 5,
+			-- },
 			{
 				name = "crates",
 				keyword_length = 4,
@@ -83,7 +83,7 @@ return {
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-nvim-lsp",
 		"saadparwaiz1/cmp_luasnip",
-		"f3fora/cmp-spell",
+		-- "f3fora/cmp-spell",
 		"saecki/crates.nvim",
 		"david-kunz/cmp-npm",
 		"jezda1337/nvim-html-css",

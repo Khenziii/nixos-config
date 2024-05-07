@@ -8,7 +8,18 @@ local tree_focus = {
 	},
 }
 
+local exit_insert_mode = {
+	mode = "i",
+	key = "<LEADER>jk",
+	command = "<ESC>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
+}
+
 return {
 	tree_focus,
+	exit_insert_mode,
 }
 

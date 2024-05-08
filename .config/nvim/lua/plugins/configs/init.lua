@@ -11,6 +11,7 @@ local cmp = require("plugins.configs.cmp")
 local luasnip = require("plugins.configs.luasnip")
 local mason = require("plugins.configs.mason")
 local gitgutter = require("plugins.configs.gitgutter")
+local leetcode = require("plugins.configs.leetcode")
 
 return {
 	catppuccin,
@@ -26,5 +27,6 @@ return {
 	luasnip,
 	mason,
 	gitgutter,
+	leetcode,
 }
 

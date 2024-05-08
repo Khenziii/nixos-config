@@ -12,6 +12,8 @@ local luasnip = require("plugins.configs.luasnip")
 local mason = require("plugins.configs.mason")
 local gitgutter = require("plugins.configs.gitgutter")
 local leetcode = require("plugins.configs.leetcode")
+local image = require("plugins.configs.image")
+local luarocks = require("plugins.configs.luarocks")
 
 return {
 	catppuccin,
@@ -28,5 +30,7 @@ return {
 	mason,
 	gitgutter,
 	leetcode,
+	image,
+	luarocks,
 }
 

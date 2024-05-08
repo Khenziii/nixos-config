@@ -14,6 +14,7 @@ local gitgutter = require("plugins.configs.gitgutter")
 local leetcode = require("plugins.configs.leetcode")
 local image = require("plugins.configs.image")
 local luarocks = require("plugins.configs.luarocks")
+local toggleterm = require("plugins.configs.toggleterm")
 
 return {
 	catppuccin,
@@ -32,5 +33,6 @@ return {
 	leetcode,
 	image,
 	luarocks,
+	toggleterm,
 }
 

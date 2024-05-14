@@ -7,6 +7,9 @@ local function setup()
 	lspconfig.lua_ls.setup({
 		capabilities = lsp_capabilities,
 	})
+	lspconfig.tsserver.setup({
+		capabilities = lsp_capabilities,
+	})
 end
 
 return {

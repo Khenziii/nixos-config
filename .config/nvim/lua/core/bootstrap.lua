@@ -41,6 +41,8 @@ local function setup_vim_settings()
 	}
 
 	vim.g.mapleader = "'"
+
+	vim.opt.updatetime = 250
 end
 
 return {

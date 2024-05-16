@@ -16,6 +16,7 @@ local plugins = {
 	"image",
 	"luarocks",
 	"toggleterm",
+	"vim-prisma",
 }
 
 local function get_plugins(plugin_names)

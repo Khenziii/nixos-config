@@ -1,6 +1,7 @@
 local function setup()
 	require("toggleterm").setup({
-		start_in_insert = true,
+		open_mapping = [[<LEADER>t]],
+		direction = "float",
 	})
 end
 

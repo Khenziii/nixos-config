@@ -18,8 +18,20 @@ local exit_insert_mode = {
 	},
 }
 
+local clear_highlights = {
+	mode = "n",
+	key = "<LEADER>c",
+	command = ":noh<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
+
+}
+
 return {
 	tree_focus,
 	exit_insert_mode,
+	clear_highlights,
 }
 

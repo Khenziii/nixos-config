@@ -1,6 +1,6 @@
 local tree_focus = {
 	mode = "n",
-	key = "f",
+	key = "<LEADER>f",
 	command = ":NvimTreeFocus<CR>",
 	options = {
 		noremap = true,

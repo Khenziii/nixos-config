@@ -1,3 +1,5 @@
+-- https://github.com/3rd/image.nvim
+
 local function setup()
 	require("image").setup({})
 end

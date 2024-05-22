@@ -1,9 +1,7 @@
 -- https://github.com/norcalli/nvim-colorizer.lua
 
 local function setup()
-	require("colorizer").setup({
-		mode = "background",
-	})
+	require("colorizer").setup()
 end
 
 return {

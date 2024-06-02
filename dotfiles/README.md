@@ -23,11 +23,6 @@ To install, you should first make sure, that git & stow is available on your os:
 git version && stow --version
 ```
 
-navigate to your home directory:
-```bash
-cd ~
-```
-
 clone the repo:
 ```bash
 git clone https://github.com/Khenziii/dotfiles
@@ -40,10 +35,10 @@ cd dotfiles
 
 and run:
 ```bash
-stow --adopt .
+stow --adopt -t ~ .
 ```
 
-After running above command, stow will take all files that are in the current working directory and create a symbolic link to them in the parent directory.
+After running above command, stow will take all files that are in the current working directory and create a symbolic link to them in your home directory.
 
 In case of any conflicts, `stow` will adapt to them (your configuration will be chosen over my config), you won't lose any settings :)
 

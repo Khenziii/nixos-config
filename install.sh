@@ -30,7 +30,7 @@ startup_warning () {
 
 # Exits, if $1 is not installed
 check_if_installed () {
-	if ! $1 --version > /dev/null 2>&1; then
+	if ! which $1 > /dev/null 2>&1; then
 		echo "$1 is not installed. Please install it, and rerun the script."
 		exit
 	fi	

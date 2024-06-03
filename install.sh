@@ -13,7 +13,7 @@ startup_warning () {
 
 	echo ""
 
-	echo "[1] Please make sure, that you're running this script in the directory from which you'd like to manage the config from. You won't be able to move this folder later, without breaking all of the symlinks."
+	echo "[1] Please make sure, that you're running this script in the directory from which you'd like to manage the config. You won't be able to move this folder later, without breaking all of the symlinks."
 
 	echo ""
 
@@ -36,11 +36,39 @@ check_if_installed () {
 	fi	
 }
 
+check_if_running_unix() {
+	# This variable will be set to "Darwin" for MacOS and "Linux" for Linux distributions 
+	os_name=$(uname -s)
+
+	if ! ([ "$os_name" = "Darwin" ] || [ "$os_name" = "Linux" ]); then
+		echo "You're not using an Unix-Like OS. Please stop using Windows (:pray:) and rerun this script, lol."
+		exit
+	fi
+}
+
+# check_if_running_nixos() {
+# 
+# }
+
 agreement=$1
 if [ "${agreement^^}" != "Y" ]; then
 	startup_warning
 fi
 
+check_if_running_unix
 check_if_installed "git"
 check_if_installed "stow"
+
+echo "Running 'git clone'.."
+
+git clone https://github.com/Khenziii/nixos-config || echo "Failed to run git clone, exiting.." && exit
+cd nixos-config
+
+echo "Creating dotfiles symlinks.."
+
+stow --adopt -t ~ .
+
+echo "Creating NixOS symlinks.."
+
+# ...
 

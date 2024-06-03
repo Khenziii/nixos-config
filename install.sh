@@ -78,3 +78,9 @@ echo "Creating NixOS symlinks.."
 check_if_running_nixos
 stow --adopt -t /etc/nixos .
 
+echo "Running 'sudo nixos-rebuild switch'.."
+
+sudo nixos-rebuild switch
+
+echo "Successfully applied the whole config!"
+

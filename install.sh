@@ -36,6 +36,7 @@ check_if_installed () {
 	fi	
 }
 
+# Exits, if not running an Unix based OS 
 check_if_running_unix() {
 	# This variable will be set to "Darwin" for MacOS and "Linux" for Linux distributions 
 	os_name=$(uname -s)
@@ -46,9 +47,13 @@ check_if_running_unix() {
 	fi
 }
 
-# check_if_running_nixos() {
-# 
-# }
+# Exits, if not running NixOS 
+check_if_running_nixos() {
+	if ! cat /etc/os-release | grep -q "NixOS"; then
+    	echo "You're not running NixOS, exiting.."
+		exit
+	fi
+}
 
 agreement=$1
 if [ "${agreement^^}" != "Y" ]; then
@@ -66,9 +71,10 @@ cd nixos-config
 
 echo "Creating dotfiles symlinks.."
 
-stow --adopt -t ~ .
+stow --adopt -t ~ dotfiles 
 
 echo "Creating NixOS symlinks.."
 
-# ...
+check_if_running_nixos
+stow --adopt -t /etc/nixos .
 

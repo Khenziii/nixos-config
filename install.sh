@@ -7,14 +7,13 @@ startup_warning () {
 	echo ""
 
 	echo "It will execute those steps in order to do so:"
-	echo "1. clone https://github.com/Khenziii/nixos-config *"
+	echo "1. clone https://github.com/Khenziii/nixos-config [1]"
 	echo "2. create symlinks using GNU's stow in order to apply settings"
 	echo "3. run some commands to setup applied settings (for example rebuild the system, if NixOS config got applied)"
-	echo "4. remove /tmp/nixos-config"
 
 	echo ""
 
-	echo "* Please make sure, that you're running this script in the directory from which you'd like to manage the config from. You won't be able to move this folder later, without breaking all of the symlinks."
+	echo "[1] Please make sure, that you're running this script in the directory from which you'd like to manage the config from. You won't be able to move this folder later, without breaking all of the symlinks."
 
 	echo ""
 

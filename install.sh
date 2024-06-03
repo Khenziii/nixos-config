@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# In order to suppress this warning, run the script with first parameter set to "y" 
+startup_warning () {
+	echo "WARNING: This script was created to setup Khenzii's working environment (NixOS configuration + some dotfiles)"
+
+	echo ""
+
+	echo "It will execute those steps in order to do so:"
+	echo "1. clone https://github.com/Khenziii/nixos-config *"
+	echo "2. create symlinks using GNU's stow in order to apply settings"
+	echo "3. run some commands to setup applied settings (for example rebuild the system, if NixOS config got applied)"
+	echo "4. remove /tmp/nixos-config"
+
+	echo ""
+
+	echo "* Please make sure, that you're running this script in the directory from which you'd like to manage the config from. You won't be able to move this folder later, without breaking all of the symlinks."
+
+	echo ""
+
+	read -p "Do you want to proceed? (Y/n): " response
+
+	# `^^` converts the string to uppercase
+	if [ "${response^^}" != "Y" ]; then
+		echo "Exiting.."
+		exit
+	fi
+
+	echo "Proceeding.."
+}
+
+agreement=$1
+if [ "${agreement^^}" != "Y" ]; then
+	startup_warning
+fi
+

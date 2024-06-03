@@ -91,5 +91,10 @@ echo "Running 'sudo nixos-rebuild switch'.."
 
 sudo nixos-rebuild switch || { echo "Failed to run 'nixos-rebuild switch', exiting.."; exit; }
 
+# Generate hardware-configuration.nix
+echo "Running 'sudo nixos-generate-config'.."
+
+sudo nixos-generate-config
+
 echo "Successfully applied the whole config!"
 

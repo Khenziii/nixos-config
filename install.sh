@@ -28,6 +28,14 @@ startup_warning () {
 	echo "Proceeding.."
 }
 
+# Exits, if the script doesn't have necessary permissions
+check_if_executed_by_root() {
+	if ! [ "$EUID" = "0" ]; then
+    	echo "This script needs to be executed with 'sudo', or by the root user. Exiting.."
+		exit
+	fi
+}
+
 # Exits, if $1 is not installed
 check_if_installed () {
 	if ! which $1 > /dev/null 2>&1; then
@@ -61,12 +69,13 @@ if [ "${agreement^^}" != "Y" ]; then
 fi
 
 check_if_running_unix
+check_if_executed_by_root
 check_if_installed "git"
 check_if_installed "stow"
 
 echo "Running 'git clone'.."
 
-git clone https://github.com/Khenziii/nixos-config || { echo "Failed to run git clone, exiting.."; exit; }
+git clone https://github.com/Khenziii/nixos-config || { echo "Failed to run 'git clone', exiting.."; exit; }
 cd nixos-config
 
 echo "Creating dotfiles symlinks.."
@@ -76,11 +85,11 @@ stow --adopt -t ~ dotfiles
 echo "Creating NixOS symlinks.."
 
 check_if_running_nixos
-stow --adopt -t /etc/nixos .
+sudo stow --adopt -t /etc/nixos .
 
 echo "Running 'sudo nixos-rebuild switch'.."
 
-sudo nixos-rebuild switch
+sudo nixos-rebuild switch || { echo "Failed to run 'nixos-rebuild switch', exiting.."; exit; }
 
 echo "Successfully applied the whole config!"
 

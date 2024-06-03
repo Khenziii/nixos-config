@@ -66,7 +66,7 @@ check_if_installed "stow"
 
 echo "Running 'git clone'.."
 
-git clone https://github.com/Khenziii/nixos-config || echo "Failed to run git clone, exiting.." && exit
+git clone https://github.com/Khenziii/nixos-config || echo "Failed to run git clone, exiting.."; exit
 cd nixos-config
 
 echo "Creating dotfiles symlinks.."

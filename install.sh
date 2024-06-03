@@ -28,8 +28,19 @@ startup_warning () {
 	echo "Proceeding.."
 }
 
+# Exits, if $1 is not installed
+check_if_installed () {
+	if ! $1 --version > /dev/null 2>&1; then
+		echo "$1 is not installed. Please install it, and rerun the script."
+		exit
+	fi	
+}
+
 agreement=$1
 if [ "${agreement^^}" != "Y" ]; then
 	startup_warning
 fi
+
+check_if_installed "git"
+check_if_installed "stow"
 

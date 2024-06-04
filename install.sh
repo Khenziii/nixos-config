@@ -87,14 +87,14 @@ echo "Creating NixOS symlinks.."
 check_if_running_nixos
 sudo stow --adopt -t /etc/nixos .
 
-echo "Running 'sudo nixos-rebuild switch'.."
-
-sudo nixos-rebuild switch || { echo "Failed to run 'nixos-rebuild switch', exiting.."; exit; }
-
 # Generate hardware-configuration.nix
 echo "Running 'sudo nixos-generate-config'.."
 
 sudo nixos-generate-config
+
+echo "Running 'sudo nixos-rebuild switch'.."
+
+sudo nixos-rebuild switch || { echo "Failed to run 'nixos-rebuild switch', exiting.."; exit; }
 
 echo "Successfully applied the whole config!"
 

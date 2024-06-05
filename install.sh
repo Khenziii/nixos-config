@@ -85,6 +85,7 @@ stow --adopt -t ~ dotfiles
 echo "Creating NixOS symlinks.."
 
 check_if_running_nixos
+sudo mv /etc/nixos/hardware-configuration.nix .
 sudo stow --adopt -t /etc/nixos .
 
 # Generate hardware-configuration.nix

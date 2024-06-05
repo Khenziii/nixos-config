@@ -4,3 +4,7 @@ dotfiles
 .gitignore
 install.sh
 
+# Flakes are temporarily disabled
+flake.lock
+flake.nix
+

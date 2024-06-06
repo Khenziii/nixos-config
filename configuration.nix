@@ -43,7 +43,7 @@
   };
 
   services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = false;
+  services.displayManager.sddm.enable = false;
   services.xserver.desktopManager.plasma5.enable = false;
   programs.hyprland = {
     enable = true;
@@ -51,9 +51,9 @@
   };
 
   # Configure keymap in X11
-  services.xserver = {
+  services.xserver.xkb = {
     layout = "us";
-    xkbVariant = "";
+    variant = "";
   };
 
   # Enable CUPS to print documents.

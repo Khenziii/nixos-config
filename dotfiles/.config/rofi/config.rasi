@@ -1,3 +1,12 @@
+* {
+	primary: #cba6f7;
+	secondary: #11111b;
+	secondary-darkened: #11111b44; 
+	text: #cdd6f4;
+	text-darkened: #cdd6f488;
+	background: #1e1e2e;
+}
+
 configuration {
 	modi: "drun";
 	show-icons: true;
@@ -15,10 +24,10 @@ window {
     padding: 0px;
 
     border: 3px solid;
-	border-color: #cba6f7;
+	border-color: @primary;
     border-radius: 5px;
 
-	background-color: #1e1e2e;
+	background-color: @background;
 
     cursor: "default";
 }
@@ -35,30 +44,30 @@ inputbar {
 	children: ["entry", "num-filtered-rows", "textbox-num-sep", "num-rows"];
 
 	border: 0px 0px 3px 0px;
-	border-color: #cba6f7;
+	border-color: @primary;
 }
 
 num-filtered-rows {
 	enabled: true;
-	text-color: #cdd6f4;
+	text-color: @text;
 }
 
 textbox-num-sep {
 	enabled: true;
-	text-color: #cdd6f4;
+	text-color: @text;
 }
 
 num-rows {
 	enabled: true;
-	text-color: #cdd6f4;
+	text-color: @text;
 }
 
 entry {
 	enabled: true;
-	text-color: #cdd6f4;
+	text-color: @text;
 	cursor: text;
 	placeholder: "Search..";
-	placeholder-color: #cdd6f488;
+	placeholder-color: @text-darkened;
 }
 
 listview {
@@ -70,7 +79,7 @@ listview {
 scrollbar {
 	enabled: true;
     handle-width: 10px;
-    handle-color: #cba6f7;
+    handle-color: @primary;
 }
 
 element {
@@ -79,16 +88,16 @@ element {
 }
 
 element-text {
-	text-color: #cdd6f4;
+	text-color: @text;
 }
 
 element normal.normal,
 element alternate.normal {
-	background-color: #11111b44;
+	background-color: @secondary-darkened;
 }
 
 element selected.normal {
-	background-color: #11111b;
+	background-color: @secondary;
 }
 
 message,
@@ -98,6 +107,6 @@ error-message {
 }
 
 textbox {
-    text-color: #cdd6f4;
+    text-color: @text;
 }
 

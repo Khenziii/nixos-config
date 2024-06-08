@@ -82,20 +82,15 @@ echo "Creating dotfiles symlinks.."
 
 stow --adopt -t "/home/$SUDO_USER" dotfiles 
 
-echo "Creating NixOS symlinks.."
+echo "Generating NixOS config.."
 
 check_if_running_nixos
-sudo mv /etc/nixos/hardware-configuration.nix .
-sudo stow --adopt -t /etc/nixos .
-
-# Generate hardware-configuration.nix
-echo "Running 'sudo nixos-generate-config'.."
-
 sudo nixos-generate-config
+sudo mv /etc/nixos/hardware-configuration.nix .
 
-echo "Running 'sudo nixos-rebuild switch'.."
+echo "Installing NixOS config.."
 
-sudo nixos-rebuild switch || { echo "Failed to run 'nixos-rebuild switch', exiting.."; exit; }
+sudo nixos-rebuild switch --flake ".#nixos"
 
 echo "Successfully applied the whole config!"
 

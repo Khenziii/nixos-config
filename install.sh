@@ -90,7 +90,8 @@ sudo mv /etc/nixos/hardware-configuration.nix .
 
 echo "Installing NixOS config.."
 
-sudo nixos-rebuild switch --flake ".#nixos"
+# This is a hacky workaround. See: https://github.com/Khenziii/nixos-config/issues/1
+mv .git .git-old && sudo nixos-rebuild switch --flake ".#nixos"; mv .git-old .git
 
 echo "Successfully applied the whole config!"
 

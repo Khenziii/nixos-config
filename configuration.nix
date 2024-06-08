@@ -76,6 +76,13 @@
     #media-session.enable = true;
   };
 
+  # Shell
+  programs.bash = {
+    shellAliases = {
+      rebuild = "mv .git .git-old && sudo nixos-rebuild switch --flake '.#nixos'; mv .git-old .git";
+    };
+  };
+
   # Bluetooth
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;

@@ -120,10 +120,10 @@
     neofetch
     rofi-wayland
     wl-clipboard
-	swww
+    swww
     libnotify
     swaynotificationcenter
-	pavucontrol
+    pavucontrol
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

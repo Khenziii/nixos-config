@@ -129,6 +129,7 @@
     spotify
     spicetify-cli
     hyprshot
+    caprine-bin
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

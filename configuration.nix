@@ -131,6 +131,7 @@
     hyprshot
     caprine-bin
     cava
+    peaclock
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

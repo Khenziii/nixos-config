@@ -124,6 +124,7 @@
     libnotify
     swaynotificationcenter
     pavucontrol
+    networkmanagerapplet
   ];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

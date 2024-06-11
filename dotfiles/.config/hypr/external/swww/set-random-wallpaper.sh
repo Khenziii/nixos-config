@@ -1,6 +1,6 @@
 #!/bin/sh
 
-script_directory=~/.config/hypr/plugins/swww/
+script_directory=~/.config/hypr/external/swww/
 
 # get names of all the wallpapers
 wallpapers=( $(ls -1 $script_directory/enabled-wallpapers) )

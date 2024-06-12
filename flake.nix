@@ -24,9 +24,10 @@
 	  specialArgs = { passedArgs = passedArgs; };
     };
 
-    homeConfigurations.${passedArgs.username} = home-manager.libs.homeManagerConfiguration {
+    homeConfigurations.${passedArgs.username} = home-manager.lib.homeManagerConfiguration {
+	  pkgs = pkgs;
       modules = [ ./home.nix ];
-	  specialArgs = { passedArgs = passedArgs; };
+	  extraSpecialArgs = { passedArgs = passedArgs; };
     };
   };
 }

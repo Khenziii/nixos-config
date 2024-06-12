@@ -136,6 +136,8 @@
     vesktop
     obs-studio
     steam
+    catppuccin-cursors.mochaMauve
+    hyprcursor
   ];
 
   fonts.packages = with pkgs; [

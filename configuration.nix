@@ -109,6 +109,8 @@
 
   environment.systemPackages = with pkgs; [
     home-manager
+    konsole
+    vim
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

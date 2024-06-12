@@ -18,13 +18,5 @@
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  gtk = {
-    enable = true;
-	cursorTheme = {
-	  package = pkgs.catppuccin-cursors.mochaMauve;
-	  name = "Catppuccin-Mocha-Mauve-Cursors";
-	  size = 24;
-	};
-  };
 }
 

@@ -136,7 +136,6 @@
     vesktop
     obs-studio
     steam
-    catppuccin-cursors.mochaMauve
     hyprcursor
   ];
 

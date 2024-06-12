@@ -107,42 +107,8 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
     home-manager
-    git
-    stow
-    neovim
-    kitty
-    neofetch
-    rofi-wayland
-    wl-clipboard
-    swww
-    libnotify
-    swaynotificationcenter
-    pavucontrol
-    networkmanagerapplet
-    discord
-    spotify
-    spicetify-cli
-    hyprshot
-    caprine-bin
-    cava
-    peaclock
-    eww
-    vesktop
-    obs-studio
-    steam
-    hyprcursor
-  ];
-
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { 
-	  fonts = [ "Hack" ]; 
-    })
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -157,6 +123,10 @@
     "nix-command" 
     "flakes"
   ];
+
+  catppuccin.flavor = "mocha";
+  catppuccin.accent = "mauve";
+  catppuccin.enable = true;
 
   # List services that you want to enable:
 

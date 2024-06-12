@@ -7,9 +7,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+	catppuccin.url = "github:catppuccin/nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }: let 
+  outputs = { self, nixpkgs, home-manager, catppuccin, ... }: let 
     system = "x86_64-linux";
     pkgs = import nixpkgs { inherit system; };
 
@@ -20,13 +21,20 @@
 	};
   in {
     nixosConfigurations.${passedArgs.hostname} = nixpkgs.lib.nixosSystem {
-      modules = [ ./configuration.nix ];
+	  system = system;
+      modules = [
+	    ./configuration.nix
+		catppuccin.nixosModules.catppuccin
+	  ];
 	  specialArgs = { passedArgs = passedArgs; };
     };
 
     homeConfigurations.${passedArgs.username} = home-manager.lib.homeManagerConfiguration {
 	  pkgs = pkgs;
-      modules = [ ./home.nix ];
+      modules = [
+	    ./home.nix
+		catppuccin.homeManagerModules.catppuccin
+	  ];
 	  extraSpecialArgs = { passedArgs = passedArgs; };
     };
   };

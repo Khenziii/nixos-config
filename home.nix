@@ -18,5 +18,49 @@
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
+  environment.systemPackages = with pkgs; [
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    wget
+    git
+    stow
+    neovim
+    kitty
+    neofetch
+    rofi-wayland
+    wl-clipboard
+    swww
+    libnotify
+    swaynotificationcenter
+    pavucontrol
+    networkmanagerapplet
+    discord
+    spotify
+    spicetify-cli
+    hyprshot
+    caprine-bin
+    cava
+    peaclock
+    eww
+    vesktop
+    obs-studio
+    steam
+    hyprcursor
+  ];
+
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { 
+	  fonts = [ "Hack" ]; 
+    })
+  ];
+
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { 
+	  fonts = [ "Hack" ]; 
+    })
+  ];
+
+  catppuccin.flavor = "mocha";
+  catppuccin.accent = "mauve";
+  catppuccin.enable = true;
 }
 

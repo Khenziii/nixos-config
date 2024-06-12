@@ -135,6 +135,7 @@
     eww
     vesktop
     obs-studio
+    steam
   ];
 
   fonts.packages = with pkgs; [

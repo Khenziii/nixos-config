@@ -136,6 +136,13 @@
     vesktop
     obs-studio
   ];
+
+  fonts.packages = with pkgs; [
+    (nerdfonts.override { 
+	  fonts = [ "Hack" ]; 
+    })
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

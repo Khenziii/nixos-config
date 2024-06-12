@@ -45,11 +45,8 @@
     obs-studio
     steam
     hyprcursor
-  ];
-
-  fonts.packages = with pkgs; [
     (nerdfonts.override { 
-	  fonts = [ "Hack" ]; 
+      fonts = [ "Hack" ]; 
     })
   ];
 

@@ -22,4 +22,8 @@ jobs:
           pr-labels: |
             automated
           token: ${{ secrets.TOKEN_GITHUB }}
+          git-author-name: 'GitHub Actions'
+          git-author-email: 'github-actions[bot]@users.noreply.github.com'
+          git-committer-name: 'GitHub Actions'
+          git-committer-email: 'github-actions[bot]@users.noreply.github.com'
 

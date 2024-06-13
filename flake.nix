@@ -25,7 +25,6 @@
 	  system = system;
       modules = [
 	    ./configuration.nix
-		catppuccin.nixosModules.catppuccin
 	  ];
 	  specialArgs = { passedArgs = passedArgs; };
     };
@@ -34,7 +33,6 @@
 	  pkgs = pkgs;
       modules = [
 	    ./home.nix
-		catppuccin.homeManagerModules.catppuccin
 	  ];
 	  extraSpecialArgs = { passedArgs = passedArgs; };
     };

@@ -7,6 +7,7 @@ on:
 jobs:
   update-lockfile:
     runs-on: ubuntu-latest
+    name: "🕙 Update flake.lock"
     steps:
       - name: Checkout Code 
         uses: actions/checkout@v4
@@ -20,4 +21,5 @@ jobs:
           pr-title: "chore(nixos): update flake.lock"
           pr-labels: |
             automated
+          token: ${{ secrets.TOKEN_GITHUB }}
 

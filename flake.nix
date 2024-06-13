@@ -15,29 +15,29 @@
     pkgs = import nixpkgs { inherit system; };
 
 	# This variable gets passed to all the modules.
-	passedArgs = {
+	modules-inputs = {
 	  hostname = "nixos";
       username = "khenzii";
 	};
   in {
-    nixosConfigurations.${passedArgs.hostname} = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.${modules-inputs.hostname} = nixpkgs.lib.nixosSystem {
 	  system = system;
       modules = [
 		./shared/shared.nix
 	    ./nixos/configuration.nix
 		catppuccin.nixosModules.catppuccin
 	  ];
-	  specialArgs = { passedArgs = passedArgs; };
+	  specialArgs = { inputs = modules-inputs; };
     };
 
-    homeConfigurations.${passedArgs.username} = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.${modules-inputs.username} = home-manager.lib.homeManagerConfiguration {
 	  pkgs = pkgs;
       modules = [
 		./shared/shared.nix
 	    ./home-manager/home.nix	
 		catppuccin.homeManagerModules.catppuccin
 	  ];
-	  extraSpecialArgs = { passedArgs = passedArgs; };
+	  extraSpecialArgs = { inputs = modules-inputs; };
     };
   };
 }

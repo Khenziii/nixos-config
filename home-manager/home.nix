@@ -1,4 +1,4 @@
-{ config, pkgs, passedArgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -6,8 +6,8 @@
   ];
 
   home = {
-    username = passedArgs.username;
-    homeDirectory = "/home/${passedArgs.username}";
+    username = inputs.username;
+    homeDirectory = "/home/${inputs.username}";
   };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion

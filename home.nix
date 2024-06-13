@@ -1,6 +1,10 @@
 { config, pkgs, passedArgs, ... }:
 
 {
+  imports = [
+	passedArgs.catppuccin.homeManagerModules.catppuccin
+  ];
+
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -19,7 +23,6 @@
   systemd.user.startServices = "sd-switch";
 
   home.packages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
     stow
@@ -50,8 +53,10 @@
     })
   ];
 
-  catppuccin.flavor = "mocha";
-  catppuccin.accent = "mauve";
-  catppuccin.enable = true;
+  catppuccin = {
+    enable = true;
+    flavor = "mocha";
+    accent = "mauve";
+  };
 }
 

@@ -18,6 +18,7 @@
 	passedArgs = {
 	  hostname = "nixos";
       username = "khenzii";
+	  catppuccin = catppuccin;
 	};
   in {
     nixosConfigurations.${passedArgs.hostname} = nixpkgs.lib.nixosSystem {

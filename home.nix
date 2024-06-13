@@ -51,8 +51,8 @@
     (nerdfonts.override { 
       fonts = [ "Hack" ]; 
     })
-	supertux
-	supertuxkart
+	superTux
+	superTuxKart
   ];
 
   catppuccin = {

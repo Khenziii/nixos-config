@@ -31,7 +31,7 @@
     };
 
     homeConfigurations.${modules-inputs.username} = home-manager.lib.homeManagerConfiguration {
-	  pkgs = pkgs;
+	  pkgs = nixpkgs.legacyPackages.${system};
       modules = [
 		./shared/shared.nix
 	    ./home-manager/home.nix	

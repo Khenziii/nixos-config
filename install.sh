@@ -86,7 +86,7 @@ echo "Generating NixOS config.."
 
 check_if_running_nixos
 sudo nixos-generate-config
-sudo mv /etc/nixos/hardware-configuration.nix .
+sudo mv /etc/nixos/hardware-configuration.nix nixos 
 
 echo "Installing NixOS config.."
 

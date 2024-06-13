@@ -18,13 +18,14 @@
 	passedArgs = {
 	  hostname = "nixos";
       username = "khenzii";
-	  catppuccin = catppuccin;
 	};
   in {
     nixosConfigurations.${passedArgs.hostname} = nixpkgs.lib.nixosSystem {
 	  system = system;
       modules = [
-	    ./configuration.nix
+		./shared/shared.nix
+	    ./nixos/configuration.nix
+		catppuccin.nixosModules.catppuccin
 	  ];
 	  specialArgs = { passedArgs = passedArgs; };
     };
@@ -32,7 +33,9 @@
     homeConfigurations.${passedArgs.username} = home-manager.lib.homeManagerConfiguration {
 	  pkgs = pkgs;
       modules = [
-	    ./home.nix
+		./shared/shared.nix
+	    ./home-manager/home.nix	
+		catppuccin.homeManagerModules.catppuccin
 	  ];
 	  extraSpecialArgs = { passedArgs = passedArgs; };
     };

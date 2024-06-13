@@ -5,10 +5,10 @@
 { config, pkgs, passedArgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+	../shared/shared.nix
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -79,7 +79,9 @@
   # Shell
   programs.bash = {
     shellAliases = {
-      rebuild = "mv .git .git-old && sudo nixos-rebuild switch --flake '.#nixos'; mv .git-old .git";
+      rebuild = "rebuild-home && rebuild-system";
+      rebuild-home = "mv .git .git-old && home-manager switch --flake '.#khenzii'; mv .git-old .git";
+      rebuild-system = "mv .git .git-old && sudo nixos-rebuild switch --flake '.#nixos'; mv .git-old .git";
     };
   };
 
@@ -104,9 +106,6 @@
   # Install firefox.
   programs.firefox.enable = true;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   environment.systemPackages = with pkgs; [
     home-manager
     konsole
@@ -125,10 +124,6 @@
     "nix-command" 
     "flakes"
   ];
-
-  catppuccin.flavor = "mocha";
-  catppuccin.accent = "mauve";
-  catppuccin.enable = true;
 
   # List services that you want to enable:
 

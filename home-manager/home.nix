@@ -2,14 +2,8 @@
 
 {
   imports = [
-	passedArgs.catppuccin.homeManagerModules.catppuccin
+	../shared/shared.nix
   ];
-
-  nixpkgs = {
-    config = {
-      allowUnfree = true;
-    };
-  };
 
   home = {
     username = passedArgs.username;
@@ -54,11 +48,5 @@
 	superTux
 	superTuxKart
   ];
-
-  catppuccin = {
-    enable = true;
-    flavor = "mocha";
-    accent = "mauve";
-  };
 }
 

@@ -13,17 +13,14 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Nix
-        uses: DeterminateSystems/nix-installer-action@main
+        uses: cachix/install-nix-action@V27
 
       - name: Update flake.lock
         uses: DeterminateSystems/update-flake-lock@main
         with:
+          commit-msg: "chore(nixos): update flake.lock"
           pr-title: "chore(nixos): update flake.lock"
           pr-labels: |
             automated
-          token: ${{ secrets.TOKEN_GITHUB }}
-          git-author-name: 'GitHub Actions'
-          git-author-email: 'github-actions[bot]@users.noreply.github.com'
-          git-committer-name: 'GitHub Actions'
-          git-committer-email: 'github-actions[bot]@users.noreply.github.com'
+          token: ${{ github.token }}
 

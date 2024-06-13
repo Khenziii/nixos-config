@@ -23,9 +23,10 @@
     nixosConfigurations.${modules-inputs.hostname} = nixpkgs.lib.nixosSystem {
 	  system = system;
       modules = [
+	    home-manager.nixosModules.home-manager
+		catppuccin.nixosModules.catppuccin
 		./shared/shared.nix
 	    ./nixos/configuration.nix
-		catppuccin.nixosModules.catppuccin
 	  ];
 	  specialArgs = { inputs = modules-inputs; };
     };
@@ -33,9 +34,9 @@
     homeConfigurations.${modules-inputs.username} = home-manager.lib.homeManagerConfiguration {
 	  pkgs = nixpkgs.legacyPackages.${system};
       modules = [
+		catppuccin.homeManagerModules.catppuccin
 		./shared/shared.nix
 	    ./home-manager/home.nix	
-		catppuccin.homeManagerModules.catppuccin
 	  ];
 	  extraSpecialArgs = { inputs = modules-inputs; };
     };

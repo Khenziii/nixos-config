@@ -47,6 +47,15 @@
     })
 	superTux
 	superTuxKart
+	alacritty
   ];
+
+  programs.alacritty = {
+    enable = true;
+    catppuccin = {
+	  enable = true;
+	  flavor = "latte";
+	};
+  };
 }
 

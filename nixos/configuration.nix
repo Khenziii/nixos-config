@@ -10,6 +10,11 @@
 	../shared/shared.nix
   ];
 
+  # catppuccin = {
+  #   enable = true;
+  #   flavor = "latte";
+  # };
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;

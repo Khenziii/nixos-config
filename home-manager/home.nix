@@ -54,6 +54,7 @@
 	swaylock
 	tmux
 	mpv
+	zsh
   ];
 
   catppuccin = {
@@ -102,6 +103,11 @@
   programs.mpv = {
     enable = true;
 	catppuccin.enable = true; 
+  };
+
+  programs.zsh = {
+    enable = true;
+	syntaxHighlighting.catppuccin.enable = true;
   };
 
   gtk = {

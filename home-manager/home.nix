@@ -50,6 +50,7 @@
 	btop
 	fzf
 	delta
+	imv
   ];
 
   catppuccin = {
@@ -76,6 +77,11 @@
   };
 
   programs.git.delta = {
+    enable = true;
+	catppuccin.enable = true;
+  };
+
+  programs.imv = {
     enable = true;
 	catppuccin.enable = true;
   };

@@ -10,10 +10,11 @@
 	../shared/shared.nix
   ];
 
-  # catppuccin = {
-  #   enable = true;
-  #   flavor = "latte";
-  # };
+  catppuccin = {
+    enable = true;
+    flavor = "mocha";
+	accent = "mauve";
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;

@@ -47,15 +47,16 @@
     })
 	superTux
 	superTuxKart
-	alacritty
   ];
 
-  programs.alacritty = {
+  catppuccin = {
+    flavor = "mocha";
+	accent = "mauve";
+  };
+
+  programs.cava = {
     enable = true;
-    catppuccin = {
-	  enable = true;
-	  flavor = "latte";
-	};
+	catppuccin.enable = true; 
   };
 }
 

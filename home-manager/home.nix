@@ -49,6 +49,7 @@
 	superTuxKart
 	btop
 	fzf
+	delta
   ];
 
   catppuccin = {
@@ -70,6 +71,11 @@
   };
 
   programs.fzf = {
+    enable = true;
+	catppuccin.enable = true;
+  };
+
+  programs.git.delta = {
     enable = true;
 	catppuccin.enable = true;
   };

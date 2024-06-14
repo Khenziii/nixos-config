@@ -53,6 +53,7 @@
 	imv
 	swaylock
 	tmux
+	mpv
   ];
 
   catppuccin = {
@@ -96,6 +97,11 @@
   programs.tmux = {
     enable = true;
 	catppuccin.enable = true;
+  };
+
+  programs.mpv = {
+    enable = true;
+	catppuccin.enable = true; 
   };
 
   gtk = {

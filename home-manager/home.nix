@@ -48,6 +48,7 @@
 	superTux
 	superTuxKart
 	btop
+	fzf
   ];
 
   catppuccin = {
@@ -66,6 +67,11 @@
   programs.btop = {
     enable = true;
 	catppuccin.enable = true; 
+  };
+
+  programs.fzf = {
+    enable = true;
+	catppuccin.enable = true;
   };
 
   gtk = {

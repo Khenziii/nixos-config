@@ -51,6 +51,7 @@
 	fzf
 	delta
 	imv
+	swaylock
   ];
 
   catppuccin = {
@@ -82,6 +83,11 @@
   };
 
   programs.imv = {
+    enable = true;
+	catppuccin.enable = true;
+  };
+
+  programs.swaylock = {
     enable = true;
 	catppuccin.enable = true;
   };

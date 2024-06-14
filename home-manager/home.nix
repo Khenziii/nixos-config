@@ -103,6 +103,7 @@
 	catppuccin = {
 	  enable = true;
 	  cursor.enable = true;
+	  icon.enable = true;
 	};
   };
 }

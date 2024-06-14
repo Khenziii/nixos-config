@@ -58,5 +58,13 @@
     enable = true;
 	catppuccin.enable = true; 
   };
+
+  gtk = {
+    enable = true;
+	catppuccin = {
+	  enable = true;
+	  cursor.enable = true;
+	};
+  };
 }
 

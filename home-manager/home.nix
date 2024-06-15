@@ -55,6 +55,7 @@
 	tmux
 	mpv
 	zsh
+	catppuccin-cursors.mochaMauve
   ];
 
   catppuccin = {
@@ -122,6 +123,12 @@
 	  cursor.enable = true;
 	  icon.enable = true;
 	};
+  };
+
+  home.pointerCursor = {
+	name = "catppuccin-mocha-mauve-cursors";
+    package = pkgs.catppuccin-cursors.mochaMauve;
+    size = 22;
   };
 }
 

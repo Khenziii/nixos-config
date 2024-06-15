@@ -13,16 +13,16 @@
   catppuccin = {
     enable = true;
     flavor = "mocha";
-	accent = "mauve";
+    accent = "mauve";
   };
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = false;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.grub = {
     enable = true;
     device = "nodev";
     useOSProber = true;
+	efiSupport = true;
   };
 
   networking.hostName = inputs.hostname; # Define your hostname.
@@ -121,6 +121,7 @@
     home-manager
     konsole
     vim
+	os-prober
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

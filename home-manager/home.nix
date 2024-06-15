@@ -56,6 +56,7 @@
 	mpv
 	zsh
 	catppuccin-cursors.mochaMauve
+	brightnessctl
   ];
 
   catppuccin = {

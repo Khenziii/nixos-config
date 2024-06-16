@@ -45,7 +45,6 @@
 	tmux
 	mpv
 	zsh
-	catppuccin-cursors.mochaMauve
 	brightnessctl
   ];
 
@@ -95,12 +94,6 @@
   programs.zsh = {
     enable = true;
 	syntaxHighlighting.catppuccin.enable = true;
-  };
-
-  home.pointerCursor = {
-	name = "catppuccin-mocha-mauve-cursors";
-    package = pkgs.catppuccin-cursors.mochaMauve;
-    size = 24;
   };
 }
 

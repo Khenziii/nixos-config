@@ -49,11 +49,6 @@
 	brightnessctl
   ];
 
-  catppuccin = {
-    flavor = "mocha";
-	accent = "mauve";
-  };
-
   programs.cava = {
     enable = true;
 	catppuccin = {

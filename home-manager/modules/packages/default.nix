@@ -9,6 +9,7 @@
 	./rofi.nix
 	./wl-clipboard.nix
 	./swww.nix
+	./libnotify.nix
   ];
 }
 

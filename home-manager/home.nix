@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    libnotify
     swaynotificationcenter
     pavucontrol
     networkmanagerapplet

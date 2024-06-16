@@ -7,8 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    git
-    stow
     neovim
     kitty
     neofetch

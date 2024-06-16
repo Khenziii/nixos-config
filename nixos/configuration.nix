@@ -122,6 +122,8 @@
     konsole
     vim
 	os-prober
+    git
+    stow
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

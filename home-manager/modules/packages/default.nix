@@ -16,6 +16,7 @@
 	./discord.nix
 	./spotify.nix
 	./spicetify-cli.nix
+	./hyprshot.nix
   ];
 }
 

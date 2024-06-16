@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    hyprshot
     caprine-bin
     cava
     peaclock

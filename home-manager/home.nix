@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    spicetify-cli
     hyprshot
     caprine-bin
     cava

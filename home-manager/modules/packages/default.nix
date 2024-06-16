@@ -15,6 +15,7 @@
 	./networkmanagerapplet.nix
 	./discord.nix
 	./spotify.nix
+	./spicetify-cli.nix
   ];
 }
 

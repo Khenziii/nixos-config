@@ -20,6 +20,7 @@
 	./caprine-bin.nix
     ./cava.nix	
     ./peaclock.nix	
+    ./eww.nix	
   ];
 }
 

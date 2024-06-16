@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    eww
     vesktop
     obs-studio
     steam

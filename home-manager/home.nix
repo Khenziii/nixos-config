@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    rofi-wayland
     wl-clipboard
     swww
     libnotify

@@ -6,6 +6,7 @@
     ./neovim.nix
 	./kitty.nix
 	./neofetch.nix
+	./rofi.nix
   ];
 }
 

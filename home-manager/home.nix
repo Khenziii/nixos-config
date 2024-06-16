@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    kitty
     neofetch
     rofi-wayland
     wl-clipboard

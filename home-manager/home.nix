@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    caprine-bin
     cava
     peaclock
     eww

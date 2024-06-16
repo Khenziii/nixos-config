@@ -17,6 +17,7 @@
 	./spotify.nix
 	./spicetify-cli.nix
 	./hyprshot.nix
+	./caprine-bin.nix
   ];
 }
 

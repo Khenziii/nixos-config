@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    steam
     hyprcursor
     (nerdfonts.override { 
       fonts = [ "Hack" ]; 

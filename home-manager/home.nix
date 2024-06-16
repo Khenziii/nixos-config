@@ -3,11 +3,10 @@
 {
   imports = [
 	../shared/shared.nix
-	./modules/default.nix
+	./modules
   ];
 
   home.packages = with pkgs; [
-    wget
     git
     stow
     neovim

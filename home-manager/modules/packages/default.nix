@@ -1,6 +1,8 @@
 { ... }:
 
 {
-
+  imports = [
+    ./wget.nix
+  ];
 }
 

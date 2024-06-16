@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    wl-clipboard
     swww
     libnotify
     swaynotificationcenter

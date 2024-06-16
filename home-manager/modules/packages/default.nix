@@ -11,6 +11,7 @@
 	./swww.nix
 	./libnotify.nix
 	./swaynotificationcenter.nix
+	./pavucontrol.nix
   ];
 }
 

@@ -7,8 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    swaynotificationcenter
-    pavucontrol
     networkmanagerapplet
     discord
     spotify

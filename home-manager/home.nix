@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    peaclock
     eww
     vesktop
     obs-studio

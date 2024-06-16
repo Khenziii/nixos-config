@@ -19,6 +19,7 @@
 	./hyprshot.nix
 	./caprine-bin.nix
     ./cava.nix	
+    ./peaclock.nix	
   ];
 }
 

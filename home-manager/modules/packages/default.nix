@@ -21,6 +21,7 @@
     ./cava.nix	
     ./peaclock.nix	
     ./eww.nix	
+    ./vesktop.nix	
   ];
 }
 

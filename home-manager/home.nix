@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    vesktop
     obs-studio
     steam
     hyprcursor

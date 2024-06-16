@@ -13,6 +13,7 @@
 	./swaynotificationcenter.nix
 	./pavucontrol.nix
 	./networkmanagerapplet.nix
+	./discord.nix
   ];
 }
 

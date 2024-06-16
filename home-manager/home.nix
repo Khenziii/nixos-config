@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    discord
     spotify
     spicetify-cli
     hyprshot

@@ -97,20 +97,6 @@
 	syntaxHighlighting.catppuccin.enable = true;
   };
 
-  qt.style.catppuccin = {
-    enable = true;
-	apply = true; # auto applies the theme
-  };
-
-  gtk = {
-    enable = true;
-	catppuccin = {
-	  enable = true;
-	  cursor.enable = true;
-	  icon.enable = true;
-	};
-  };
-
   home.pointerCursor = {
 	name = "catppuccin-mocha-mauve-cursors";
     package = pkgs.catppuccin-cursors.mochaMauve;

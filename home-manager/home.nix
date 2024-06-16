@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    swww
     libnotify
     swaynotificationcenter
     pavucontrol

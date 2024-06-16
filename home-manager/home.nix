@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    cava
     peaclock
     eww
     vesktop
@@ -29,14 +28,6 @@
 	zsh
 	brightnessctl
   ];
-
-  programs.cava = {
-    enable = true;
-	catppuccin = {
-	  enable = true;
-	  transparent = true;
-	};
-  };
 
   programs.btop = {
     enable = true;

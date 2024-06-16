@@ -18,6 +18,7 @@
 	./spicetify-cli.nix
 	./hyprshot.nix
 	./caprine-bin.nix
+    ./cava.nix	
   ];
 }
 

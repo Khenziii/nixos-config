@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    obs-studio
     steam
     hyprcursor
     (nerdfonts.override { 

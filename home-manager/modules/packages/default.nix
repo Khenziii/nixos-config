@@ -22,6 +22,7 @@
     ./peaclock.nix	
     ./eww.nix	
     ./vesktop.nix	
+    ./obs-studio.nix
   ];
 }
 

@@ -14,6 +14,7 @@
 	./pavucontrol.nix
 	./networkmanagerapplet.nix
 	./discord.nix
+	./spotify.nix
   ];
 }
 

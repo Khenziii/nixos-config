@@ -100,7 +100,7 @@
   hardware.bluetooth.enable = true;
   hardware.bluetooth.powerOnBoot = true;
 
-  # Enable touchpad support (enabled default in most desktopManager).
+  # Explicitly enable touchpad support (most desktop environments enable this by default).
   # services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.

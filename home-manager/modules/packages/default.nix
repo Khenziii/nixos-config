@@ -10,6 +10,7 @@
 	./wl-clipboard.nix
 	./swww.nix
 	./libnotify.nix
+	./swaynotificationcenter.nix
   ];
 }
 

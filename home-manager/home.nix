@@ -3,15 +3,8 @@
 {
   imports = [
 	../shared/shared.nix
+	./modules/default.nix
   ];
-
-  home = {
-    username = inputs.username;
-    homeDirectory = "/home/${inputs.username}";
-  };
-
-  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  home.stateVersion = "23.11";
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

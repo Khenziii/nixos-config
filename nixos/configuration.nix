@@ -22,12 +22,6 @@
     };
   };
 
-  # Explicitly enable touchpad support (most desktop environments enable this by default).
-  # services.xserver.libinput.enable = true;
-
-  # Install firefox.
-  programs.firefox.enable = true;
-
   environment.systemPackages = with pkgs; [
     home-manager
     konsole
@@ -37,9 +31,6 @@
     stow
   ];
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;

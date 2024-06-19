@@ -23,7 +23,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    konsole
     vim
 	os-prober
     git

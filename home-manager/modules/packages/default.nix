@@ -2,6 +2,7 @@
 
 {
   imports = [
+	./shell
     ./wget.nix
     ./neovim.nix
 	./kitty.nix

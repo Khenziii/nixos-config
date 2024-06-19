@@ -10,15 +10,6 @@
 	../shared/shared.nix
   ];
 
-  # Bootloader.
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub = {
-    enable = true;
-    device = "nodev";
-    useOSProber = true;
-	efiSupport = true;
-  };
-
   networking.hostName = inputs.hostname; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

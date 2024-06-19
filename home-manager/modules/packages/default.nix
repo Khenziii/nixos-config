@@ -25,6 +25,7 @@
     ./obs-studio.nix
     ./steam.nix
     ./hyprcursor.nix
+    ./nerdfonts.nix
   ];
 }
 

@@ -9,6 +9,7 @@
     ./os-prober.nix
     ./git.nix
     ./stow.nix
+    ./gnupg.nix
   ];
 }
 

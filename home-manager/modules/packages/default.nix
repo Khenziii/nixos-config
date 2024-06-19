@@ -29,6 +29,7 @@
     ./super-tux.nix
     ./super-tux-kart.nix
     ./btop.nix
+    ./fzf.nix
   ];
 }
 

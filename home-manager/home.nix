@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-	fzf
 	delta
 	imv
 	swaylock
@@ -16,11 +15,6 @@
 	zsh
 	brightnessctl
   ];
-
-  programs.fzf = {
-    enable = true;
-	catppuccin.enable = true;
-  };
 
   programs.git.delta = {
     enable = true;

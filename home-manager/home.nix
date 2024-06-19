@@ -7,15 +7,10 @@
   ];
 
   home.packages = with pkgs; [
-	mpv
 	zsh
 	brightnessctl
   ];
 
-  programs.mpv = {
-    enable = true;
-	catppuccin.enable = true; 
-  };
 
   programs.zsh = {
     enable = true;

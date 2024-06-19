@@ -34,6 +34,7 @@
     ./imv.nix
     ./swaylock.nix
     ./tmux.nix
+    ./mpv.nix
   ];
 }
 

@@ -23,7 +23,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    home-manager
     konsole
     vim
 	os-prober

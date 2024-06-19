@@ -7,6 +7,7 @@
     ./konsole.nix
     ./vim.nix
     ./os-prober.nix
+    ./git.nix
   ];
 }
 

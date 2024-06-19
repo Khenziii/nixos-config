@@ -32,6 +32,7 @@
     ./fzf.nix
     ./delta.nix
     ./imv.nix
+    ./swaylock.nix
   ];
 }
 

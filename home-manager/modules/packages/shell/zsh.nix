@@ -1,4 +1,4 @@
-{ shared-config, ... }:
+{ pkgs, shared-config, ... }:
 
 {
   home.packages = with pkgs; [

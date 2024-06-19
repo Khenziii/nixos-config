@@ -36,7 +36,6 @@
     ./swaylock.nix
     ./tmux.nix
     ./mpv.nix
-    ./zsh.nix
     ./brightnessctl.nix
   ];
 }

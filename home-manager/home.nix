@@ -7,18 +7,12 @@
   ];
 
   home.packages = with pkgs; [
-	imv
 	swaylock
 	tmux
 	mpv
 	zsh
 	brightnessctl
   ];
-
-  programs.imv = {
-    enable = true;
-	catppuccin.enable = true;
-  };
 
   programs.swaylock = {
     enable = true;

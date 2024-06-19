@@ -31,6 +31,7 @@
     ./btop.nix
     ./fzf.nix
     ./delta.nix
+    ./imv.nix
   ];
 }
 

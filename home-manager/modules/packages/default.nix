@@ -33,6 +33,7 @@
     ./delta.nix
     ./imv.nix
     ./swaylock.nix
+    ./tmux.nix
   ];
 }
 

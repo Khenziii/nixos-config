@@ -26,6 +26,7 @@
     ./steam.nix
     ./hyprcursor.nix
     ./nerdfonts.nix
+    ./super-tux.nix
   ];
 }
 

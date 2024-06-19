@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-    superTux
 	superTuxKart
 	btop
 	fzf

@@ -22,10 +22,6 @@
     };
   };
 
-  # Bluetooth
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = true;
-
   # Explicitly enable touchpad support (most desktop environments enable this by default).
   # services.xserver.libinput.enable = true;
 

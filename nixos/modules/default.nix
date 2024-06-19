@@ -13,6 +13,6 @@
 	./sound.nix
     ./users.nix
 	./packages
-  ]    
+  ];
 }
 

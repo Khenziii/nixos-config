@@ -8,6 +8,7 @@
     ./vim.nix
     ./os-prober.nix
     ./git.nix
+    ./stow.nix
   ];
 }
 

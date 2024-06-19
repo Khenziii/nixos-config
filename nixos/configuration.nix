@@ -22,10 +22,6 @@
     };
   };
 
-  environment.systemPackages = with pkgs; [
-    stow
-  ];
-
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;

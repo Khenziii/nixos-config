@@ -28,6 +28,7 @@
     ./nerdfonts.nix
     ./super-tux.nix
     ./super-tux-kart.nix
+    ./btop.nix
   ];
 }
 

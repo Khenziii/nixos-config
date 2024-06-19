@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-	btop
 	fzf
 	delta
 	imv
@@ -17,11 +16,6 @@
 	zsh
 	brightnessctl
   ];
-
-  programs.btop = {
-    enable = true;
-	catppuccin.enable = true; 
-  };
 
   programs.fzf = {
     enable = true;

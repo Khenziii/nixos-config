@@ -23,7 +23,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    vim
 	os-prober
     git
     stow

@@ -24,6 +24,7 @@
     ./vesktop.nix	
     ./obs-studio.nix
     ./steam.nix
+    ./hyprcursor.nix
   ];
 }
 

@@ -7,7 +7,6 @@
   ];
 
   home.packages = with pkgs; [
-	delta
 	imv
 	swaylock
 	tmux
@@ -15,11 +14,6 @@
 	zsh
 	brightnessctl
   ];
-
-  programs.git.delta = {
-    enable = true;
-	catppuccin.enable = true;
-  };
 
   programs.imv = {
     enable = true;

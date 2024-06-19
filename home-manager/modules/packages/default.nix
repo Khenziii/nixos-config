@@ -30,6 +30,7 @@
     ./super-tux-kart.nix
     ./btop.nix
     ./fzf.nix
+    ./delta.nix
   ];
 }
 

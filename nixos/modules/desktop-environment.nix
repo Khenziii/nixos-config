@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   # Explicitly enable touchpad support (most desktop 
@@ -17,6 +17,13 @@
   services.xserver.xkb = {
     layout = "us";
     variant = "";
+  };
+
+  xdg.portal = {
+    enable = true;
+	extraPortals = with pkgs; [ 
+      xdg-desktop-portal-hyprland 
+	];
   };
 }
 

@@ -8,19 +8,24 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 	catppuccin.url = "github:catppuccin/nix";
+	spicetify-nix.url = "github:the-argus/spicetify-nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, ... }: let 
+  outputs = { self, nixpkgs, home-manager, catppuccin, spicetify-nix, ... }: let 
     system = "x86_64-linux";
     pkgs = import nixpkgs { inherit system; };
 
-	# This variable gets passed to all the modules.
-	modules-inputs = {
+    # Below variables get passed to the modules.
+    home-manager-inputs = {
+	  inherit spicetify-nix;
+	};
+	nixos-inputs = {};
+	shared-inputs = {
 	  hostname = "nixos";
       username = "khenzii";
 	};
   in {
-    nixosConfigurations.${modules-inputs.hostname} = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.${shared-inputs.hostname} = nixpkgs.lib.nixosSystem {
 	  system = system;
       modules = [
 	    home-manager.nixosModules.home-manager
@@ -28,17 +33,18 @@
 		./shared/shared.nix
 	    ./nixos/configuration.nix
 	  ];
-	  specialArgs = { inputs = modules-inputs; };
+	  specialArgs = { inputs = shared-inputs // nixos-inputs; };
     };
 
-    homeConfigurations.${modules-inputs.username} = home-manager.lib.homeManagerConfiguration {
+    homeConfigurations.${shared-inputs.username} = home-manager.lib.homeManagerConfiguration {
 	  pkgs = nixpkgs.legacyPackages.${system};
       modules = [
 		catppuccin.homeManagerModules.catppuccin
+		spicetify-nix.homeManagerModule
 		./shared/shared.nix
 	    ./home-manager/home.nix	
 	  ];
-	  extraSpecialArgs = { inputs = modules-inputs; };
+	  extraSpecialArgs = { inputs = shared-inputs // home-manager-inputs; };
     };
   };
 }

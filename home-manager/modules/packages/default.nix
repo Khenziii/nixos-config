@@ -15,7 +15,7 @@
 	./pavucontrol.nix
 	./networkmanagerapplet.nix
 	./discord.nix
-	./spotify.nix
+	# ./spotify.nix | spicetify is being used instead.
 	./spicetify-cli.nix
 	./hyprshot.nix
 	./caprine-bin.nix

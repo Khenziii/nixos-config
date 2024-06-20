@@ -12,7 +12,6 @@ in
 	  loopyLoop
 	  trashbin
 	  groupSession
-	  skipOrPlayLikedSongs
 	  playlistIcons
 	  fullAlbumDate
 	  goToSong
@@ -25,7 +24,7 @@ in
 	  showQueueDuration
 	  copyToClipboard
 	  history
-	  genre
+	  # genre
 	  adblock
 	  savePlaylists
 	  autoSkip

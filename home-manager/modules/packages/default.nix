@@ -37,6 +37,7 @@
     ./tmux.nix
     ./mpv.nix
     ./brightnessctl.nix
+	./tree.nix
   ];
 }
 

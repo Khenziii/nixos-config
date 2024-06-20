@@ -3,6 +3,7 @@
 {
   imports = [
 	./shell
+	./development-environment
     ./wget.nix
     ./neovim.nix
 	./kitty.nix

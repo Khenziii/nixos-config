@@ -2,7 +2,15 @@
 
 local function build()
 	require("nvim-treesitter.install").update({
+		ensure_installed = {
+			"lua",
+			"yuck",
+			"javascript",
+			"typescript",
+			"python",
+		},
 		with_sync = true,
+		auto_install = true,
 	})()
 end
 

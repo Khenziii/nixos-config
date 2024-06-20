@@ -38,6 +38,7 @@
     ./mpv.nix
     ./brightnessctl.nix
 	./tree.nix
+	./thefuck.nix
   ];
 }
 

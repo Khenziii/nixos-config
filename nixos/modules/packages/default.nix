@@ -10,6 +10,7 @@
     ./git.nix
     ./stow.nix
     ./gnupg.nix
+    ./steam.nix
   ];
 }
 

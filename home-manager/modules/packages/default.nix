@@ -24,7 +24,8 @@
     ./eww.nix	
     ./vesktop.nix	
     ./obs-studio.nix
-    ./steam.nix
+    # ./steam.nix | steam is enabled system-wide, as it requires
+	# opening some ports in the firewall for certain features.
     ./hyprcursor.nix
     ./nerdfonts.nix
     ./super-tux.nix

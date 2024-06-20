@@ -18,6 +18,7 @@ local plugins = {
 	"toggleterm",
 	"vim-prisma",
 	"colorizer",
+	"yuck",
 }
 
 local function get_plugins(plugin_names)

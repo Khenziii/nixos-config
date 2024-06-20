@@ -92,6 +92,7 @@ echo "Installing NixOS config.."
 
 # This is a hacky workaround. See: https://github.com/Khenziii/nixos-config/issues/1
 mv .git .git-old && sudo nixos-rebuild switch --flake ".#nixos"; mv .git-old .git
+mv .git .git-old && home-manager switch --flake '.#khenzii'; mv .git-old .git
 
 echo "Successfully applied the whole config!"
 

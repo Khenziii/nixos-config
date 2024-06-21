@@ -14,7 +14,6 @@ local plugins = {
 	"gitgutter",
 	"leetcode",
 	"image",
-	"luarocks",
 	"toggleterm",
 	"vim-prisma",
 	"colorizer",

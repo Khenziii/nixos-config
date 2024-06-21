@@ -18,5 +18,5 @@ mv $script_directory/current-wallpaper/* $script_directory/enabled-wallpapers
 mv $script_directory/enabled-wallpapers/$random_wallpaper $script_directory/current-wallpaper/
 
 # make swww use it
-swww img $script_directory/current-wallpaper/$random_wallpaper --fill-color=1e1e2e --no-resize
+swww img $script_directory/current-wallpaper/$random_wallpaper --fill-color=1e1e2e --resize=fit
 

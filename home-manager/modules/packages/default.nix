@@ -15,7 +15,8 @@
 	./swaynotificationcenter.nix
 	./pavucontrol.nix
 	./networkmanagerapplet.nix
-	./discord.nix
+	# ./discord.nix | vesktop is being used instead. In case of
+	# any issues, re-enabling this is okay.
 	# ./spotify.nix | spicetify is being used instead.
 	./spicetify-cli.nix
 	./hyprshot.nix

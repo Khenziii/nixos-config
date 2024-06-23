@@ -43,6 +43,7 @@
 	./tree.nix
 	./thefuck.nix
 	./ffmpeg.nix
+	./nwg-displays.nix
   ];
 }
 

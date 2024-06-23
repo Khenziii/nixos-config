@@ -6,7 +6,10 @@
   # services.xserver.libinput.enable = true;
 
   services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+	package = pkgs.kdePackages.sddm;
+  };
   services.xserver.desktopManager.plasma5.enable = false;
   programs.hyprland = {
     enable = true;

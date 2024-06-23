@@ -41,6 +41,7 @@
     ./brightnessctl.nix
 	./tree.nix
 	./thefuck.nix
+	./ffmpeg.nix
   ];
 }
 

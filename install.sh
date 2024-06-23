@@ -80,7 +80,7 @@ cd nixos-config
 
 echo "Creating dotfiles symlinks.."
 
-stow --adopt --no-folding -t "/home/$SUDO_USER" dotfiles 
+stow --adopt -t "/home/$SUDO_USER" dotfiles 
 
 echo "Generating NixOS config.."
 

@@ -2,9 +2,11 @@
   description = "Khenzii's NixOS configuration";
 
   inputs = { 
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/e8057b67ebf307f01bdcc8fba94d94f75039d1f6";
     home-manager = { 
-      url = "github:nix-community/home-manager";
+      # url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/a7117efb3725e6197dd95424136f79147aa35e5b";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 	catppuccin.url = "github:catppuccin/nix";

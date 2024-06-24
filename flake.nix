@@ -11,15 +11,20 @@
     };
 	catppuccin.url = "github:catppuccin/nix";
 	spicetify-nix.url = "github:the-argus/spicetify-nix";
+	firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+	};
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, spicetify-nix, ... }: let 
+  outputs = { self, nixpkgs, home-manager, catppuccin, spicetify-nix, firefox-addons, ... }: let 
     system = "x86_64-linux";
     pkgs = import nixpkgs { inherit system; };
 
     # Below variables get passed to the modules.
     home-manager-inputs = {
 	  inherit spicetify-nix;
+	  inherit firefox-addons;
 	};
 	nixos-inputs = {};
 	shared-inputs = {

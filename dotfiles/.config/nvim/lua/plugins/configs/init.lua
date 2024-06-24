@@ -18,6 +18,7 @@ local plugins = {
 	"vim-prisma",
 	"colorizer",
 	"yuck",
+	"telescope",
 }
 
 local function get_plugins(plugin_names)

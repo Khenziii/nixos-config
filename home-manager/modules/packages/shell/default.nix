@@ -7,6 +7,7 @@
 	  trewa = "tree";
 	  fuck = "thefuck";
 	  bruh = "thefuck";
+	  ripgrep = "rg";
 	};
   };
   

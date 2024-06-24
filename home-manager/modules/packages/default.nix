@@ -45,6 +45,7 @@
 	./ffmpeg.nix
 	./nwg-displays.nix
 	./firefox.nix
+	./ripgrep.nix
   ];
 }
 

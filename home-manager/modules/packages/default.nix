@@ -44,6 +44,7 @@
 	./thefuck.nix
 	./ffmpeg.nix
 	./nwg-displays.nix
+	./firefox.nix
   ];
 }
 

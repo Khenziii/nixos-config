@@ -26,12 +26,22 @@ local clear_highlights = {
 		noremap = true,
 		silent = true,
 	},
+}
 
+local telescope_live_grep = {
+	mode = "n",
+	key = "<LEADER>s",
+	command = ":Telescope live_grep<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
 }
 
 return {
 	tree_focus,
 	exit_insert_mode,
 	clear_highlights,
+	telescope_live_grep,
 }
 

@@ -3,11 +3,8 @@
 {
   imports = [
     ./gui-apps
-    ./home-manager.nix
-    ./vim.nix
+    ./cli-utilities
     ./os-prober.nix
-    ./git.nix
-    ./stow.nix
     ./gnupg.nix
   ];
 }

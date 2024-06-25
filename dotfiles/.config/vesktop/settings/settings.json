@@ -539,7 +539,8 @@
         "SilentTyping": {
             "enabled": true,
             "isEnabled": true,
-            "showIcon": false
+            "showIcon": true,
+            "contextMenu": true
         },
         "SortFriendRequests": {
             "enabled": true,
@@ -584,7 +585,9 @@
         },
         "TypingTweaks": {
             "enabled": true,
-            "alternativeFormatting": true
+            "alternativeFormatting": true,
+            "showRoleColors": true,
+            "showAvatars": true
         },
         "Unindent": {
             "enabled": true
@@ -675,6 +678,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1719326041911
+        "settingsSyncVersion": 1719326267467
     }
 }

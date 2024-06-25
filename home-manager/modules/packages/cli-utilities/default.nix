@@ -20,6 +20,7 @@
     ./tree.nix
     ./wget.nix
     ./wl-clipboard.nix
+    ./imgcat.nix
   ];
 }
 

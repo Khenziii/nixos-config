@@ -18,6 +18,7 @@
 	./super-tux-kart.nix
 	./super-tux.nix
 	./vesktop.nix
+	./qalculate-gtk.nix
   ];
 }
 

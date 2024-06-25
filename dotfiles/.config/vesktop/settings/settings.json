@@ -6,7 +6,7 @@
         "https://catppuccin.github.io/discord/dist/catppuccin-mocha-mauve.theme.css"
     ],
     "enabledThemes": [],
-    "enableReactDevtools": false,
+    "enableReactDevtools": true,
     "frameless": false,
     "transparent": false,
     "winCtrlQ": false,
@@ -47,7 +47,9 @@
             "enabled": true
         },
         "AlwaysTrust": {
-            "enabled": false
+            "enabled": true,
+            "domain": true,
+            "file": true
         },
         "AnonymiseFileNames": {
             "enabled": false
@@ -106,7 +108,8 @@
             "enabled": false
         },
         "CallTimer": {
-            "enabled": true
+            "enabled": true,
+            "format": "stopwatch"
         },
         "ClearURLs": {
             "enabled": true
@@ -247,7 +250,9 @@
             "toolTip": true
         },
         "MessageClickActions": {
-            "enabled": true
+            "enabled": true,
+            "requireModifier": false,
+            "enableDoubleClickToReply": true
         },
         "MessageLatency": {
             "enabled": false
@@ -573,7 +578,9 @@
             "enabled": false
         },
         "TypingIndicator": {
-            "enabled": true
+            "enabled": true,
+            "includeMutedChannels": false,
+            "includeCurrentChannel": true
         },
         "TypingTweaks": {
             "enabled": true,
@@ -661,13 +668,13 @@
     "notifications": {
         "timeout": 5000,
         "position": "bottom-right",
-        "useNative": "not-focused",
+        "useNative": "always",
         "logLimit": 50
     },
     "cloud": {
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1719325226383
+        "settingsSyncVersion": 1719326041911
     }
 }

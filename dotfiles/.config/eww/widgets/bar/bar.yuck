@@ -1,0 +1,17 @@
+(include "./widgets/bar/clock.yuck")
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry
+    :anchor "top center"
+    :y "20px"
+  )
+  :exclusive true
+  (box
+    :spacing 50
+    :orientation "horizontal"
+    :class "container"
+    (clock)
+  ) 
+)
+

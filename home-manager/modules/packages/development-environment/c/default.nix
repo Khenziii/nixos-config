@@ -2,9 +2,7 @@
 
 {
   imports = [
-    ./c
-	./c-sharp
-	./lua
+    ./gcc.nix
   ];
 }
 

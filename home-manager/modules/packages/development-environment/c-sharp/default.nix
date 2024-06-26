@@ -1,6 +1,8 @@
 { ... }:
 
 {
-  imports = [];
+  imports = [
+    ./mono.nix
+  ];
 }
 

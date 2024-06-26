@@ -19,6 +19,7 @@
 	./super-tux.nix
 	./vesktop.nix
 	./qalculate-gtk.nix
+	./godot_4.nix
   ];
 }
 

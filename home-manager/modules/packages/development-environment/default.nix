@@ -5,6 +5,7 @@
     ./c
 	./c-sharp
 	./lua
+	./python
   ];
 }
 

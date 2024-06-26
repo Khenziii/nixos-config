@@ -142,7 +142,8 @@
         },
         "CustomIdle": {
             "enabled": true,
-            "idleTimeout": 10
+            "idleTimeout": 10,
+            "remainInIdle": false
         },
         "Dearrow": {
             "enabled": false
@@ -252,7 +253,8 @@
         "MessageClickActions": {
             "enabled": true,
             "requireModifier": false,
-            "enableDoubleClickToReply": true
+            "enableDoubleClickToReply": true,
+            "enableDoubleClickToEdit": true
         },
         "MessageLatency": {
             "enabled": false
@@ -581,7 +583,8 @@
         "TypingIndicator": {
             "enabled": true,
             "includeMutedChannels": false,
-            "includeCurrentChannel": true
+            "includeCurrentChannel": true,
+            "indicatorMode": 3
         },
         "TypingTweaks": {
             "enabled": true,
@@ -678,6 +681,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1719326397274
+        "settingsSyncVersion": 1719433557457
     }
 }

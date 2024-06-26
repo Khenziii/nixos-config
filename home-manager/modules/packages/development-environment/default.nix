@@ -6,6 +6,7 @@
 	./c-sharp
 	./lua
 	./python
+	./java
   ];
 }
 

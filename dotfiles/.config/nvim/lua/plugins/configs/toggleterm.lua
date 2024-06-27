@@ -2,7 +2,7 @@
 
 local function setup()
 	require("toggleterm").setup({
-		open_mapping = [[<LEADER>t]],
+		-- open_mapping = [[<LEADER>t]],
 		direction = "float",
 	})
 end

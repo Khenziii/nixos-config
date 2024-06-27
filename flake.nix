@@ -28,7 +28,7 @@
 	};
 	nixos-inputs = {};
 	shared-inputs = {
-	  hostname = "nixos";
+	  hostname = "iusenixosbtw";
       username = "khenzii";
 	};
   in {

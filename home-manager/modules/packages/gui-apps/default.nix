@@ -21,6 +21,7 @@
 	./qalculate-gtk.nix
 	./godot_4.nix
 	./wireshark.nix
+	./vscode.nix
   ];
 }
 

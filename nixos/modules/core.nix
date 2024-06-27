@@ -10,10 +10,10 @@
   # read the wiki before modifying this.
   system.stateVersion = "23.11";
 
-  # Create a 4GB swap file
+  # Create a 8GB swap file
   swapDevices = [{
     device = "/swapfile";
-    size = 1024 * 4; # Size is in MB
+    size = 1024 * 8; # Size is in MB
   }];
 }
 

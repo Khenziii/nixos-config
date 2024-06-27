@@ -21,6 +21,7 @@
     ./wget.nix
     ./wl-clipboard.nix
     ./imgcat.nix
+    ./nmap.nix
   ];
 }
 

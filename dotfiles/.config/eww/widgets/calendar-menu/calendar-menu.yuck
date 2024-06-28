@@ -1,0 +1,38 @@
+(include "./widgets/calendar-menu/battery.yuck")
+(include "./widgets/calendar-menu/cpu.yuck")
+(include "./widgets/calendar-menu/disk.yuck")
+(include "./widgets/calendar-menu/memory.yuck")
+
+(
+    defwindow calendar-menu
+    :monitor 0
+    :exclusive false
+    :stacking "overlay"
+    :geometry (geometry
+      :anchor "top center"
+      :y -50
+    )
+    (eventbox
+      :onhoverlost "~/.config/eww/scripts/toggle-calendar-menu.sh"
+      (box
+        :orientation "vertical"
+        :class "container"
+        :space-evenly false
+        :spacing 10
+        (calendar)
+        (battery)
+        (cpu)
+        (disk)
+        (memory)
+        (box
+          :orientation "horizontal"
+          :space-evenly false
+          :spacing 10
+          ; (lock)
+          ; (reboot)
+          ; (power-off)
+        )
+      )
+    )
+)
+

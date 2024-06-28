@@ -1,40 +1,20 @@
 (include "./widgets/bar/clock.yuck")
-(include "./widgets/bar/battery.yuck")
-(include "./widgets/bar/cpu.yuck")
-(include "./widgets/bar/memory.yuck")
-(include "./widgets/bar/disk.yuck")
 
 (defwindow bar
   :monitor 0
   :geometry (geometry
     :anchor "top center"
     :y "20px"
-    :width "80%"
   )
   :exclusive true
-  (centerbox
-    :orientation "horizontal"
-    (box
-      :spacing 25 
-      :orientation "horizontal"
-      :class "container"
-      (cpu)
-      (memory)
-      (battery)
-      (disk)
-    )
+  (eventbox
+    :onhover "~/.config/eww/scripts/toggle-calendar-menu.sh"
     (box
       :spacing 25 
       :orientation "horizontal"
       :class "container"
       (clock)
     )
-    (box
-      :spacing 25 
-      :orientation "horizontal"
-      :class "container"
-      (clock)
-    ) 
-  ) 
+  )
 )
 

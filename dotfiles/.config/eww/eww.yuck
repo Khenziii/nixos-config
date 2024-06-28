@@ -1,2 +1,3 @@
 (include "./widgets/bar/bar.yuck")
+(include "./widgets/calendar-menu/calendar-menu.yuck")
 

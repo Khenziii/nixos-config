@@ -1,0 +1,37 @@
+(defwidget battery []
+  (tooltip
+    (label
+      :text {EWW_BATTERY.BAT0.status == "Charging" ?
+        "Battery (Charging)" :
+        "Battery (Discharging)"}
+    )
+    (box
+      :orientation "horizontal"
+      :space-evenly false
+      :spacing 10 
+      (label
+        :text {EWW_BATTERY.BAT0.capacity == 100.0
+          ? ""
+          : EWW_BATTERY.BAT0.capacity > 75.0
+          ? ""
+          : EWW_BATTERY.BAT0.capacity > 50.0
+          ? ""
+          : EWW_BATTERY.BAT0.capacity > 25.0
+          ? ""
+          : ""
+        }
+      )
+      (progress
+        :orientation "horizontal"
+        :class "progress-bar"
+        :valign "center" 
+        :value {EWW_BATTERY.BAT0.capacity}
+        :width 5
+      )
+      (label
+        :text "${EWW_BATTERY.BAT0.capacity}%"
+      )
+    )
+  ) 
+)
+

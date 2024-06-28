@@ -1,4 +1,5 @@
 (include "./widgets/bar/clock.yuck")
+(include "./widgets/bar/battery.yuck")
 
 (defwindow bar
   :monitor 0
@@ -7,11 +8,26 @@
     :y "20px"
   )
   :exclusive true
-  (box
-    :spacing 50
+  (centerbox
     :orientation "horizontal"
-    :class "container"
-    (clock)
+    (box
+      :spacing 25 
+      :orientation "horizontal"
+      :class "container"
+      (battery)
+    )
+    (box
+      :spacing 25 
+      :orientation "horizontal"
+      :class "container"
+      (clock)
+    )
+    (box
+      :spacing 25 
+      :orientation "horizontal"
+      :class "container"
+      (clock)
+    ) 
   ) 
 )
 

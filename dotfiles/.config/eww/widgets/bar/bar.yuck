@@ -2,12 +2,14 @@
 (include "./widgets/bar/battery.yuck")
 (include "./widgets/bar/cpu.yuck")
 (include "./widgets/bar/memory.yuck")
+(include "./widgets/bar/disk.yuck")
 
 (defwindow bar
   :monitor 0
   :geometry (geometry
     :anchor "top center"
     :y "20px"
+    :width "80%"
   )
   :exclusive true
   (centerbox
@@ -16,9 +18,10 @@
       :spacing 25 
       :orientation "horizontal"
       :class "container"
-      (battery)
       (cpu)
       (memory)
+      (battery)
+      (disk)
     )
     (box
       :spacing 25 

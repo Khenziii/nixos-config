@@ -1,0 +1,4 @@
+(include "./widgets/calendar-menu/power-buttons/lock.yuck")
+(include "./widgets/calendar-menu/power-buttons/power-off.yuck")
+(include "./widgets/calendar-menu/power-buttons/reboot.yuck")
+

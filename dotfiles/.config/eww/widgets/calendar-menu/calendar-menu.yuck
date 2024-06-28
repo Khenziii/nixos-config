@@ -1,10 +1,5 @@
-(include "./widgets/calendar-menu/usage-bars/battery.yuck")
-(include "./widgets/calendar-menu/usage-bars/cpu.yuck")
-(include "./widgets/calendar-menu/usage-bars/disk.yuck")
-(include "./widgets/calendar-menu/usage-bars/memory.yuck")
-(include "./widgets/calendar-menu/power-buttons/lock.yuck")
-(include "./widgets/calendar-menu/power-buttons/reboot.yuck")
-(include "./widgets/calendar-menu/power-buttons/power-off.yuck")
+(include "./widgets/calendar-menu/usage-bars/usage-bars.yuck")
+(include "./widgets/calendar-menu/power-buttons/power-buttons.yuck")
 
 (
     defwindow calendar-menu

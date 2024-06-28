@@ -1,0 +1,5 @@
+(include "./widgets/calendar-menu/usage-bars/battery.yuck")
+(include "./widgets/calendar-menu/usage-bars/cpu.yuck")
+(include "./widgets/calendar-menu/usage-bars/disk.yuck")
+(include "./widgets/calendar-menu/usage-bars/memory.yuck")
+

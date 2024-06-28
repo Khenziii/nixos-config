@@ -1,9 +1,14 @@
-(defwidget power-button [script-path icon]
-  (button
-    :class "power-button"
-    :onclick script-path 
-    :timeout "60s"
-    icon 
+(defwidget power-button [script-path icon tooltip-text]
+  (tooltip
+    (label
+      :text tooltip-text
+    )
+    (button
+      :class "power-button"
+      :onclick script-path 
+      :timeout "60s"
+      icon 
+    )
   )
 )
 

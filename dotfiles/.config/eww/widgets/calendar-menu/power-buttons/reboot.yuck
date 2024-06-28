@@ -4,6 +4,7 @@
   (power-button
     :script-path "~/.config/eww/scripts/reboot.sh"
     :icon ""
+    :tooltip-text "Reboot"
   )
 )
 

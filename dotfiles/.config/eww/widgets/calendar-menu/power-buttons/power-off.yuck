@@ -4,6 +4,7 @@
   (power-button
     :script-path "~/.config/eww/scripts/power-off.sh"
     :icon ""
+    :tooltip-text "Shutdown Now"
   )
 )
 

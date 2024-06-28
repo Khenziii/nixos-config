@@ -4,6 +4,7 @@
   (power-button
     :script-path "~/.config/eww/scripts/lock.sh"
     :icon ""
+    :tooltip-text "Lock"
   )
 )
 

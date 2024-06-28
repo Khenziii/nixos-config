@@ -1,0 +1,11 @@
+(include "./widgets/calendar-menu/usage-bars/usage-bar.yuck")
+
+(defwidget disk []
+  (usage-bar
+    :tooltip-text "Disk Usage"
+    :label-left-text ""
+    :progress-value {EWW_DISK['/'].used_perc}
+    :label-right-text "${round(EWW_DISK['/'].used_perc, 0)}%"
+  )
+)
+

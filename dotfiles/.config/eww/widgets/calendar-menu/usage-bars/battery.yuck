@@ -1,0 +1,22 @@
+(include "./widgets/calendar-menu/usage-bars/usage-bar.yuck")
+
+(defwidget battery []
+  (usage-bar
+    :tooltip-text {EWW_BATTERY.BAT0.status == "Charging" ?
+      "Battery (Charging)" :
+      "Battery (Discharging)"}
+    :label-left-text {EWW_BATTERY.BAT0.capacity == 100.0
+      ? ""
+      : EWW_BATTERY.BAT0.capacity > 75.0
+      ? ""
+      : EWW_BATTERY.BAT0.capacity > 50.0
+      ? ""
+      : EWW_BATTERY.BAT0.capacity > 25.0
+      ? ""
+      : ""
+    }
+    :progress-value {EWW_BATTERY.BAT0.capacity}
+    :label-right-text "${EWW_BATTERY.BAT0.capacity}%"
+  )
+)
+

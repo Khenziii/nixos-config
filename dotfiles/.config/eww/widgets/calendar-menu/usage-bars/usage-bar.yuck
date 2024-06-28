@@ -1,24 +1,24 @@
-(defwidget disk []
+(defwidget usage-bar [tooltip-text label-left-text progress-value label-right-text]
   (tooltip
     (label
-      :text "Disk Usage"
+      :text tooltip-text 
     )
     (box
       :orientation "horizontal"
       :space-evenly false
       :spacing 10 
       (label
-        :text "" 
+        :text label-left-text 
       )
       (progress
         :orientation "horizontal"
         :class "progress-bar"
         :valign "center" 
-        :value {EWW_DISK['/'].used_perc}
+        :value progress-value 
         :width 5
       )
       (label
-        :text "${round(EWW_DISK['/'].used_perc, 0)}%"
+        :text label-right-text 
       )
     )
   ) 

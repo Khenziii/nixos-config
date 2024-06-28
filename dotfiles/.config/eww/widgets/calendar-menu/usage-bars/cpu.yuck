@@ -1,0 +1,11 @@
+(include "./widgets/calendar-menu/usage-bars/usage-bar.yuck")
+
+(defwidget cpu []
+  (usage-bar
+    :tooltip-text "CPU Usage"
+    :label-left-text ""
+    :progress-value {EWW_CPU.avg}
+    :label-right-text "${round(EWW_CPU.avg, 0)}%"
+  )
+)
+

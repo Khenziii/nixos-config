@@ -1,0 +1,11 @@
+(include "./widgets/calendar-menu/usage-bars/usage-bar.yuck")
+
+(defwidget memory []
+  (usage-bar
+    :tooltip-text "RAM Usage"
+    :label-left-text ""
+    :progress-value {EWW_RAM.used_mem_perc}
+    :label-right-text "${round(EWW_RAM.used_mem_perc, 0)}%"
+  )
+)
+

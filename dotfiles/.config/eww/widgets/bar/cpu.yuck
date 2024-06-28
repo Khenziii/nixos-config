@@ -1,0 +1,26 @@
+(defwidget cpu []
+  (tooltip
+    (label
+      :text "CPU Usage"
+    )
+    (box
+      :orientation "horizontal"
+      :space-evenly false
+      :spacing 10 
+      (label
+        :text "" 
+      )
+      (progress
+        :orientation "horizontal"
+        :class "progress-bar"
+        :valign "center" 
+        :value {EWW_CPU.avg}
+        :width 5
+      )
+      (label
+        :text "${round(EWW_CPU.avg, 0)}%"
+      )
+    )
+  ) 
+)
+

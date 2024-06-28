@@ -1,5 +1,6 @@
 (include "./widgets/bar/clock.yuck")
 (include "./widgets/bar/battery.yuck")
+(include "./widgets/bar/cpu.yuck")
 
 (defwindow bar
   :monitor 0
@@ -15,6 +16,7 @@
       :orientation "horizontal"
       :class "container"
       (battery)
+      (cpu)
     )
     (box
       :spacing 25 

@@ -1,0 +1,9 @@
+(include "./widgets/calendar-menu/power-buttons/power-button.yuck")
+
+(defwidget power-off []
+  (power-button
+    :script-path "~/.config/eww/scripts/power-off.sh"
+    :icon ""
+  )
+)
+

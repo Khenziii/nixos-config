@@ -1,0 +1,9 @@
+(defwidget power-button [script-path icon]
+  (button
+    :class "power-button"
+    :onclick script-path 
+    :timeout "60s"
+    icon 
+  )
+)
+

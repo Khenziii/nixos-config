@@ -2,6 +2,9 @@
 (include "./widgets/calendar-menu/cpu.yuck")
 (include "./widgets/calendar-menu/disk.yuck")
 (include "./widgets/calendar-menu/memory.yuck")
+(include "./widgets/calendar-menu/power-buttons/lock.yuck")
+(include "./widgets/calendar-menu/power-buttons/reboot.yuck")
+(include "./widgets/calendar-menu/power-buttons/power-off.yuck")
 
 (
     defwindow calendar-menu
@@ -28,9 +31,9 @@
           :orientation "horizontal"
           :space-evenly false
           :spacing 10
-          ; (lock)
-          ; (reboot)
-          ; (power-off)
+          (lock)
+          (reboot)
+          (power-off)
         )
       )
     )

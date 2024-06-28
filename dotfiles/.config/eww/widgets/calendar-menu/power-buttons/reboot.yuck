@@ -1,0 +1,9 @@
+(include "./widgets/calendar-menu/power-buttons/power-button.yuck")
+
+(defwidget reboot []
+  (power-button
+    :script-path "~/.config/eww/scripts/reboot.sh"
+    :icon ""
+  )
+)
+

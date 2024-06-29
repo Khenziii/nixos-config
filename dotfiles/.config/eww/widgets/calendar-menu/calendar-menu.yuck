@@ -24,7 +24,8 @@
         (memory)
         (box
           :orientation "horizontal"
-          :space-evenly true
+          :halign "center"
+          :spacing 50
           (lock)
           (reboot)
           (power-off)

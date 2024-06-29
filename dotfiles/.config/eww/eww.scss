@@ -30,7 +30,13 @@ button {
   font-size: 32px;
 }
 
-.power-button:hover {
-  color: darken(#cba6f7, 10%);
+.power-button {
+  &:hover {
+    color: darken(#cba6f7, 10%);
+  }
+
+  &:active {
+    color: #ae25a7;
+  }
 }
 

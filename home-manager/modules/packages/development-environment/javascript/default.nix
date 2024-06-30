@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./node.nix
+    ./nodejs_22.nix
   ];
 }
 

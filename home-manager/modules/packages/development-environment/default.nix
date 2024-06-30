@@ -7,6 +7,8 @@
 	./lua
 	./python
 	./java
+	./javascript
+	./typescript
   ];
 }
 

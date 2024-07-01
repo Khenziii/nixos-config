@@ -22,6 +22,7 @@
     ./wl-clipboard.nix
     ./imgcat.nix
     ./nmap.nix
+    ./openssl.nix
   ];
 }
 

@@ -23,7 +23,6 @@
     ./imgcat.nix
     ./nmap.nix
     ./openssl.nix
-    ./docker.nix
   ];
 }
 

@@ -23,6 +23,7 @@
     ./imgcat.nix
     ./nmap.nix
     ./openssl.nix
+    ./gitleaks.nix
   ];
 }
 

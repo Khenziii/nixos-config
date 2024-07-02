@@ -8,6 +8,16 @@ local tree_focus = {
 	},
 }
 
+local tree_toggle = {
+	mode = "n",
+	key = "<LEADER>q",
+	command = ":NvimTreeToggle<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
+}
+
 local exit_insert_mode = {
 	mode = "i",
 	key = "<LEADER>j",
@@ -43,5 +53,6 @@ return {
 	exit_insert_mode,
 	clear_highlights,
 	telescope_live_grep,
+	tree_toggle,
 }
 

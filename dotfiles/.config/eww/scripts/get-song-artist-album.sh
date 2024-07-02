@@ -14,5 +14,9 @@ if [ "$title" = "$album" ] || [ ${#formatted_output} -gt 50 ]; then
    formatted_output="\"${title}\" by ${artist}"
 fi
 
+if [ -z "$title" ]; then
+    formatted_output=";)"
+fi
+
 echo "$formatted_output"
 

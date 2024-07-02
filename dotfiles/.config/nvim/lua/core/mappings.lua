@@ -48,11 +48,33 @@ local telescope_live_grep = {
 	},
 }
 
+local open_tab = {
+    mode = "n",
+    key = "<LEADER>n",
+    command = ":$tabnew<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
+}
+
+local close_tab = {
+    mode = "n",
+    key = "<LEADER>c",
+    command = ":tabclose<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
+}
+
 return {
 	tree_focus,
 	exit_insert_mode,
 	clear_highlights,
 	telescope_live_grep,
 	tree_toggle,
+	open_tab,
+	close_tab,
 }
 

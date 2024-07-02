@@ -60,7 +60,7 @@ local open_tab = {
 
 local close_tab = {
     mode = "n",
-    key = "<LEADER>c",
+    key = "<LEADER>x",
     command = ":tabclose<CR>",
 	options = {
 		noremap = true,

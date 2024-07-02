@@ -12,7 +12,7 @@
 	./nwg-displays.nix
 	./obs-studio.nix
 	./pavucontrol.nix
-	./spotify.nix
+	# ./spotify.nix | spicetify is being used instead.
 	# ./steam.nix | steam is enabled system-wide, as it requires
 	# opening some ports in the firewall for certain features.
 	./super-tux-kart.nix

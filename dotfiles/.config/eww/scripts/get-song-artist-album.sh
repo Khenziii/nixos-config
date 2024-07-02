@@ -6,10 +6,12 @@ title=$(echo "$currently_playing" | awk -F '"' '/xesam:title/ {getline; print $2
 artist=$(echo "$currently_playing" | awk -F '"' '/xesam:artist/ {getline; getline; print $2}')
 album=$(echo "$currently_playing" | awk -F '"' '/xesam:album/ {getline; print $2}')
 
-if [ "$title" = "$album" ]; then
+formatted_output="\"${title}\" from \"${album}\" by ${artist}"
+
+# If title is the same as album, or our formatted 
+# string is too long, shorten it by removing the album.
+if [ "$title" = "$album" ] || [ ${#formatted_output} -gt 50 ]; then
    formatted_output="${title} by ${artist}"
-else
-   formatted_output="\"${title}\" from \"${album}\" by ${artist}"
 fi
 
 echo "$formatted_output"

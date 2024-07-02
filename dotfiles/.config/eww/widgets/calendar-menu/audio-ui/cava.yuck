@@ -1,5 +1,5 @@
 (deflisten cava-output
-  :initial "▁▁▁▁▁▁▁"
+  :initial "▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁"
   `sh ~/.config/eww/scripts/cava.sh`
 )
 

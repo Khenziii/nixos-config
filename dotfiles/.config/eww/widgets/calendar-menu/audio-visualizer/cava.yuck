@@ -1,0 +1,11 @@
+(deflisten cava-output
+  :initial "▁▁▁▁▁▁▁"
+  `sh ~/.config/eww/scripts/cava.sh`
+)
+
+(defwidget cava []
+  (label
+    :text cava-output
+  )
+)
+

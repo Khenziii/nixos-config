@@ -1,5 +1,6 @@
 (include "./widgets/calendar-menu/usage-bars/usage-bars.yuck")
 (include "./widgets/calendar-menu/power-buttons/power-buttons.yuck")
+(include "./widgets/calendar-menu/audio-visualizer/cava.yuck")
 
 (
     defwindow calendar-menu
@@ -22,6 +23,7 @@
         (cpu)
         (disk)
         (memory)
+        (cava)
         (box
           :orientation "horizontal"
           :halign "center"

@@ -11,7 +11,7 @@ formatted_output="\"${title}\" from \"${album}\" by ${artist}"
 # If title is the same as album, or our formatted 
 # string is too long, shorten it by removing the album.
 if [ "$title" = "$album" ] || [ ${#formatted_output} -gt 50 ]; then
-   formatted_output="${title} by ${artist}"
+   formatted_output="\"${title}\" by ${artist}"
 fi
 
 echo "$formatted_output"

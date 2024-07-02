@@ -8,6 +8,7 @@
   (label
     :text song-artist-album-string
     :wrap true
+    :justify "center" 
   )
 )
 

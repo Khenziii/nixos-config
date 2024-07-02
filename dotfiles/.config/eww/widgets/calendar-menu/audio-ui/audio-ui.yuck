@@ -1,0 +1,15 @@
+(include "./widgets/calendar-menu/audio-ui/cava.yuck")
+(include "./widgets/calendar-menu/audio-ui/song-artist-album.yuck")
+
+(defwidget audio-ui []
+  (box
+    :orientation "vertical"
+    :halign "center"
+    :hexpand false
+    :space-evenly false
+    :spacing 10
+    (song-artist-album)
+    (cava)
+  )
+)
+

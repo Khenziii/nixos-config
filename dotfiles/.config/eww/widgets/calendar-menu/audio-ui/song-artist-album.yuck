@@ -1,0 +1,13 @@
+(defpoll song-artist-album-string
+  :interval "1s"
+  :initial ";)"
+  `sh ~/.config/eww/scripts/get-song-artist-album.sh`
+)
+
+(defwidget song-artist-album []
+  (label
+    :text song-artist-album-string
+    :wrap true
+  )
+)
+

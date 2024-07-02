@@ -1,6 +1,6 @@
 (include "./widgets/calendar-menu/usage-bars/usage-bars.yuck")
 (include "./widgets/calendar-menu/power-buttons/power-buttons.yuck")
-(include "./widgets/calendar-menu/audio-visualizer/cava.yuck")
+(include "./widgets/calendar-menu/audio-ui/audio-ui.yuck")
 
 (
     defwindow calendar-menu
@@ -19,11 +19,16 @@
         :space-evenly false
         :spacing 10
         (calendar)
-        (battery)
-        (cpu)
-        (disk)
-        (memory)
-        (cava)
+        (box
+          :orientation "vertical"
+          :halign "center"
+          :spacing 10
+          (battery)
+          (cpu)
+          (disk)
+          (memory)
+        )
+        (audio-ui)
         (box
           :orientation "horizontal"
           :halign "center"

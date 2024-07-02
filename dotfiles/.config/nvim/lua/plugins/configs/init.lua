@@ -19,6 +19,7 @@ local plugins = {
 	"colorizer",
 	"yuck",
 	"telescope",
+	"mason-lspconfig",
 }
 
 local function get_plugins(plugin_names)

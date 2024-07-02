@@ -12,5 +12,6 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 	},
 	config = setup,
+    priority = 1, -- this needs to load before mason-lspconfig
 }
 

@@ -1,0 +1,5 @@
+date ''
+set seconds on
+style active-fg #cba6f7 
+style colon-fg #cba6f7 
+

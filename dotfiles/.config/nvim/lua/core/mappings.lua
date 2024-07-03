@@ -51,7 +51,7 @@ local telescope_live_grep = {
 local telescope_find_files = {
 	mode = "n",
 	key = "<LEADER>d",
-	command = ":Telescope find_files<CR>",
+	command = ":Telescope find_files hidden=true<CR>",
 	options = {
 		noremap = true,
 		silent = true,

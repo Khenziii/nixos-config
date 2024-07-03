@@ -48,6 +48,16 @@ local telescope_live_grep = {
 	},
 }
 
+local telescope_find_files = {
+	mode = "n",
+	key = "<LEADER>d",
+	command = ":Telescope find_files<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
+}
+
 local open_tab = {
     mode = "n",
     key = "<LEADER>n",
@@ -73,6 +83,7 @@ return {
 	exit_insert_mode,
 	clear_highlights,
 	telescope_live_grep,
+	telescope_find_files,
 	tree_toggle,
 	open_tab,
 	close_tab,

@@ -24,6 +24,7 @@
     ./nmap.nix
     ./openssl.nix
     ./gitleaks.nix
+    ./whois.nix
   ];
 }
 

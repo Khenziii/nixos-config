@@ -5,6 +5,7 @@ local function setup()
         ensure_installed = {
             "tsserver",
             "nil_ls",
+            "pylsp",
         },
     })
 end

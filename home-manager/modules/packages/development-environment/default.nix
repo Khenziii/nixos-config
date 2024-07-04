@@ -9,6 +9,7 @@
 	./java
 	./javascript
 	./typescript
+	./rust
   ];
 }
 

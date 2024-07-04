@@ -11,6 +11,7 @@ local function build()
 			"markdown",
 			"html",
 			"css",
+            "nix",
 		},
 		with_sync = true,
 		auto_install = true,

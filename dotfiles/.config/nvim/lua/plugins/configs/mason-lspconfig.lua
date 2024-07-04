@@ -4,6 +4,7 @@ local function setup()
     require("mason-lspconfig").setup({
         ensure_installed = {
             "tsserver",
+            "nil_ls",
         },
     })
 end

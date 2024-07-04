@@ -8,6 +8,7 @@
 	  fuck = "thefuck";
 	  bruh = "thefuck";
 	  ripgrep = "rg";
+      history = "history 1"; # show the whole history 
 	};
   };
   

@@ -1,14 +1,51 @@
-{ pkgs, shared-config, ... }:
+{ shared-config, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    zsh 
-  ];
-
   programs.zsh = {
     enable = true;
-	syntaxHighlighting.catppuccin.enable = true;
+	syntaxHighlighting = {
+      enable = true;
+      catppuccin.enable = true;
+    };
 	shellAliases = shared-config.aliases;
+    autosuggestion.enable = true;
+    enableCompletion = true;
+    defaultKeymap = "viins";
+    history = {
+      extended = true;
+      ignoreDups = false;
+      save = 1000000;
+      size = 1000000;
+      share = true;
+    };
+    initExtra = ''
+      # Bind "'j" to exiting insert mode
+      bindkey -M viins "'j" vi-cmd-mode
+      # Bind "'a" to accepting autosuggestion
+      bindkey "'a" autosuggest-accept
+
+      # Below code was grabbed from:
+      # https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
+      # Change cursor shape for different vi modes.
+      function zle-keymap-select {
+        if [[ $KEYMAP == vicmd ]] ||
+          [[ $1 = 'block' ]]; then
+          echo -ne '\e[1 q'
+        elif [[ $KEYMAP == main ]] ||
+          [[ $KEYMAP == viins ]] ||
+          [[ $KEYMAP = "" ]] ||
+          [[ $1 = "beam" ]]; then
+          echo -ne "\e[5 q"
+        fi
+      }
+      zle -N zle-keymap-select
+      zle-line-init() {
+        echo -ne "\e[5 q"
+      }
+      zle -N zle-line-init
+      echo -ne '\e[5 q' # Use beam shape cursor on startup.
+      preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+    '';
   };
 }
 

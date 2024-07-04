@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }:
 
-{ 
+{
+  users.defaultUserShell = pkgs.zsh;
   users.users.${inputs.username} = {
     isNormalUser = true;
     description = "Khenzii";
@@ -9,7 +10,6 @@
 	  "wheel"
 	  "docker"
 	];
-    shell = pkgs.zsh; 
   };
 }
 

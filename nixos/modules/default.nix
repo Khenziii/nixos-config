@@ -12,6 +12,7 @@
 	./printing.nix
 	./sound.nix
     ./users.nix
+    ./shell.nix
 	./packages
   ];
 }

@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 
 { 
   users.users.${inputs.username} = {
@@ -9,6 +9,7 @@
 	  "wheel"
 	  "docker"
 	];
+    shell = pkgs.zsh; 
   };
 }
 

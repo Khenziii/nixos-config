@@ -25,6 +25,7 @@
     ./openssl.nix
     ./gitleaks.nix
     ./whois.nix
+    ./unzip.nix
   ];
 }
 

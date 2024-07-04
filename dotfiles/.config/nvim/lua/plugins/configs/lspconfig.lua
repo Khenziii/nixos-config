@@ -10,6 +10,9 @@ local function setup()
 	lspconfig.tsserver.setup({
 		capabilities = lsp_capabilities,
 	})
+    lspconfig.nil_ls.setup({
+		capabilities = lsp_capabilities,
+	})
 end
 
 return {

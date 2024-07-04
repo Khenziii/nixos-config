@@ -37,6 +37,16 @@
       # Bind "'a" to accepting autosuggestion
       bindkey "'a" autosuggest-accept
 
+      # Auto-run `nix-shell` if `shell.nix` is available after a directory change
+      function auto_nix_shell {
+        if [[ -f ./shell.nix ]]; then
+            echo '"shell.nix" spotted, running `nix-shell`..'
+            nix-shell
+        fi
+      }
+
+      chpwd_functions+=("auto_nix_shell")
+
       # Below code was grabbed from:
       # https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
       # Change cursor shape for different vi modes.

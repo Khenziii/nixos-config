@@ -26,6 +26,7 @@
     ./gitleaks.nix
     ./whois.nix
     ./unzip.nix
+    ./git-lfs.nix
   ];
 }
 

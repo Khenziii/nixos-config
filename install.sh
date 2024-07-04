@@ -82,6 +82,14 @@ echo "Creating dotfiles symlinks.."
 
 stow --adopt -t "/home/$SUDO_USER" dotfiles 
 
+echo "Creating placeholders.."
+
+# Those files are written to by `nwg-displays`, and imported from hyprland.conf.
+# During the installation phase, we create empty placeholders, so that mentioned
+# imports don't throw any "File not found" errors.
+touch ~/.config/hypr/monitors.conf
+touch ~/.config/hypr/workspaces.conf
+
 echo "Generating NixOS config.."
 
 check_if_running_nixos

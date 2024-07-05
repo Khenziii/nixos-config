@@ -80,6 +80,6 @@ See `lua/core/mappings.lua`, it should be pretty self explanatory xD.
 If you want to do so, you can format the entire codebase using [LuaFormatter](https://github.com/Koihik/LuaFormatter). I have created `.lua-format`, so it's a matter of running this command:
 
 ```shell
-$ find . -name "*.lua" -exec lua-format {} -i -c ~/dotfiles/.config/nvim/.lua-format
+$ find . -name "*.lua" -exec lua-format {} -i -c ~/.config/nvim/.lua-format
 ```
 

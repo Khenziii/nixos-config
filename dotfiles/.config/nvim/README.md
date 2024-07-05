@@ -8,17 +8,17 @@ Create a file called `<plugin-name>.lua` in `lua/plugins/configs`, and add `"<pl
 
 ```lua
 local function setup()
-	require("mason").setup({
-		max_concurrent_insallers = 3,
-	})
+    require("mason").setup({
+	    max_concurrent_insallers = 3,
+    })
 end
 
 return {
     "williamboman/mason.nvim",
-	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
-	},
-	config = setup,
+    dependencies = {
+        "williamboman/mason-lspconfig.nvim",
+    },
+    config = setup,
     priority = 1, -- this needs to load before mason-lspconfig
 }
 ```
@@ -30,9 +30,9 @@ return {
 Adding integration with a technology includes a couple of steps. We need to:
 
 1. Install a Treesitter parser
-2. Grab the actual LSP (Language Server Protocol) using Mason
+2. Grab the actual LSP ([Language Server Protocol](https://en.wikipedia.org/wiki/Language_Server_Protocol)) using Mason
 3. Configure [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) to use our LSP.
-4. * Sometimes, it's also necessary to install a tool from language's ecosystem. For example: `dotnet` is required for installing `csharp_ls` LSP. To do that, you should modify home-manager's config. Please read that module's docs.
+4. Sometimes, it's also necessary to install a tool from language's ecosystem. For example: `dotnet` is required for installing `csharp_ls` LSP. To do that, you should modify home-manager's config. Please read that module's docs.
 
 ### Installing a Treesitter parser
 

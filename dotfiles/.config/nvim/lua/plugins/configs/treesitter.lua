@@ -12,6 +12,7 @@ local function setup()
 			"html",
 			"css",
             "nix",
+            "c_sharp",
 		},
 		with_sync = true,
 		auto_install = true,

@@ -6,6 +6,7 @@ local function setup()
             "tsserver",
             "nil_ls",
             "pylsp",
+            "csharp_ls",
         },
     })
 end

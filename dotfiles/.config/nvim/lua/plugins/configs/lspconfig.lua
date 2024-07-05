@@ -16,6 +16,9 @@ local function setup()
     lspconfig.pylsp.setup({
 		capabilities = lsp_capabilities,
 	})
+    lspconfig.csharp_ls.setup({
+		capabilities = lsp_capabilities,
+	})
 end
 
 return {

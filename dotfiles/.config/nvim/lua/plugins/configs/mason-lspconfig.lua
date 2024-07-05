@@ -3,6 +3,7 @@
 local function setup()
     require("mason-lspconfig").setup({
         ensure_installed = {
+            "lua_ls",
             "tsserver",
             "nil_ls",
             "pylsp",

@@ -22,6 +22,7 @@
 	./godot_4.nix
 	./wireshark.nix
 	./vscode.nix
+	./lutris.nix
   ];
 }
 

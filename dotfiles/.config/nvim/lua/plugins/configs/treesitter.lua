@@ -1,7 +1,7 @@
 -- https://github.com/nvim-treesitter/nvim-treesitter
 
-local function build()
-	require("nvim-treesitter.install").update({
+local function setup()
+	require("nvim-treesitter.configs").setup({
 		ensure_installed = {
 			"lua",
 			"yuck",
@@ -15,13 +15,13 @@ local function build()
 		},
 		with_sync = true,
 		auto_install = true,
-	})()
+	})
 end
 
 return {
 	"nvim-treesitter/nvim-treesitter",
 	name = "treesitter",
-	build = build,
+	config = setup,
 	priority = 1,
 }
 

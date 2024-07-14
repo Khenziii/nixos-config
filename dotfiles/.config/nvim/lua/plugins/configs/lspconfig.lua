@@ -11,6 +11,7 @@ local function setup()
         "pylsp",
         "csharp_ls",
         "html",
+        "cssls",
     }
 
     for _, server in ipairs(servers) do

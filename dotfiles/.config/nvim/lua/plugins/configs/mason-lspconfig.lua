@@ -9,6 +9,7 @@ local function setup()
             "pylsp",
             "csharp_ls",
             "html",
+            "cssls",
         },
     })
 end

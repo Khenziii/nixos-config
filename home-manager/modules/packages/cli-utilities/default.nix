@@ -27,6 +27,7 @@
     ./whois.nix
     ./unzip.nix
     ./git-lfs.nix
+    ./hashcat.nix
   ];
 }
 

@@ -28,6 +28,7 @@
     ./unzip.nix
     ./git-lfs.nix
     ./hashcat.nix
+    ./wine.nix
   ];
 }
 

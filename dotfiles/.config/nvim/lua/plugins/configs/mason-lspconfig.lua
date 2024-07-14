@@ -8,6 +8,7 @@ local function setup()
             "nil_ls",
             "pylsp",
             "csharp_ls",
+            "html",
         },
     })
 end

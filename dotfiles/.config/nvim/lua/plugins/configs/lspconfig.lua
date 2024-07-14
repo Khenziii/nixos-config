@@ -10,6 +10,7 @@ local function setup()
         "nil_ls",
         "pylsp",
         "csharp_ls",
+        "html",
     }
 
     for _, server in ipairs(servers) do

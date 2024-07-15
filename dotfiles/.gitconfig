@@ -3,7 +3,11 @@
 	name = Khenziii
 	signingkey = AB2FD4A1FDBB707D
 [http]
-	postBuffer = 2097152000
+    postBuffer = 2097152000
+    # don't close the connecition
+    # if speed too low (my internet
+    # sucks, **a lot**)
+    lowSpeedLimit = 0
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

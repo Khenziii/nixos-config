@@ -23,6 +23,7 @@
 	./wireshark.nix
 	./vscode.nix
 	./lutris.nix
+	./google-chrome.nix
   ];
 }
 

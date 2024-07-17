@@ -1,4 +1,8 @@
-{ ... }:
+{ pkgs, ... }: let
+  soundnode = import ./soundnode.nix {
+    inherit (pkgs) lib stdenv fetchurl makeWrapper gtk2 gtk3 electron atk glib cairo;
+  };
+in
 
 {
   imports = [
@@ -25,6 +29,10 @@
 	./lutris.nix
 	./google-chrome.nix
 	./slack.nix
+  ];
+
+  home.packages = [
+    # soundnode
   ];
 }
 

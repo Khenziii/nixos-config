@@ -24,6 +24,7 @@
 	./vscode.nix
 	./lutris.nix
 	./google-chrome.nix
+	./slack.nix
   ];
 }
 

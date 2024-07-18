@@ -1,6 +1,16 @@
 # WIP!!! This package is not ready to be used.
 
-{ lib, stdenv, fetchurl, makeWrapper, gtk2, gtk3, electron, atk, glib, cairo }:
+{ lib
+, stdenv
+, fetchurl
+, makeWrapper
+, gtk2
+, gtk3
+, electron
+, atk
+, glib
+, cairo
+}:
 
 stdenv.mkDerivation rec {
   pname = "soundnode";

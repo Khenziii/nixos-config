@@ -1,7 +1,6 @@
 { pkgs, ... }: let
-  soundnode = import ./soundnode.nix {
-    inherit (pkgs) lib stdenv fetchurl makeWrapper gtk2 gtk3 electron atk glib cairo;
-  };
+  soundnode = pkgs.callPackage ./soundnode.nix {};
+  sherloq = pkgs.callPackage ./sherloq.nix {};
 in
 
 {
@@ -33,6 +32,7 @@ in
 
   home.packages = [
     # soundnode
+    # sherloq
   ];
 }
 

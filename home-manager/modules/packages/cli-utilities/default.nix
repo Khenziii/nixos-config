@@ -29,6 +29,7 @@
     ./git-lfs.nix
     ./hashcat.nix
     ./wine.nix
+    ./nix-init.nix
   ];
 }
 

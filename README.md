@@ -47,7 +47,7 @@ $ curl https://raw.githubusercontent.com/Khenziii/nixos-config/master/install.sh
 > Running this script, requires having `git` and `stow` installed. If you're on NixOS, you can temporarily enter a shell session with them available using this command: 
 > 
 > ```shell
-> $ sudo nix-shell -p git stow 
+> $ nix-shell -p git stow 
 > ```
 
 

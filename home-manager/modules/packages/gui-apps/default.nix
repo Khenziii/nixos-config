@@ -28,6 +28,7 @@ in
 	./lutris.nix
 	./google-chrome.nix
 	./slack.nix
+	./gedit.nix
   ];
 
   home.packages = [

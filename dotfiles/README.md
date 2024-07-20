@@ -35,7 +35,7 @@ cd dotfiles
 
 and run:
 ```bash
-stow --adopt -t ~ .
+stow --no-folding --adopt -t ~ .
 ```
 
 After running above command, stow will take all files that are in the current working directory and create a symbolic link to them in your home directory.

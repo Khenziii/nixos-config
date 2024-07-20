@@ -70,7 +70,7 @@ If you don't want to run a random script originating from a random github repo (
 ```shell
 $ git clone https://github.com/Khenziii/nixos-config
 $ cd nixos-config
-$ stow --adopt -t ~ dotfiles
+$ stow --no-folding --adopt -t ~ dotfiles
 $ touch ~/.config/hypr/monitors.conf
 $ touch ~/.config/hypr/workspaces.conf
 $ sudo nixos-generate-config
@@ -88,7 +88,7 @@ Remember, there's nothing stopping you from using the code however you like to! 
 ```shell
 $ git clone https://github.com/Khenziii/nixos-config
 $ cd nixos-config
-$ stow --adopt -t ~ dotfiles
+$ stow --no-folding --adopt -t ~ dotfiles
 $ touch ~/.config/hypr/monitors.conf
 $ touch ~/.config/hypr/workspaces.conf
 ```

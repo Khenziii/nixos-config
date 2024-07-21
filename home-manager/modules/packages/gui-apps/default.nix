@@ -29,6 +29,7 @@ in
 	./google-chrome.nix
 	./slack.nix
 	./gedit.nix
+	# ./minecraft.nix | minecraft is temporarily marked as broken. 
   ];
 
   home.packages = [

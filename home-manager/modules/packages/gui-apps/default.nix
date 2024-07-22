@@ -31,6 +31,7 @@ in
 	./gedit.nix
 	# ./minecraft.nix | minecraft is temporarily marked as broken. 
 	./gimp.nix
+	./gparted.nix
   ];
 
   home.packages = [

@@ -1,6 +1,6 @@
 { inputs, pkgs, ... }:
 let
-  spicetify-pkgs = inputs.spicetify-nix.packages.${pkgs.system}.default;
+  spicetify-pkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
 in
 {
   programs.spicetify = {

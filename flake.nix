@@ -9,7 +9,7 @@
     };
 	catppuccin.url = "github:catppuccin/nix";
 	spicetify-nix = { 
-	  url = "github:the-argus/spicetify-nix";
+	  url = "github:gerg-l/spicetify-nix";
       inputs.nixpkgs.follows = "nixpkgs";
 	};
 	firefox-addons = {
@@ -48,7 +48,7 @@
 	  pkgs = nixpkgs.legacyPackages.${system};
       modules = [
 		catppuccin.homeManagerModules.catppuccin
-		spicetify-nix.homeManagerModule
+		spicetify-nix.homeManagerModules.default
 		./shared/shared.nix
 	    ./home-manager/home.nix	
 	  ];

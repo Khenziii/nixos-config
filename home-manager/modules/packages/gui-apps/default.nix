@@ -30,6 +30,7 @@ in
 	./slack.nix
 	./gedit.nix
 	# ./minecraft.nix | minecraft is temporarily marked as broken. 
+	./gimp.nix
   ];
 
   home.packages = [

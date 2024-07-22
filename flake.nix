@@ -2,7 +2,7 @@
   description = "Khenzii's NixOS configuration";
 
   inputs = { 
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = { 
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,9 +18,15 @@
 	};
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, spicetify-nix, firefox-addons, ... }: let 
+  outputs = { 
+    nixpkgs,
+    home-manager,
+    catppuccin,
+    spicetify-nix,
+    firefox-addons,
+    ...
+  }: let 
     system = "x86_64-linux";
-    pkgs = import nixpkgs { inherit system; };
 
     # Below variables get passed to the modules.
     home-manager-inputs = {

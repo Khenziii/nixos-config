@@ -1,12 +1,12 @@
 ## dotfiles
 
-This repository contains some of my config files.
+This directory contains my config files.
 
 ## What exactly are dotfiles?
 
-In many operating systems, files / directories starting with a dot (`.`) are considered hidden.
+In many operating systems, files & directories starting with a dot (`.`) are considered hidden.
 
-This is particularly useful, as it makes them a good place for programs to store theirs settings in.
+This is particularly useful, as it provides a good place for programs to store their settings.
 
 The tradition of storing config in dotfiles is widely adopted in Unix-based systems (most notably Linux & macOS).
 
@@ -18,31 +18,28 @@ To manage my dotfiles, I use [stow](https://www.gnu.org/software/stow/).
 
 It's a tool, that allows quick creation of symbolic links.
 
-To install, you should first make sure, that git & stow is available on your os:
-```bash
-git version && stow --version
+> [!TIP]
+> *What's a symbolic link?*
+>
+> Symbolic links (symlinks) are files that act as pointers to other files or directories. They're similar to Windows' shortcuts, but have minor differences in functionality & purpose.
+
+First, check if you have `stow` installed:
+
+```shell
+$ stow --version 
 ```
 
-clone the repo:
-```bash
-git clone https://github.com/Khenziii/dotfiles
+If no errors occurred, you can use `stow` to link my dotfiles:
+
+```shell
+$ stow --no-folding --adopt -t ~ .
 ```
 
-move to the cloned repo:
-```bash
-cd dotfiles
-```
+After running above command, `stow` will create symbolic links in your home directory to files in this directory.
 
-and run:
-```bash
-stow --no-folding --adopt -t ~ .
-```
-
-After running above command, stow will take all files that are in the current working directory and create a symbolic link to them in your home directory.
-
-In case of any conflicts, `stow` will adapt to them (your configuration will be chosen over my config), you won't lose any settings :)
+In case of any conflicts, `stow` will adapt to them (your configuration will be chosen over mine), you won't lose any settings :)
 
 If you want to check, if `stow` has adapted anything, you can always run:
-```bash
-git status
+```shell
+$ git status
 ```

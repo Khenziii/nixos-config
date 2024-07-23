@@ -1,4 +1,4 @@
-## WIP
+## shared
 
-This README is still being worked on.. 🔧 
+This directory contains config that is imported both from `home-manager` & `nixos`. Use it to avoid duplication.
 

@@ -26,7 +26,7 @@ It's a tool, that allows quick creation of symbolic links.
 First, check if you have `stow` installed:
 
 ```shell
-$ stow --version 
+$ stow --version
 ```
 
 If no errors occurred, you can use `stow` to link my dotfiles:

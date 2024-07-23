@@ -4,7 +4,7 @@ This directory contains my NixOS configuration.
 
 ## What's NixOS?
 
-The NixOS project consist of 3 core parts:
+The NixOS project consists of 3 core parts:
 
 1. [Nix](https://github.com/NixOS/nix) - a purely functional package manager.
 2. [NixOS](https://github.com/NixOS/nixpkgs/tree/master/nixos) - a distro specifficaly made to be managed using Nix.
@@ -18,9 +18,9 @@ Instead of imperatively installing packages, we basically create a file storing 
 
 This makes us able to just move this file to another machine, and install every single package that we've had before.
 
-On top of that, we can also configure our system using Nix. We can for example define our hostname, or wheter bluetooth should be enabled on boot.
+On top of that, we can also configure our system using Nix. We can, for example, define our hostname, or whether bluetooth should be enabled on boot.
 
-If you spend a lot of time configuring your machine, Nix ensures that you'll never loose your settings and that you'll be able to manage them from a single place.
+If you spend a lot of time configuring your machine, Nix ensures that you'll never lose your settings and that you'll be able to manage them from a single place.
 
 *Keep in mind, that I've presented an simplified description; for more info, see the [official documentation](https://nixos.org/learn).*
 

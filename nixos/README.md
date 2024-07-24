@@ -45,6 +45,6 @@ $ sudo stow -t /etc/nixos .
 After that, you can rebuild to apply the config:
 
 ```shell
-$ sudo nixos-rebuild switch
+$ sudo nixos-rebuild switch --impure
 ```
 

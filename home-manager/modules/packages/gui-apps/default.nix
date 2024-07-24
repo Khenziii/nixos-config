@@ -34,6 +34,7 @@ in
 	# ./gparted.nix | gparted doesn't work on Wayland.
 	./virtualbox.nix
 	./whatsapp-for-linux.nix
+	./tor-browser.nix
   ];
 
   home.packages = [

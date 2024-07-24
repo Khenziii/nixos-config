@@ -74,8 +74,7 @@ $ stow --no-folding --adopt -t ~ dotfiles
 $ touch ~/.config/hypr/monitors.conf
 $ touch ~/.config/hypr/workspaces.conf
 $ sudo nixos-generate-config
-$ sudo mv /etc/nixos/hardware-configuration.nix nixos
-$ sudo nixos-rebuild switch --flake ".#iusenixosbtw"
+$ sudo nixos-rebuild switch --flake ".#iusenixosbtw" --impure
 $ home-manager switch --flake ".#khenzii"
 ```
 

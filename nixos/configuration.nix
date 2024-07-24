@@ -3,8 +3,8 @@
 {
   imports = [
     ./modules
-    ./hardware-configuration.nix
 	../shared/shared.nix
+    /etc/nixos/hardware-configuration.nix
   ];
 }
 

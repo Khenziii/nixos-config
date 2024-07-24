@@ -2,8 +2,8 @@
   shared-config = {
     aliases = {
       rebuild = "rebuild-system && rebuild-home";
-      rebuild-home = "mv .git .git-old && home-manager switch --flake '.#${inputs.username}' -b backup; mv .git-old .git";
-      rebuild-system = "mv .git .git-old && sudo nixos-rebuild switch --flake '.#${inputs.hostname}'; mv .git-old .git";
+      rebuild-home = "home-manager switch --flake '.#${inputs.username}' -b backup";
+      rebuild-system = "sudo nixos-rebuild switch --flake '.#${inputs.hostname}' --impure";
 	  trewa = "tree";
 	  fuck = "thefuck";
 	  bruh = "thefuck";

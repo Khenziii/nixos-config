@@ -35,6 +35,7 @@ in
 	./virtualbox.nix
 	./whatsapp-for-linux.nix
 	./tor-browser.nix
+	./protonvpn-gui.nix
   ];
 
   home.packages = [

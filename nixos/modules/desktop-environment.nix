@@ -10,7 +10,6 @@
     enable = true;
 	package = pkgs.kdePackages.sddm;
   };
-  services.xserver.desktopManager.plasma5.enable = false;
   programs.hyprland = {
     enable = true;
 	xwayland.enable = true;
@@ -31,5 +30,7 @@
       xdg-desktop-portal-hyprland 
 	];
   };
+
+  security.polkit.enable = true;
 }
 

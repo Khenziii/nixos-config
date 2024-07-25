@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    gparted
+    xorg.xhost
   ];
 }
 

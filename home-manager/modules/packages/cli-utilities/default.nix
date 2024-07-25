@@ -31,6 +31,7 @@
     ./wine.nix
     ./nix-init.nix
     ./speedtest-cli.nix
+    ./xhost.nix
   ];
 }
 

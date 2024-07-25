@@ -31,7 +31,6 @@ in
 	./gedit.nix
 	# ./minecraft.nix | minecraft is temporarily marked as broken. 
 	./gimp.nix
-	# ./gparted.nix | gparted doesn't work on Wayland.
 	./virtualbox.nix
 	./whatsapp-for-linux.nix
 	./tor-browser.nix

@@ -21,8 +21,8 @@ local settings = {
 			"█     █",
 			"███ ███",
 		},
-		highlight = "",
-		default_color = "#FFFFFF",
+		highlight = "Normal",
+		default_color = "",
 		oldfiles_amount = 0,
 	},
 	quote_first_paragraph = {
@@ -98,8 +98,8 @@ local settings = {
 				date,
 			}
 		end,
-		highlight = "",
-		default_color = "#FFFFFF",
+		highlight = "Normal",
+		default_color = "",
 		oldfiles_amount = 0,
 	},
 	options = {

@@ -33,7 +33,7 @@ local settings = {
 		title = "",
 		margin = 5,
 		content = {
-			'"I use arch, btw"',
+			'"I use NixOS, btw"',
 		},
 		highlight = "String",
 		default_color = "",

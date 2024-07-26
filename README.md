@@ -9,6 +9,10 @@ It thoroughly defines every single tweak that I've made to any program that's ru
 
 ## Features
 
+<div align="center">
+  <img src="assets/preview.png" alt="Preview Image">
+</div>
+
 The whole OS is centered around Catppuccin Mocha Mauve theme. Lots of applications are configured to match this color pallete, some examples include:
 
 - shell - [zsh](https://github.com/zsh-users/zsh),

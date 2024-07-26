@@ -33,6 +33,7 @@
     ./speedtest-cli.nix
     ./xhost.nix
     ./kittysay.nix
+    ./cowsay.nix
   ];
 }
 

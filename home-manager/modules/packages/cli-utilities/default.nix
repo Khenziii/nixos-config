@@ -34,6 +34,7 @@
     ./xhost.nix
     ./kittysay.nix
     ./cowsay.nix
+    ./cmatrix.nix
   ];
 }
 

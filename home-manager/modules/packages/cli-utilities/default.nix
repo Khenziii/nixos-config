@@ -32,6 +32,7 @@
     ./nix-init.nix
     ./speedtest-cli.nix
     ./xhost.nix
+    ./kittysay.nix
   ];
 }
 

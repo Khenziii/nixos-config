@@ -35,6 +35,7 @@
     ./kittysay.nix
     ./cowsay.nix
     ./cmatrix.nix
+    ./cbonsai.nix
   ];
 }
 

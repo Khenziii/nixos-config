@@ -10,6 +10,7 @@
     ./hyprcursor.nix
     ./nerdfonts.nix
     ./swaylock.nix
+    ./breeze.nix
   ];
 }
 

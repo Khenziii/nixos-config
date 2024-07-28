@@ -36,6 +36,7 @@ in
 	./tor-browser.nix
 	./protonvpn-gui.nix
 	./element-desktop.nix
+	./kdenlive.nix
   ];
 
   home.packages = [

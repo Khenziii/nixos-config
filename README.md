@@ -24,6 +24,35 @@ The whole OS is centered around Catppuccin Mocha Mauve theme. Lots of applicatio
 
 Other than that, this config is also integrated with [catppuccin/nix](https://github.com/catppuccin/nix); which regularly adds support for more apps.
 
+## Usage
+
+- ALT + S / Print Screen - Screenshot,
+- ALT + R - App Launcher,
+- ALT + W - Change Wallpaper,
+- ALT + A - Lock,
+- ALT + E - Toggle Window Split (Horizontal / Vertical),
+- ALT + F - Start Browser,
+- ALT + T - Start Terminal,
+- ALT + L - Change Workspace (Direction: Right),
+- ALT + H - Change Workspace (Direction: Left),
+- ALT + Q - Kill Active Window,
+- ALT + V - Make Active Window Float,
+- ALT + RMB - Resize Active Window,
+- ALT + LMB - Move Active Window,
+- SUPER + L - Change Workspace With Active Window (Direction: Right),
+- SUPER + H - Change Workspace With Active Window (Direction: Left),
+
+### Neovim Tips
+
+Checkout `dotfiles/.config/nvim/README.md`. It covers those topics:
+
+1. Keybindings
+2. Plugins
+3. Languages Support
+4. Code Formatting
+
+If you have more questions, feel free to reach out to me!
+
 ## Documentation
 
 Every previously mentioned module (`nixos/`, `home-manager/`, `shared/`, `dotfiles/`) has it's own docs placed in `<module_name>/README.md`. If you're going to read them, the recommended order is:

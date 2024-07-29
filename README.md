@@ -44,11 +44,11 @@ Other than that, this config is also integrated with [catppuccin/nix](https://gi
 
 ### Neovim Tips
 
-Checkout `dotfiles/.config/nvim/README.md`. It covers those topics:
+Checkout [`dotfiles/.config/nvim/README.md`](https://github.com/Khenziii/nixos-config/blob/master/dotfiles/.config/nvim/README.md). It covers those topics:
 
 1. Keybindings
 2. Plugins
-3. Languages Support
+3. Language Support
 4. Code Formatting
 
 If you have more questions, feel free to reach out to me!
@@ -57,10 +57,10 @@ If you have more questions, feel free to reach out to me!
 
 Every previously mentioned module (`nixos/`, `home-manager/`, `shared/`, `dotfiles/`) has it's own docs placed in `<module_name>/README.md`. If you're going to read them, the recommended order is:
 
-1. `dotfiles/`
-2. `nixos/`
-3. `home-manager/`
-4. `shared/`
+1. [`dotfiles/`](https://github.com/Khenziii/nixos-config/blob/master/dotfiles/README.md)
+2. [`nixos/`](https://github.com/Khenziii/nixos-config/blob/master/nixos/README.md)
+3. [`home-manager/`](https://github.com/Khenziii/nixos-config/blob/master/home-manager/README.md)
+4. [`shared/`](https://github.com/Khenziii/nixos-config/blob/master/shared/README.md)
 
 If you're not familiar with Nix, checkout [this](https://nixos.org/) page; in short, NixOS is a opinionated Linux distro which focuses on reproducibility. Nix is both a package manager, and a programming language at the same time.
 

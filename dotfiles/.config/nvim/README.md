@@ -1,4 +1,4 @@
-## nvim Configuration
+## Neovim Configuration
 
 In this directory, I keep my nvim configuration. It's modular, and pretty well organized. All of the plugins are kept in `lua/plugins` and vim's built-in settings in `lua/core`.
 

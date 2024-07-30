@@ -13,9 +13,9 @@ local function setup()
 			"css",
             "nix",
             "c_sharp",
+            "asm",
 		},
-		with_sync = true,
-		auto_install = true,
+		auto_install = false,
 	})
 end
 

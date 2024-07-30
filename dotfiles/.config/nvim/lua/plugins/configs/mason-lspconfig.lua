@@ -10,6 +10,7 @@ local function setup()
             "csharp_ls",
             "html",
             "cssls",
+            "asm_lsp",
         },
     })
 end

@@ -12,6 +12,7 @@ local function setup()
         "csharp_ls",
         "html",
         "cssls",
+        "asm_lsp",
     }
 
     for _, server in ipairs(servers) do

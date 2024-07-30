@@ -51,6 +51,14 @@ Checkout [`dotfiles/.config/nvim/README.md`](https://github.com/Khenziii/nixos-c
 3. Language Support
 4. Code Formatting
 
+### Shell Usage
+
+For every detail, see [`home-manager/modules/packages/shell`](https://github.com/Khenziii/nixos-config/tree/master/home-manager/modules/packages/shell).
+
+TL;DR: you can accept autosuggestions using `'a`, and exit insert mode with `'j`.
+
+## 
+
 If you have more questions, feel free to reach out to me!
 
 ## Documentation

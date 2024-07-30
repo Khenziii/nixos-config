@@ -36,6 +36,7 @@
     ./cowsay.nix
     ./cmatrix.nix
     ./cbonsai.nix
+    ./pkg-config.nix
   ];
 }
 

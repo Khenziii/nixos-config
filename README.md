@@ -42,7 +42,7 @@ Other than that, this config is also integrated with [catppuccin/nix](https://gi
 - SUPER + L - Change Workspace With Active Window (Direction: Right),
 - SUPER + H - Change Workspace With Active Window (Direction: Left),
 
-### Neovim Tips
+### Neovim
 
 Checkout [`dotfiles/.config/nvim/README.md`](https://github.com/Khenziii/nixos-config/blob/master/dotfiles/.config/nvim/README.md). It covers those topics:
 
@@ -51,7 +51,7 @@ Checkout [`dotfiles/.config/nvim/README.md`](https://github.com/Khenziii/nixos-c
 3. Language Support
 4. Code Formatting
 
-### Shell Usage
+### Shell
 
 For every detail, see [`home-manager/modules/packages/shell`](https://github.com/Khenziii/nixos-config/tree/master/home-manager/modules/packages/shell).
 

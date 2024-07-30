@@ -1,0 +1,12 @@
+version = "0.7.4"
+
+[assemblers]
+gas = true
+go = false
+z80 = false
+
+[instruction_sets]
+x86 = false
+x86_64 = true
+z80 = false
+

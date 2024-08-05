@@ -10,6 +10,7 @@
 	./javascript
 	./typescript
 	./rust
+	./misc
   ];
 }
 

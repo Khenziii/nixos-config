@@ -37,6 +37,7 @@
     ./cmatrix.nix
     ./cbonsai.nix
     ./pkg-config.nix
+    ./ani-cli.nix
   ];
 }
 

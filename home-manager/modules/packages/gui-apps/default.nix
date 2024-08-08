@@ -37,6 +37,7 @@ in
 	./protonvpn-gui.nix
 	./element-desktop.nix
 	./kdenlive.nix
+	./fontforge-gtk.nix
   ];
 
   home.packages = [

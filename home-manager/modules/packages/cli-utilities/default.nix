@@ -38,6 +38,7 @@
     ./cbonsai.nix
     ./pkg-config.nix
     ./ani-cli.nix
+    ./dig.nix
   ];
 }
 

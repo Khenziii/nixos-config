@@ -1,6 +1,8 @@
 { ... }:
 
 {
-  imports = [];
+  imports = [
+    ./ts-node.nix
+  ];
 }
 

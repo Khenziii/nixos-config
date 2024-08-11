@@ -38,6 +38,7 @@ in
 	./element-desktop.nix
 	./kdenlive.nix
 	./fontforge-gtk.nix
+	./clocks.nix
   ];
 
   home.packages = [

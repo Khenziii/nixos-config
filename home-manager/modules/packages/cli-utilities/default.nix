@@ -39,6 +39,7 @@
     ./pkg-config.nix
     ./ani-cli.nix
     ./dig.nix
+    ./cloc.nix
   ];
 }
 

@@ -1,6 +1,7 @@
 { pkgs, ... }: let
   soundnode = pkgs.callPackage ./soundnode.nix {};
   sherloq = pkgs.callPackage ./sherloq.nix {};
+  sowon = pkgs.callPackage ./sowon.nix {};
 in
 
 {
@@ -44,6 +45,7 @@ in
   home.packages = [
     # soundnode
     # sherloq
+    sowon
   ];
 }
 

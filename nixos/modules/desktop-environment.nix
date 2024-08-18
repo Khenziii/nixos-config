@@ -16,10 +16,7 @@
   };
 
   # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    variant = "";
-  };
+  services.xserver.xkb.layout = "pl";
 
   # Wayland doesn't provide a scren sharing API by default.
   # According to theirs philosophy, the desktop environment

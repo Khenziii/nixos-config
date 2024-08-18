@@ -26,21 +26,21 @@ Other than that, this config is also integrated with [catppuccin/nix](https://gi
 
 ## Usage
 
-- ALT + S / Print Screen - Screenshot,
-- ALT + R - App Launcher,
-- ALT + W - Change Wallpaper,
-- ALT + A - Lock,
-- ALT + E - Toggle Window Split (Horizontal / Vertical),
-- ALT + F - Start Browser,
-- ALT + T - Start Terminal,
-- ALT + L - Change Workspace (Direction: Right),
-- ALT + H - Change Workspace (Direction: Left),
-- ALT + Q - Kill Active Window,
-- ALT + V - Make Active Window Float,
-- ALT + RMB - Resize Active Window,
-- ALT + LMB - Move Active Window,
-- SUPER + L - Change Workspace With Active Window (Direction: Right),
-- SUPER + H - Change Workspace With Active Window (Direction: Left),
+- SUPER + S / Print Screen - Screenshot,
+- SUPER + R - App Launcher,
+- SUPER + W - Change Wallpaper,
+- SUPER + A - Lock,
+- SUPER + E - Toggle Window Split (Horizontal / Vertical),
+- SUPER + F - Start Browser,
+- SUPER + T - Start Terminal,
+- SUPER + L - Change Workspace (Direction: Right),
+- SUPER + H - Change Workspace (Direction: Left),
+- SUPER + Q - Kill Active Window,
+- SUPER + V - Make Active Window Float,
+- SUPER + RMB - Resize Active Window,
+- SUPER + LMB - Move Active Window,
+- CTRL + L - Change Workspace With Active Window (Direction: Right),
+- CTRL + H - Change Workspace With Active Window (Direction: Left),
 
 ### Neovim
 

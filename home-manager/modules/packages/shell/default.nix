@@ -10,6 +10,8 @@
 	  ripgrep = "rg";
       history = "history 1"; # show the whole history
       is-alias = "type";
+      # If the bar will ever become unresponsive, you can use this command to restart it.
+      fix-eww = "pkill eww && eww daemon && eww open bar";
 	};
   };
   

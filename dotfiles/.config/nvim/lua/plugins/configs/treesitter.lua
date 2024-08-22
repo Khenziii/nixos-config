@@ -17,6 +17,12 @@ local function setup()
             "asm",
 		},
 		auto_install = false,
+        highlight = {
+            enable = true,
+        },
+        indent = {
+            enable = true,
+        },
 	})
 end
 

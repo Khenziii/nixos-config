@@ -7,6 +7,7 @@ local function setup()
 			"yuck",
 			"javascript",
 			"typescript",
+            "tsx",
 			"python",
 			"markdown",
 			"html",

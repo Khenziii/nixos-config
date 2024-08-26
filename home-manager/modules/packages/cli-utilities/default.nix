@@ -40,6 +40,7 @@
     ./ani-cli.nix
     ./dig.nix
     ./cloc.nix
+    ./yt-dlp.nix
   ];
 }
 

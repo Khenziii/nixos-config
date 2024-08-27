@@ -12,7 +12,7 @@ local ignored_files_and_dirs = {
 
 -- telescope expects ignored files in this format:
 -- "!{first_ignored_file,second_ignored_file}"
--- this functions handles the conversion of a string table
+-- this function handles the conversion of a string table
 -- to a single string in the mentioned format.
 local function string_table_to_glob_string(string_table)
     local result = "!{";

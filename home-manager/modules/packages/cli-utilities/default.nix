@@ -1,4 +1,6 @@
-{ ... }:
+{ pkgs, ... }: let
+    guess-the-number-asm = pkgs.callPackage ./guess-the-number-asm.nix {};
+in 
 
 {
   imports = [
@@ -41,6 +43,10 @@
     ./dig.nix
     ./cloc.nix
     ./yt-dlp.nix
+  ];
+
+  home.packages = [
+    guess-the-number-asm
   ];
 }
 

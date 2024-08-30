@@ -32,7 +32,8 @@ in
 	./gedit.nix
 	# ./minecraft.nix | minecraft is temporarily marked as broken. 
 	./gimp.nix
-	./virtualbox.nix
+    # ./virtualbox.nix | virtualbox is enabled using NixOS'
+    # `virtualisation.virtualbox` option.
 	./whatsapp-for-linux.nix
 	./tor-browser.nix
 	./protonvpn-gui.nix

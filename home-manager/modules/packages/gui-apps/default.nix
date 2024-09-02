@@ -41,6 +41,7 @@ in
 	./kdenlive.nix
 	./fontforge-gtk.nix
 	./clocks.nix
+	./synfigstudio.nix
   ];
 
   home.packages = [

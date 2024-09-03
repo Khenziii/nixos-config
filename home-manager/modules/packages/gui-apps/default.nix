@@ -42,6 +42,7 @@ in
 	./fontforge-gtk.nix
 	./clocks.nix
 	./synfigstudio.nix
+	./libreoffice.nix
   ];
 
   home.packages = [

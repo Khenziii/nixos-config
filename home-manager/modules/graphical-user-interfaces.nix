@@ -15,5 +15,7 @@
   };
 
   catppuccin.pointerCursor.enable = true;
+
+  fonts.fontconfig.enable = true;
 }
 

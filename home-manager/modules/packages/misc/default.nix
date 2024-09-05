@@ -11,6 +11,7 @@
     ./nerdfonts.nix
     ./swaylock.nix
     ./breeze.nix
+    ./comic-relief.nix
   ];
 }
 

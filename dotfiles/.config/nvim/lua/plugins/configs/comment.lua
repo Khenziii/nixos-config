@@ -6,8 +6,8 @@ local function setup()
         comment_empty = true,
         comment_empty_trim_whitespace = true,
         create_mappings = true,
-        line_mapping = "'v",
-        operator_mapping = "'c",
+        line_mapping = "'j",
+        operator_mapping = "'a",
         comment_chunk_text_object = nil,
         hook = nil
     })

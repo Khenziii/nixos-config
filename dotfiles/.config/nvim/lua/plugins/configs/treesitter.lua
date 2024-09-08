@@ -15,6 +15,7 @@ local function setup()
             "nix",
             "c_sharp",
             "asm",
+            "gdscript",
 		},
 		auto_install = false,
         highlight = {

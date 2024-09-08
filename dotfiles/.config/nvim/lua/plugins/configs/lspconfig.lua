@@ -13,6 +13,7 @@ local function setup()
         "html",
         "cssls",
         "asm_lsp",
+        "gdscript",
     }
 
     for _, server in ipairs(servers) do

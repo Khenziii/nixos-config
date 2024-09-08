@@ -37,6 +37,7 @@ Other than that, this config is also integrated with [catppuccin/nix](https://gi
 - SUPER + H - Change Workspace (Direction: Left),
 - SUPER + Q - Kill Active Window,
 - SUPER + V - Make Active Window Float,
+- SUPER + J - Fullscreen Active Window,
 - SUPER + RMB - Resize Active Window,
 - SUPER + LMB - Move Active Window,
 - CTRL + L - Change Workspace With Active Window (Direction: Right),

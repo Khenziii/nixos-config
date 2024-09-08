@@ -43,6 +43,7 @@ in
     ./dig.nix
     ./cloc.nix
     ./yt-dlp.nix
+    ./unar.nix
   ];
 
   home.packages = [

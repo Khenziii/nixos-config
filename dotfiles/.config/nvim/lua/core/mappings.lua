@@ -78,6 +78,16 @@ local close_tab = {
 	},
 }
 
+local show_full_error = {
+    mode = "n",
+    key = "<LEADER>z",
+    command = ":lua vim.diagnostic.open_float()<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
+}
+
 return {
 	tree_focus,
 	exit_insert_mode,
@@ -87,5 +97,6 @@ return {
 	tree_toggle,
 	open_tab,
 	close_tab,
+    show_full_error,
 }
 

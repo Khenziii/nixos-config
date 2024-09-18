@@ -43,6 +43,7 @@ in
 	./clocks.nix
 	./synfigstudio.nix
 	./libreoffice.nix
+	./thunar.nix
   ];
 
   home.packages = [

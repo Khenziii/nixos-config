@@ -14,6 +14,7 @@ local function setup()
         "cssls",
         "asm_lsp",
         "gdscript",
+        "jdtls",
     }
 
     for _, server in ipairs(servers) do

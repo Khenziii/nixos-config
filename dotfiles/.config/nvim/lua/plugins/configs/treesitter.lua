@@ -16,6 +16,7 @@ local function setup()
             "c_sharp",
             "asm",
             "gdscript",
+            "java",
 		},
 		auto_install = false,
         highlight = {

@@ -11,6 +11,7 @@ local function setup()
             "html",
             "cssls",
             "asm_lsp",
+            "jdtls",
         },
     })
 end

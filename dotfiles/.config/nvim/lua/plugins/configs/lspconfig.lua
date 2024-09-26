@@ -15,6 +15,7 @@ local function setup()
         "asm_lsp",
         "gdscript",
         "jdtls",
+        "kotlin_language_server",
     }
 
     for _, server in ipairs(servers) do

@@ -12,6 +12,7 @@ local function setup()
             "cssls",
             "asm_lsp",
             "jdtls",
+            "kotlin_language_server",
         },
     })
 end

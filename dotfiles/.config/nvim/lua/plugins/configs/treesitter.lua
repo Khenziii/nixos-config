@@ -17,6 +17,7 @@ local function setup()
             "asm",
             "gdscript",
             "java",
+            "kotlin",
 		},
 		auto_install = false,
         highlight = {

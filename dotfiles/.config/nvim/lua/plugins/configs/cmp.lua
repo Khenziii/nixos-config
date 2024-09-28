@@ -71,6 +71,7 @@ local function setup()
 			["<Down>"] = cmp.mapping.select_next_item(select_opts),
 			["<C-k>"] = cmp.mapping.select_prev_item(select_opts),
 			["<C-j>"] = cmp.mapping.select_next_item(select_opts),
+            ["<LEADER>w"] = cmp.mapping.complete(),
 		},
 	})
 

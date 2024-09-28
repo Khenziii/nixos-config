@@ -483,7 +483,8 @@
             "chatMentions": true,
             "memberList": true,
             "voiceUsers": true,
-            "reactorsList": true
+            "reactorsList": true,
+            "colorChatMessages": false
         },
         "SecretRingToneEnabler": {
             "enabled": false
@@ -510,7 +511,9 @@
             "enabled": false
         },
         "ShowConnections": {
-            "enabled": true
+            "enabled": true,
+            "iconSpacing": 1,
+            "iconSize": 32
         },
         "ShowHiddenChannels": {
             "enabled": true,
@@ -539,7 +542,7 @@
         },
         "SilentTyping": {
             "enabled": true,
-            "isEnabled": false,
+            "isEnabled": true,
             "showIcon": true,
             "contextMenu": true
         },
@@ -680,6 +683,21 @@
         },
         "FullSearchContext": {
             "enabled": true
+        },
+        "AccountPanelServerProfile": {
+            "enabled": false
+        },
+        "CopyFileContents": {
+            "enabled": false
+        },
+        "NoMaskedUrlPaste": {
+            "enabled": false
+        },
+        "StickerPaste": {
+            "enabled": false
+        },
+        "VolumeBooster": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -692,6 +710,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1726908513888
+        "settingsSyncVersion": 1727465320707
     }
 }

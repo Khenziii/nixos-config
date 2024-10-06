@@ -8,6 +8,7 @@ local ignored_files_and_dirs = {
     ".next",
     "yarn.lock",
     "coverage",
+    ".nx",
 };
 
 -- telescope expects ignored files in this format:

@@ -260,7 +260,10 @@
             "enabled": false
         },
         "MessageLinkEmbeds": {
-            "enabled": true
+            "enabled": true,
+            "listMode": "blacklist",
+            "idList": "",
+            "automodEmbeds": "never"
         },
         "MessageLogger": {
             "enabled": true,
@@ -542,7 +545,7 @@
         },
         "SilentTyping": {
             "enabled": true,
-            "isEnabled": true,
+            "isEnabled": false,
             "showIcon": true,
             "contextMenu": true
         },
@@ -710,6 +713,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1727465320707
+        "settingsSyncVersion": 1728411257347
     }
 }

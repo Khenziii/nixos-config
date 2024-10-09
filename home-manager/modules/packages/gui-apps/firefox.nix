@@ -17,6 +17,7 @@
 		violentmonkey
 		react-devtools
         darkreader
+        polish-dictionary
 	  ];
 	  settings = {
 	    "extensions.autoDisableScopes" = 0; # auto enable extensions

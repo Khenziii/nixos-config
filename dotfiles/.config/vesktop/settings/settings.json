@@ -177,7 +177,8 @@
             "enabled": true
         },
         "FavoriteGifSearch": {
-            "enabled": true
+            "enabled": true,
+            "searchOption": "hostandpath"
         },
         "FixCodeblockGap": {
             "enabled": true
@@ -713,6 +714,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1728411257347
+        "settingsSyncVersion": 1728650004566
     }
 }

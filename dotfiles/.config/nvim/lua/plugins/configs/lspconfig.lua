@@ -16,6 +16,7 @@ local function setup()
         "gdscript",
         "jdtls",
         "kotlin_language_server",
+        "eslint",
     }
 
     for _, server in ipairs(servers) do

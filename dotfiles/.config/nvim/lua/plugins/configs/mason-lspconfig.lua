@@ -13,6 +13,7 @@ local function setup()
             "asm_lsp",
             "jdtls",
             "kotlin_language_server",
+            "eslint",
         },
     })
 end

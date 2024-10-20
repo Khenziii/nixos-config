@@ -14,6 +14,7 @@ local function setup()
             "jdtls",
             "kotlin_language_server",
             "eslint",
+            "stylelint_lsp",
         },
     })
 end

@@ -17,6 +17,7 @@ local function setup()
         "jdtls",
         "kotlin_language_server",
         "eslint",
+        "stylelint_lsp",
     }
 
     for _, server in ipairs(servers) do

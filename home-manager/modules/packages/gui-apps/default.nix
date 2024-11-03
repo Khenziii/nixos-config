@@ -44,6 +44,7 @@ in
 	./synfigstudio.nix
 	./libreoffice.nix
 	./thunar.nix
+	./godot3-mono.nix
   ];
 
   home.packages = [

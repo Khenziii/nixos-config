@@ -46,6 +46,7 @@ in
 	./thunar.nix
 	# ./godot3-mono.nix | godot 4 is being used instead.
 	./atlauncher.nix
+	./lunar-client.nix
   ];
 
   home.packages = [

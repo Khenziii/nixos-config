@@ -45,7 +45,7 @@ in
 	./libreoffice.nix
 	./thunar.nix
 	# ./godot3-mono.nix | godot 4 is being used instead.
-	./atlauncher.nix
+	# ./atlauncher.nix | lunar client is being used instead.
 	./lunar-client.nix
   ];
 

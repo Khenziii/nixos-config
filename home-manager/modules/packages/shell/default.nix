@@ -12,6 +12,8 @@
       is-alias = "type";
       # If the bar will ever become unresponsive, you can use this command to restart it.
       fix-eww = "pkill eww && eww daemon && eww open bar";
+      # Godot is configured to use an external editor listening on this port.
+      nvim = "nvim --listen 127.0.0.1:55432";
 	};
   };
   

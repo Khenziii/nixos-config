@@ -45,6 +45,7 @@ in
     ./yt-dlp.nix
     ./unar.nix
     ./onefetch.nix
+    ./zip.nix
   ];
 
   home.packages = [

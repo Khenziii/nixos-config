@@ -11,6 +11,7 @@ local function setup()
 			"python",
 			"markdown",
 			"html",
+            "scss",
 			"css",
             "nix",
             "c_sharp",

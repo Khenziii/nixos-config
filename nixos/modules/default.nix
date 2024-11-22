@@ -3,7 +3,7 @@
 {
   imports = [
     ./bluetooth.nix
-	./bootloader.nix
+	./boot.nix
 	./catppuccin.nix
 	./core.nix
 	./desktop-environment.nix

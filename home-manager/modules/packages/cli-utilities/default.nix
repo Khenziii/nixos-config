@@ -46,6 +46,7 @@ in
     ./unar.nix
     ./onefetch.nix
     ./zip.nix
+    ./cpulimit.nix
   ];
 
   home.packages = [

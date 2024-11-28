@@ -5,25 +5,27 @@ local function setup()
 	local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     local servers = {
-        "lua_ls",
-        "tsserver",
-        "nil_ls",
-        "pylsp",
-        "csharp_ls",
-        "html",
-        "cssls",
-        "asm_lsp",
-        "gdscript",
-        "jdtls",
-        "kotlin_language_server",
-        "eslint",
-        "stylelint_lsp",
+        { name = "lua_ls", additional_settings = {} },
+        { name = "tsserver", additional_settings = {} },
+        { name = "nil_ls", additional_settings = {} },
+        { name = "pylsp", additional_settings = {} },
+        { name = "csharp_ls", additional_settings = {} },
+        { name = "html", additional_settings = {} },
+        { name = "cssls", additional_settings = {} },
+        { name = "asm_lsp", additional_settings = {} },
+        { name = "gdscript", additional_settings = {} },
+        { name = "jdtls", additional_settings = {} },
+        { name = "kotlin_language_server", additional_settings = {} },
+        { name = "eslint", additional_settings = {} },
+        { name = "stylelint_lsp", additional_settings = {
+            filetypes = { "css", "scss", "less" },
+        } },
     }
 
     for _, server in ipairs(servers) do
-        lspconfig[server].setup({
+        lspconfig[server.name].setup(vim.tbl_extend("force", {
             capabilities = lsp_capabilities,
-        })
+        }, server.additional_settings))
     end
 end
 

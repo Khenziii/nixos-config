@@ -9,6 +9,7 @@ local ignored_files_and_dirs = {
     "yarn.lock",
     "coverage",
     ".nx",
+    ".idea",
 };
 
 -- telescope expects ignored files in this format:

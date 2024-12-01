@@ -47,6 +47,7 @@ in
     ./onefetch.nix
     ./zip.nix
     ./cpulimit.nix
+    ./svgo.nix
   ];
 
   home.packages = [

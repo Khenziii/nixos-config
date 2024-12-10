@@ -15,7 +15,17 @@
       # Godot is configured to use an external editor listening on this port.
       nvim = "nvim --listen 127.0.0.1:55432";
       godot = "godot4";
+      kill-port = "killport";
 	};
+    init-extra = ''
+      killport() {
+        if [ -z "$1" ]; then
+          echo "Usage: killport <port>"
+          return 1
+        fi
+        kill $(lsof -t -i :"$1")
+      }
+    '';
   };
   
   zsh-config = import ./zsh.nix { inherit shared-config; inherit pkgs; };

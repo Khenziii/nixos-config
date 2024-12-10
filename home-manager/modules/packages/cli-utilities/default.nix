@@ -48,6 +48,7 @@ in
     ./zip.nix
     ./cpulimit.nix
     ./svgo.nix
+    ./lsof.nix
   ];
 
   home.packages = [

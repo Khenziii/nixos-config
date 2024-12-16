@@ -49,6 +49,7 @@ in
     ./cpulimit.nix
     ./svgo.nix
     ./lsof.nix
+    ./websocat.nix
   ];
 
   home.packages = [

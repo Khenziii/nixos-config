@@ -88,6 +88,16 @@ local show_full_error = {
 	},
 }
 
+local open_in_browser = {
+    mode = "n",
+    key = "<LEADER>v",
+    command = ":lua Snacks.gitbrowse()<CR>",
+    options = {
+        noremap = true,
+        silent = true,
+    },
+}
+
 return {
 	tree_focus,
 	exit_insert_mode,
@@ -98,5 +108,6 @@ return {
 	open_tab,
 	close_tab,
     show_full_error,
+    open_in_browser,
 }
 

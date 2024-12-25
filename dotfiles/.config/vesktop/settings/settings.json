@@ -485,7 +485,8 @@
             "memberList": true,
             "voiceUsers": true,
             "reactorsList": true,
-            "colorChatMessages": false
+            "colorChatMessages": false,
+            "pollResults": true
         },
         "SecretRingToneEnabler": {
             "enabled": false
@@ -721,6 +722,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1730559701188
+        "settingsSyncVersion": 1734979687459
     }
 }

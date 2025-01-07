@@ -47,6 +47,7 @@ in
 	# ./godot3-mono.nix | godot 4 is being used instead.
 	# ./atlauncher.nix | lunar client is being used instead.
 	./lunar-client.nix
+	./via.nix
   ];
 
   home.packages = [

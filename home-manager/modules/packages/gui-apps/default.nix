@@ -48,6 +48,7 @@ in
 	# ./atlauncher.nix | lunar client is being used instead.
 	./lunar-client.nix
 	./via.nix
+	./ciscopackettracer8.nix
   ];
 
   home.packages = [

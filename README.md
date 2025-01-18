@@ -33,6 +33,7 @@ Other than that, this config is also integrated with [catppuccin/nix](https://gi
 - SUPER + E - Toggle Window Split (Horizontal / Vertical),
 - SUPER + F - Start Browser,
 - SUPER + T - Start Terminal,
+- SUPER + G - Enter a TTY Session,
 - SUPER + L - Change Workspace (Direction: Right),
 - SUPER + H - Change Workspace (Direction: Left),
 - SUPER + Q - Kill Active Window,

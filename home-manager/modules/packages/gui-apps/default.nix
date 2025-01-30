@@ -7,8 +7,7 @@ in
 {
   imports = [
     ./caprine-bin.nix
-	# ./discord.nix | vesktop is being used instead. In case of
-	# any issues, re-enabling this is okay.
+	./discord.nix
 	./firefox.nix
 	./kitty.nix
 	./mpv.nix
@@ -21,7 +20,7 @@ in
 	# opening some ports in the firewall for certain features.
 	./super-tux-kart.nix
 	./super-tux.nix
-	./vesktop.nix
+	# ./vesktop.nix | discord is temporarily used.
 	./qalculate-gtk.nix
 	./godot_4.nix
 	./wireshark.nix

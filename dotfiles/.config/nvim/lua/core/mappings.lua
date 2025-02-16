@@ -98,6 +98,16 @@ local open_in_browser = {
     },
 }
 
+local format_file = {
+    mode = "n",
+    key = "<LEADER>g",
+    command = ":lua vim.lsp.buf.format()<CR>",
+    options = {
+        noremap = true,
+        silent = true,
+    },
+}
+
 return {
 	tree_focus,
 	exit_insert_mode,
@@ -109,5 +119,6 @@ return {
 	close_tab,
     show_full_error,
     open_in_browser,
+    format_file
 }
 

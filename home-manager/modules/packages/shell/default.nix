@@ -16,6 +16,7 @@
       nvim = "nvim --listen 127.0.0.1:55432";
       godot = "godot4";
       kill-port = "killport";
+      make-bootable-dev = "makebootabledev";
 	};
     init-extra = ''
       killport() {
@@ -24,6 +25,21 @@
           return 1
         fi
         kill $(lsof -t -i :"$1")
+      }
+
+      makebootabledev() {
+        if [[ -z "$1" || -z "$2" ]]; then
+          echo "Usage: makebootabledev <path-to-iso-file> <path-to-dev>"
+          return 1
+        fi
+
+        input_file="$1"
+        dev="$2"
+
+        sudo umount $dev
+        sudo dd if=$input_file of=$dev bs=4M status=progress
+        sync
+        sudo eject $dev
       }
     '';
   };

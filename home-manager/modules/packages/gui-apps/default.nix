@@ -48,7 +48,8 @@ in
 	./lunar-client.nix
 	./via.nix
 	# ./ciscopackettracer8.nix | broken.
-	./postman.nix
+    # ./postman.nix | hoppscotch is used instead.
+	./hoppscotch.nix
   ];
 
   home.packages = [

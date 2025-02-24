@@ -48,6 +48,7 @@ in
 	./lunar-client.nix
 	./via.nix
 	# ./ciscopackettracer8.nix | broken.
+	./postman.nix
   ];
 
   home.packages = [

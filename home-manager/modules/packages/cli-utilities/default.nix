@@ -50,6 +50,7 @@ in
     ./svgo.nix
     ./lsof.nix
     ./websocat.nix
+    ./minio-client.nix
   ];
 
   home.packages = [

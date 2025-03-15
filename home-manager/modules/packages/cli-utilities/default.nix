@@ -51,6 +51,7 @@ in
     ./lsof.nix
     ./websocat.nix
     ./minio-client.nix
+    ./jq.nix
   ];
 
   home.packages = [

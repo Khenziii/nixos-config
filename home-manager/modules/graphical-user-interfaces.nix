@@ -17,5 +17,14 @@
   catppuccin.pointerCursor.enable = true;
 
   fonts.fontconfig.enable = true;
+
+  xdg.desktopEntries = {
+    firefox = {
+      name = "FireFox";
+      genericName = "Web Browser 🦊";
+      exec = "firefox --name firefox %U";
+      icon = "firefox";
+    };
+  };
 }
 

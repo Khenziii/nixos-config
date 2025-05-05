@@ -52,6 +52,7 @@ in
     ./websocat.nix
     ./minio-client.nix
     ./jq.nix
+    ./exiftool.nix
   ];
 
   home.packages = [

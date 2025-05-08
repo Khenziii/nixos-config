@@ -53,6 +53,7 @@ in
     ./minio-client.nix
     ./jq.nix
     ./exiftool.nix
+	./sqlite-web.nix
   ];
 
   home.packages = [

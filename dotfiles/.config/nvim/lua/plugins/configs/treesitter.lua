@@ -19,6 +19,7 @@ local function setup()
             "gdscript",
             "java",
             "kotlin",
+            "c",
 		},
 		auto_install = false,
         highlight = {

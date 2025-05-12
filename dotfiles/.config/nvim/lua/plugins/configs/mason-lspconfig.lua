@@ -17,6 +17,7 @@ local function setup()
             "kotlin_language_server@1.3.12",
             "eslint@4.10.0",
             "stylelint_lsp@2.0.0",
+            "clangd@20.1.0",
         },
     })
 end

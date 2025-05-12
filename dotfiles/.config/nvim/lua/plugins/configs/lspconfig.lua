@@ -20,6 +20,7 @@ local function setup()
         { name = "stylelint_lsp", additional_settings = {
             filetypes = { "css", "scss", "less" },
         } },
+        { name = "clangd", additional_settings = {} },
     }
 
     for _, server in ipairs(servers) do

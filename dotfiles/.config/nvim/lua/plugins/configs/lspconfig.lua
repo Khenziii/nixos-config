@@ -5,7 +5,15 @@ local function setup()
 	local lsp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     local servers = {
-        { name = "lua_ls", additional_settings = {} },
+        { name = "lua_ls", additional_settings = {
+            settings = {
+                Lua = {
+                    format = {
+                        enable = false
+                    }
+                }
+            }
+        } },
         { name = "tsserver", additional_settings = {} },
         { name = "nil_ls", additional_settings = {} },
         { name = "pylsp", additional_settings = {} },
@@ -20,7 +28,10 @@ local function setup()
         { name = "stylelint_lsp", additional_settings = {
             filetypes = { "css", "scss", "less" },
         } },
-        { name = "clangd", additional_settings = {} },
+        { name = "clangd", additional_settings = {
+            -- TODO: get `clangd` to recognize standard headers...
+            -- cmd = { "/home/khenzii/.local/share/nvim/mason/bin/clangd", "--query-driver=/home/khenzii/.nix-profile/bin/clang", "--background-index" }
+        } },
     }
 
     for _, server in ipairs(servers) do

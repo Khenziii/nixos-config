@@ -13,6 +13,7 @@
 	./sound.nix
     ./users.nix
     ./shell.nix
+    ./external.nix
 	./packages
   ];
 }

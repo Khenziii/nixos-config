@@ -16,6 +16,7 @@
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
 	};
+    vms.url = "github:matthewcroughan/nixtheplanet";
   };
 
   outputs = { 
@@ -24,6 +25,7 @@
     catppuccin,
     spicetify-nix,
     firefox-addons,
+    vms,
     ...
   }: let 
     system = "x86_64-linux";
@@ -44,6 +46,7 @@
       modules = [
 	    home-manager.nixosModules.home-manager
 		catppuccin.nixosModules.catppuccin
+        vms.nixosModules.macos-ventura
 		./shared/shared.nix
 	    ./nixos/configuration.nix
 	  ];

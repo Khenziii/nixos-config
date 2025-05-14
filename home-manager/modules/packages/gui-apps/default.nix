@@ -50,6 +50,7 @@ in
 	# ./ciscopackettracer8.nix | broken.
     # ./postman.nix | hoppscotch is used instead.
 	./hoppscotch.nix
+	./remmina.nix
   ];
 
   home.packages = [

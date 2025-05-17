@@ -6,3 +6,6 @@ __pycache__
 venv
 env
 
+node_modules
+
+compile_commands.json

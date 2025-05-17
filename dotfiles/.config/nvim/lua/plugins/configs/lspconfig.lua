@@ -28,10 +28,7 @@ local function setup()
         { name = "stylelint_lsp", additional_settings = {
             filetypes = { "css", "scss", "less" },
         } },
-        { name = "clangd", additional_settings = {
-            -- TODO: get `clangd` to recognize standard headers...
-            -- cmd = { "/home/khenzii/.local/share/nvim/mason/bin/clangd", "--query-driver=/home/khenzii/.nix-profile/bin/clang", "--background-index" }
-        } },
+        { name = "clangd", additional_settings = {} },
     }
 
     for _, server in ipairs(servers) do

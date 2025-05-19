@@ -25,6 +25,12 @@
       exec = "firefox --name firefox %U";
       icon = "firefox";
     };
+    "org.gnome.Epiphany" = {
+      name = "Epiphany";
+      genericName = "GNOME's Web Browser. Uses port of WebKit as it's rendering engine, making it similar to Safari";
+      exec = "epiphany %U";
+      icon = "org.gnome.Epiphany";
+    };
   };
 }
 

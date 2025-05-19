@@ -51,6 +51,7 @@ in
     # ./postman.nix | hoppscotch is used instead.
 	./hoppscotch.nix
 	./remmina.nix
+	./epiphany.nix
   ];
 
   home.packages = [

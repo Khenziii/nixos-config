@@ -52,6 +52,7 @@ in
 	./hoppscotch.nix
 	./remmina.nix
 	./epiphany.nix
+	./mnta.nix
   ];
 
   home.packages = [

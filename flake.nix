@@ -17,6 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
 	};
     vms.url = "github:matthewcroughan/nixtheplanet";
+    mnta.url = "github:khenziii/mnta";
   };
 
   outputs = { 
@@ -26,23 +27,24 @@
     spicetify-nix,
     firefox-addons,
     vms,
+    mnta,
     ...
   }: let 
-    system = "x86_64-linux";
-
     # Below variables get passed to the modules.
     home-manager-inputs = {
 	  inherit spicetify-nix;
 	  inherit firefox-addons;
+	  inherit mnta;
 	};
 	nixos-inputs = {};
 	shared-inputs = {
 	  hostname = "iusenixosbtw";
       username = "khenzii";
+      system = "x86_64-linux";
 	};
   in {
     nixosConfigurations.${shared-inputs.hostname} = nixpkgs.lib.nixosSystem {
-	  system = system;
+	  system = shared-inputs.system;
       modules = [
 	    home-manager.nixosModules.home-manager
 		catppuccin.nixosModules.catppuccin
@@ -54,7 +56,7 @@
     };
 
     homeConfigurations.${shared-inputs.username} = home-manager.lib.homeManagerConfiguration {
-	  pkgs = nixpkgs.legacyPackages.${system};
+	  pkgs = nixpkgs.legacyPackages.${shared-inputs.system};
       modules = [
 		catppuccin.homeManagerModules.catppuccin
 		spicetify-nix.homeManagerModules.default

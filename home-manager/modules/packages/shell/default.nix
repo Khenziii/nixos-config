@@ -17,6 +17,7 @@
       godot = "godot4";
       kill-port = "killport";
       make-bootable-dev = "makebootabledev";
+      gdb = "gdb --core=core";
 	};
     init-extra = ''
       killport() {

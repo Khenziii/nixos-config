@@ -9,3 +9,5 @@ env
 node_modules
 
 compile_commands.json
+
+core

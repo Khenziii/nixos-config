@@ -15,7 +15,11 @@
     device = "/swapfile";
     size = 1024 * 8; # Size is in MB
   }];
-  boot.kernel.sysctl."vm.swappiness" = 80;
+  boot.kernel.sysctl = {
+    "vm.swappiness" = 80;
+    "kernel.core_uses_pid" = 0;
+    "kernel.core_pattern" = "./core";
+  };
 
   # Allow access to all hidraw devices. This is necessary for
   # keyboard configuration via apps such as VIA. See:

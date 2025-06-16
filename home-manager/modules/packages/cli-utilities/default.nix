@@ -54,6 +54,7 @@ in
     ./jq.nix
     ./exiftool.nix
 	./sqlite-web.nix
+	./emacs.nix
   ];
 
   home.packages = [

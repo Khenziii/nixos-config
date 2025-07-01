@@ -47,12 +47,13 @@ in
 	# ./atlauncher.nix | lunar client is being used instead.
 	./lunar-client.nix
 	./via.nix
-	./ciscopackettracer8.nix
+    ./ciscopackettracer8.nix
     # ./postman.nix | hoppscotch is used instead.
 	./hoppscotch.nix
 	./remmina.nix
 	./epiphany.nix
 	./mnta.nix
+	./netflix.nix
   ];
 
   home.packages = [

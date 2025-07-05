@@ -54,7 +54,7 @@ in
 	./epiphany.nix
 	./mnta.nix
 	./netflix.nix
-	./screenkey.nix
+	# ./screenkey.nix | showmethekey is used instead.
   ];
 
   home.packages = [

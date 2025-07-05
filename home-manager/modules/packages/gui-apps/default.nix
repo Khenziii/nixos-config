@@ -54,6 +54,7 @@ in
 	./epiphany.nix
 	./mnta.nix
 	./netflix.nix
+	./screenkey.nix
   ];
 
   home.packages = [

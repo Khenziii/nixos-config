@@ -12,6 +12,7 @@
     ./swaylock.nix
     ./breeze.nix
     ./comic-relief.nix
+    ./showmethekey.nix
   ];
 }
 

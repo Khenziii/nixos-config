@@ -55,6 +55,7 @@ in
 	./mnta.nix
 	./netflix.nix
 	# ./screenkey.nix | showmethekey is used instead.
+    ./anki.nix
   ];
 
   home.packages = [

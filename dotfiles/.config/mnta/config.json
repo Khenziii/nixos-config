@@ -1,7 +1,7 @@
 {
 	"editor_launch_command":	"nvim",
 	"background_color_hex":	"#171617",
-	"keyboard_navigation_sensitivity":	50,
+	"keyboard_navigation_sensitivity":	25,
 	"default_files_placement":	{
 		"files_per_row":	5,
 		"margin_horizontal":	300,

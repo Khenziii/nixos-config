@@ -171,11 +171,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1750109445,
-        "narHash": "sha256-JMzQN237KDkXtCbg73KPkqU+iLCq3sThD+V9QvLFjlI=",
+        "lastModified": 1751887567,
+        "narHash": "sha256-P3WEg1d/e/t1LaX+QvT3at15HaNXwo3TDm/3rnI3uLY=",
         "owner": "khenziii",
         "repo": "mnta",
-        "rev": "04526c7fde30851e24d15df65a0f05170b6a8190",
+        "rev": "e6f86e11e07871739161e762e50bf93a4c892c71",
         "type": "github"
       },
       "original": {

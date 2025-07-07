@@ -18,6 +18,7 @@
       kill-port = "killport";
       make-bootable-dev = "makebootabledev";
       gdb = "gdb --core=core";
+      emacs = "emacs -nw";
 	};
     init-extra = ''
       killport() {

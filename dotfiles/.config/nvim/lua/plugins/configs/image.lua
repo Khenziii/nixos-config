@@ -1,7 +1,13 @@
 -- https://github.com/3rd/image.nvim
 
 local function setup()
-	require("image").setup({})
+	require("image").setup({
+        integrations = {
+            markdown = {
+                enabled = false,
+            },
+        },
+    })
 end
 
 return {

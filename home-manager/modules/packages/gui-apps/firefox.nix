@@ -18,6 +18,7 @@
 		react-devtools
         darkreader
         polish-dictionary
+        dictionary-german
 	  ];
 	  settings = {
 	    "extensions.autoDisableScopes" = 0; # auto enable extensions

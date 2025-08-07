@@ -22,6 +22,7 @@ local plugins = {
 	"mason-lspconfig",
     "comment",
     "snacks",
+    "render-markdown",
 }
 
 local function get_plugins(plugin_names)

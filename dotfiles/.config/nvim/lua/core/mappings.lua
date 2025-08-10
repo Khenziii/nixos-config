@@ -108,6 +108,16 @@ local format_file = {
     },
 }
 
+local open_terminal = {
+    mode = "n",
+    key = "<LEADER>t",
+    command = ":bot term<CR>",
+    options = {
+        noremap = true,
+        silent = true,
+    },
+}
+
 return {
 	tree_focus,
 	exit_insert_mode,
@@ -119,6 +129,7 @@ return {
 	close_tab,
     show_full_error,
     open_in_browser,
-    format_file
+    format_file,
+    open_terminal,
 }
 

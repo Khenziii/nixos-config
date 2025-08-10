@@ -118,6 +118,16 @@ local open_terminal = {
     },
 }
 
+local unfocus_terminal = {
+    mode = "t",
+    key = "<LEADER>r",
+    command = "<C-\\><C-n>",
+    options = {
+        noremap = true,
+        silent = true,
+    },
+}
+
 return {
 	tree_focus,
 	exit_insert_mode,
@@ -131,5 +141,6 @@ return {
     open_in_browser,
     format_file,
     open_terminal,
+    unfocus_terminal,
 }
 

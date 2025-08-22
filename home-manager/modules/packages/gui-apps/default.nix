@@ -56,6 +56,7 @@ in
 	./netflix.nix
 	# ./screenkey.nix | showmethekey is used instead.
     ./anki.nix
+    ./thunderbird.nix
   ];
 
   home.packages = [

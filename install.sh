@@ -78,11 +78,11 @@ select_config() {
     
     	echo ""
     
-        echo "This decision will impact: disabling or enabling swap, installing dedicated drivers for the GPU, etc."
+        echo "This decision will impact: disabling or enabling swap, installing dedicated GPU drivers, etc."
     
         echo ""
     
-        echo "It can be changed later in $STATION_TYPE_PATH"
+        echo "It can be changed later in '$STATION_TYPE_PATH'."
     
         echo ""
     

@@ -87,8 +87,8 @@ echo "Creating placeholders.."
 # Those files are written to by `nwg-displays`, and imported from hyprland.conf.
 # During the installation phase, we create empty placeholders, so that mentioned
 # imports don't throw any "File not found" errors.
-touch ~/.config/hypr/monitors.conf
-touch ~/.config/hypr/workspaces.conf
+touch $SUDO_USER/.config/hypr/monitors.conf
+touch $SUDO_USER/.config/hypr/workspaces.conf
 
 # Ensure, that `/etc/nixos/hardware-configuration.nix` is present.
 echo "Generating NixOS config.."

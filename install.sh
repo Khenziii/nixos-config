@@ -1,5 +1,7 @@
 #!/bin/sh
 
+STATION_TYPE_PATH="$SUDO_USER/scripts/rebuild-args/station-type"
+
 # In order to suppress this warning, run the script with first parameter set to "y" 
 startup_warning () {
 	echo "WARNING: This script was created to setup Khenzii's working environment (NixOS configuration + some dotfiles)"
@@ -63,6 +65,45 @@ check_if_running_nixos() {
 	fi
 }
 
+select_config() {
+    # This could be usually done with recursion (invoking `select_config` again when choice is invalid),
+    # but from what I've read it's usually better to use loops for this kind of things in `bash` and `sh`. 
+    while true; do
+    	echo "Please select appropiate config type:"
+    
+    	echo ""
+    
+    	echo "1. desktop"
+    	echo "2. laptop"
+    
+    	echo ""
+    
+        echo "This decision will impact: disabling or enabling swap, installing dedicated drivers for the GPU, etc."
+    
+        echo ""
+    
+        echo "It can be changed later in $STATION_TYPE_PATH"
+    
+        echo ""
+    
+    	read -p "Choice (1/2): " response
+    
+        if [ "$response" == "1" ]; then
+            response="desktop"
+            break
+        elif [ "$response" == "2" ]; then
+            response="laptop"
+            break
+        else
+            echo "Invalid choice, try again.."
+
+            echo ""
+        fi
+    done
+
+	echo "You chose '$response' config type, proceeding.."
+}
+
 agreement=$1
 if [ "${agreement^^}" != "Y" ]; then
 	startup_warning
@@ -72,6 +113,10 @@ check_if_running_unix
 check_if_executed_by_root
 check_if_installed "git"
 check_if_installed "stow"
+
+select_config
+mkdir -p "$(dirname $STATION_TYPE_PATH)"
+echo $response > $STATION_TYPE_PATH
 
 echo "Running 'git clone'.."
 
@@ -98,8 +143,8 @@ sudo nixos-generate-config
 
 echo "Installing NixOS config.."
 
-sudo nixos-rebuild switch --flake ".#iusenixosbtw" --impure
-home-manager switch --flake ".#khenzii"
+KHENZII_STATION_TYPE=$(cat $STATION_TYPE_PATH) sudo -E nixos-rebuild switch --flake ".#iusenixosbtw" --impure
+KHENZII_STATION_TYPE=$(cat $STATION_TYPE_PATH) home-manager switch --flake ".#khenzii"
 
 echo "Successfully applied the whole config!"
 

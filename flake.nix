@@ -41,6 +41,7 @@
 	  hostname = "iusenixosbtw";
       username = "khenzii";
       system = "x86_64-linux";
+      stationType = builtins.getEnv "KHENZII_STATION_TYPE";
 	};
   in {
     nixosConfigurations.${shared-inputs.hostname} = nixpkgs.lib.nixosSystem {

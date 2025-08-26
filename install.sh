@@ -1,6 +1,6 @@
 #!/bin/sh
 
-STATION_TYPE_PATH="$SUDO_USER/scripts/rebuild-args/station-type"
+STATION_TYPE_PATH="/home/$SUDO_USER/scripts/rebuild-args/station-type"
 
 # In order to suppress this warning, run the script with first parameter set to "y" 
 startup_warning () {
@@ -132,8 +132,8 @@ echo "Creating placeholders.."
 # Those files are written to by `nwg-displays`, and imported from hyprland.conf.
 # During the installation phase, we create empty placeholders, so that mentioned
 # imports don't throw any "File not found" errors.
-touch $SUDO_USER/.config/hypr/monitors.conf
-touch $SUDO_USER/.config/hypr/workspaces.conf
+touch /home/$SUDO_USER/.config/hypr/monitors.conf
+touch /home/$SUDO_USER/.config/hypr/workspaces.conf
 
 # Ensure, that `/etc/nixos/hardware-configuration.nix` is present.
 echo "Generating NixOS config.."

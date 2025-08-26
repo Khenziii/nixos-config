@@ -2,8 +2,8 @@
   shared-config = {
     aliases = {
       rebuild = "rebuild-system && rebuild-home";
-      rebuild-home = "home-manager switch --flake '.#${inputs.username}' -b backup";
-      rebuild-system = "sudo nixos-rebuild switch --flake '.#${inputs.hostname}' --impure";
+      rebuild-home = "KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type) home-manager switch --flake '.#${inputs.username}' -b backup";
+      rebuild-system = "KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type) sudo -E nixos-rebuild switch --flake '.#${inputs.hostname}' --impure";
 	  trewa = "tree";
 	  fuck = "thefuck";
 	  bruh = "thefuck";

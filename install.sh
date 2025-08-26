@@ -125,7 +125,7 @@ cd nixos-config
 
 echo "Creating dotfiles symlinks.."
 
-stow --no-folding --adopt -t "/home/$SUDO_USER" dotfiles 
+sudo -u "$SUDO_USER" stow --no-folding --adopt -t "/home/$SUDO_USER" dotfiles 
 
 echo "Creating placeholders.."
 

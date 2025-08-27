@@ -55,6 +55,7 @@ in
     ./exiftool.nix
 	./sqlite-web.nix
 	./emacs.nix
+	./rocm-smi.nix
   ];
 
   home.packages = [

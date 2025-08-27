@@ -27,5 +27,8 @@
   services.udev.extraRules = ''
     SUBSYSTEM=="hidraw", MODE="0660", GROUP="input"
   '';
+
+  hardware.graphics.enable = true;
+  hardware.amdgpu.initrd.enable = true;
 }
 

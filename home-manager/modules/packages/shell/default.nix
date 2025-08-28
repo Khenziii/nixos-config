@@ -17,6 +17,7 @@
       make-bootable-dev = "makebootabledev";
       gdb = "gdb --core=core";
       emacs = "emacs -nw";
+      get-nix-path = "getnixpath";
 	};
     init-extra = ''
       killport() {
@@ -50,6 +51,15 @@
       rebuild-system() {
         KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
         sudo KHENZII_STATION_TYPE="$KHENZII_STATION_TYPE" nixos-rebuild switch --flake '.#${inputs.hostname}' --impure
+      }
+
+      getnixpath() {
+        if [ -z "$1" ]; then
+          echo "Usage: getnixpath <nix-package>"
+          return 1
+        fi
+
+        nix-build '<nixpkgs>' --attr $1
       }
     '';
   };

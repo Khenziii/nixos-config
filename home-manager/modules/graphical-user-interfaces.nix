@@ -1,20 +1,15 @@
 { ... }:
 
 {
-  qt.style.catppuccin = {
-    enable = true;
-	apply = true; # auto applies the theme
-  };
-
   gtk = {
     enable = true;
-	catppuccin = {
-	  enable = true;
-	  icon.enable = true;
-	};
+    # See: https://github.com/catppuccin/gtk/issues/262
+    # What a shame ;(
+	# catppuccin = {
+	#   enable = true;
+	#   icon.enable = true;
+	# };
   };
-
-  catppuccin.pointerCursor.enable = true;
 
   fonts.fontconfig.enable = true;
 

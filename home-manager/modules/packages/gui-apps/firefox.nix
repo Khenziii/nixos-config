@@ -8,7 +8,7 @@
 	  isDefault = true;
       # a list of extensions can be found here:
       # https://gitlab.com/rycee/nur-expressions/-/blob/master/pkgs/firefox-addons/addons.json
-      extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
+      extensions.packages = with inputs.firefox-addons.packages.${pkgs.system}; [
         bitwarden
 		duckduckgo-privacy-essentials
 		return-youtube-dislikes
@@ -26,8 +26,8 @@
         "signon.rememberSignons" = false;
 	  };
 	  search = {
-	    default = "DuckDuckGo";
-	    privateDefault = "DuckDuckGo";
+	    default = "ddg";
+	    privateDefault = "ddg";
 	  };
 	};
 	policies = {

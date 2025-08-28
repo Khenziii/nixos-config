@@ -4,7 +4,7 @@
   inputs = { 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     home-manager = { 
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 	catppuccin.url = "github:catppuccin/nix";
@@ -59,7 +59,7 @@
     homeConfigurations.${shared-inputs.username} = home-manager.lib.homeManagerConfiguration {
 	  pkgs = nixpkgs.legacyPackages.${shared-inputs.system};
       modules = [
-		catppuccin.homeManagerModules.catppuccin
+		catppuccin.homeModules.catppuccin
 		spicetify-nix.homeManagerModules.default
 		./shared/shared.nix
 	    ./home-manager/home.nix	

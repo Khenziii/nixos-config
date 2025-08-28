@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    gnome.gnome-clocks
+    gnome-clocks
   ];
 }
 

@@ -7,10 +7,6 @@
 
   programs.cava = {
     enable = true;
-	catppuccin = {
-	  enable = true;
-	  transparent = true;
-	};
   };
 }
 

@@ -3,10 +3,7 @@
 {
   programs.zsh = {
     enable = true;
-	syntaxHighlighting = {
-      enable = true;
-      catppuccin.enable = true;
-    };
+	syntaxHighlighting.enable = true;
 	shellAliases = shared-config.aliases;
     autosuggestion.enable = true;
     enableCompletion = true;
@@ -28,7 +25,7 @@
         sha256 = "1lzrn0n4fxfcgg65v0qhnj7wnybybqzs4adz7xsrkgmcsr0ii8b7";
       };
     }];
-    initExtra = ''
+    initContent = ''
       # Prompt
       PS1='%F{#cba6f7}%n%F{#b4befe}@%F{#cba6f7}%m %F{#b4befe}%~ %F{#a6e3a1}$ '
 

@@ -20,6 +20,8 @@ local function setup()
             "java",
             "kotlin",
             "c",
+            "bash",
+            "json",
 		},
 		auto_install = false,
         highlight = {

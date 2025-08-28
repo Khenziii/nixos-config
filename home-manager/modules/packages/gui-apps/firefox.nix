@@ -25,10 +25,10 @@
         "privacy.trackingprotection.enabled" = true;
         "signon.rememberSignons" = false;
 	  };
-	  search = {
-	    default = "ddg";
-	    privateDefault = "ddg";
-	  };
+	  # search = {
+	  #   default = "ddg";
+	  #   privateDefault = "ddg";
+	  # };
 	};
 	policies = {
 	  BlockAboutConfig = false;

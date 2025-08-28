@@ -59,7 +59,7 @@
           return 1
         fi
 
-        nix-build '<nixpkgs>' --attr $1
+        NIXPKGS_ALLOW_UNFREE=1 nix-build '<nixpkgs>' --attr $1 && rm result
       }
     '';
   };

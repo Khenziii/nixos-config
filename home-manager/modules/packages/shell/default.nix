@@ -2,9 +2,7 @@
   shared-config = {
     aliases = {
       rebuild = "rebuild-system && rebuild-home";
-      rebuild-home = "KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type) home-manager switch --flake '.#${inputs.username}' -b backup";
-      rebuild-system = "sudo KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type) nixos-rebuild switch --flake '.#${inputs.hostname}' --impure";
-	  trewa = "tree";
+   	  trewa = "tree";
 	  fuck = "thefuck";
 	  bruh = "thefuck";
 	  ripgrep = "rg";
@@ -42,6 +40,16 @@
         sudo dd if=$input_file of=$dev bs=4M status=progress
         sync
         sudo eject $dev
+      }
+
+      rebuild-home() {
+        KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
+        home-manager switch --flake '.#${inputs.username}' -b backup
+      }
+
+      rebuild-system() {
+        KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
+        sudo KHENZII_STATION_TYPE="$KHENZII_STATION_TYPE" nixos-rebuild switch --flake '.#${inputs.hostname}' --impure
       }
     '';
   };

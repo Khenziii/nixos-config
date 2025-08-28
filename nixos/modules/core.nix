@@ -1,4 +1,4 @@
-{ ... }:
+{ inputs, ... }:
 
 {
   nix.settings.experimental-features = [
@@ -11,12 +11,19 @@
   system.stateVersion = "23.11";
 
   # Create a 8GB swap file
-  swapDevices = [{
-    device = "/swapfile";
-    size = 1024 * 8; # Size is in MB
-  }];
+  swapDevices = if inputs.stationType == "laptop" then [
+    {
+      device = "/swapfile";
+      size = 1024 * 8;
+    }
+  ] else [
+    {
+      device = "/swapfile";
+      size = 1024 * 2;
+    }
+  ];
   boot.kernel.sysctl = {
-    "vm.swappiness" = 80;
+    "vm.swappiness" = if inputs.stationType == "laptop" then 80 else 20;
     "kernel.core_uses_pid" = 0;
     "kernel.core_pattern" = "./core";
   };
@@ -28,7 +35,7 @@
     SUBSYSTEM=="hidraw", MODE="0660", GROUP="input"
   '';
 
-  hardware.graphics.enable = true;
-  hardware.amdgpu.initrd.enable = true;
+  hardware.graphics.enable = if inputs.stationType == "desktop" then true else null;
+  hardware.amdgpu.initrd.enable = if inputs.stationType == "desktop" then true else null;
 }
 

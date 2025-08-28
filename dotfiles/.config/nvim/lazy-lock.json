@@ -12,6 +12,7 @@
   "image.nvim": { "branch": "master", "commit": "61c76515cfc3cdac8123ece9e9761b20c3dc1315" },
   "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
   "leetcode.nvim": { "branch": "master", "commit": "02fb2c855658ad6b60e43671f6b040c812181a1d" },
+  "lensline.nvim": { "branch": "main", "commit": "1dd55c72431e6ce1e16e85c6f9903fd65ff37d8c" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "ba9c2f0b93deb48d0a99ae0e8d8dd36f7cc286d6" },
   "mason.nvim": { "branch": "main", "commit": "e2f7f9044ec30067bc11800a9e266664b88cda22" },
   "nui.nvim": { "branch": "main", "commit": "61574ce6e60c815b0a0c4b5655b8486ba58089a1" },

@@ -23,6 +23,7 @@ local plugins = {
     "comment",
     "snacks",
     "render-markdown",
+    "lensline",
 }
 
 local function get_plugins(plugin_names)

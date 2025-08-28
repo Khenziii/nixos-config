@@ -56,6 +56,7 @@ in
 	./sqlite-web.nix
 	./emacs.nix
 	./rocm-smi.nix
+	./sysbench.nix
   ];
 
   home.packages = [

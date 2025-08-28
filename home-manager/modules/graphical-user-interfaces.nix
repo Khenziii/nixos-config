@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   gtk = {
@@ -9,6 +9,10 @@
 	#   enable = true;
 	#   icon.enable = true;
 	# };
+    theme = {
+      name = "Fluent-Dark";
+      package = pkgs.fluent-gtk-theme;
+    };
   };
 
   fonts.fontconfig.enable = true;

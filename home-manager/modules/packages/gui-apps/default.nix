@@ -57,6 +57,7 @@ in
 	# ./screenkey.nix | showmethekey is used instead.
     ./anki.nix
     ./thunderbird.nix
+    ./activitywatch.nix
   ];
 
   home.packages = [

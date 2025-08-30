@@ -58,6 +58,7 @@ in
     ./anki.nix
     ./thunderbird.nix
     ./activitywatch.nix
+    ./cpu-x.nix
   ];
 
   home.packages = [

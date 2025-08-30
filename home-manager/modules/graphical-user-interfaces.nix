@@ -30,6 +30,15 @@
       exec = "epiphany %U";
       icon = "org.gnome.Epiphany";
     };
+    "aw-qt" = {
+      name = "ActivityWatch";
+      genericName = "Time-tracking application";
+      exec = "${pkgs.writeShellScript "aw-qt-start-wrapper" ''
+        xdg-open http://localhost:5600
+        notify-send "Opened ActivityWatch stats viewer in the browser!"
+      ''}";
+      icon = "activitywatch";
+    };
   };
 }
 

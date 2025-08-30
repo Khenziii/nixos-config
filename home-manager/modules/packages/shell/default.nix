@@ -1,6 +1,8 @@
 { pkgs, inputs, ... }: let
   shared-config = {
     aliases = {
+      rebuild-home = "rebuildhome";
+      rebuild-system = "rebuildsystem";
       rebuild = "rebuild-system && rebuild-home";
    	  trewa = "tree";
 	  fuck = "thefuck";
@@ -18,6 +20,10 @@
       gdb = "gdb --core=core";
       emacs = "emacs -nw";
       get-nix-path = "getnixpath";
+      start-aw = "~/.config/activitywatch/scripts/start-aw.sh";
+      kill-aw = "~/.config/activitywatch/scripts/kill-aw.sh";
+      startaw = "start-aw";
+      killaw = "kill-aw";
 	};
     init-extra = ''
       killport() {
@@ -43,12 +49,12 @@
         sudo eject $dev
       }
 
-      rebuild-home() {
+      rebuildhome() {
         KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
         home-manager switch --flake '.#${inputs.username}' -b backup
       }
 
-      rebuild-system() {
+      rebuildsystem() {
         KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
         sudo KHENZII_STATION_TYPE="$KHENZII_STATION_TYPE" nixos-rebuild switch --flake '.#${inputs.hostname}' --impure
       }

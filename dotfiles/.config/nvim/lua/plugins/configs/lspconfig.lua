@@ -14,7 +14,7 @@ local function setup()
                 }
             }
         } },
-        { name = "tsserver", additional_settings = {} },
+        { name = "ts_ls", additional_settings = {} },
         { name = "nil_ls", additional_settings = {} },
         { name = "pylsp", additional_settings = {} },
         { name = "csharp_ls", additional_settings = {} },

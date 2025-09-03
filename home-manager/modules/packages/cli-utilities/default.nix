@@ -57,6 +57,7 @@ in
 	./emacs.nix
 	./rocm-smi.nix
 	./sysbench.nix
+	./alsa-utils.nix
   ];
 
   home.packages = [

@@ -65,14 +65,14 @@ local function setup()
 				"kind",
 			},
 		},
-		mapping = {
-  			["<ENTER>"] = cmp.mapping.confirm({ select = true }),
+        mapping = cmp.mapping.preset.insert({
+			["<ENTER>"] = cmp.mapping.confirm({ select = true }),
 			["<Up>"] = cmp.mapping.select_prev_item(select_opts),
 			["<Down>"] = cmp.mapping.select_next_item(select_opts),
 			["<C-k>"] = cmp.mapping.select_prev_item(select_opts),
 			["<C-j>"] = cmp.mapping.select_next_item(select_opts),
-            ["<LEADER>w"] = cmp.mapping.complete(),
-		},
+            [vim.g.mapleader .. "w"] = cmp.mapping.complete(),
+        }),
 	})
 
 end

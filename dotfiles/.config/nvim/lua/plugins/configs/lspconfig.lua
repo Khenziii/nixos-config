@@ -29,6 +29,7 @@ local function setup()
             filetypes = { "css", "scss", "less" },
         } },
         { name = "clangd", additional_settings = {} },
+        { name = "rust_analyzer", additional_settings = {} },
     }
 
     for _, server in ipairs(servers) do

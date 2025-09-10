@@ -18,6 +18,7 @@ local function setup()
             "eslint@4.10.0",
             "stylelint_lsp@2.0.0",
             -- "clangd@20.1.0", | This is installed via home manager's config, as we need the wrapped version of `clangd` to find certain headers.
+            "rust_analyzer@2025-08-25",
         },
     })
 end

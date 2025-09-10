@@ -22,6 +22,7 @@ local function setup()
             "c",
             "bash",
             "json",
+            "rust",
 		},
 		auto_install = false,
         highlight = {

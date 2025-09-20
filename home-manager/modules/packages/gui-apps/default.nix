@@ -59,6 +59,7 @@ in
     ./thunderbird.nix
     ./activitywatch.nix
     ./cpu-x.nix
+    ./libremines.nix
   ];
 
   home.packages = [

@@ -60,6 +60,7 @@ in
     ./activitywatch.nix
     ./cpu-x.nix
     ./libremines.nix
+    ./aisleriot.nix
   ];
 
   home.packages = [

@@ -10,6 +10,8 @@ local ignored_files_and_dirs = {
     "coverage",
     ".nx",
     ".idea",
+    "target",
+    "Cargo.lock",
 };
 
 -- telescope expects ignored files in this format:

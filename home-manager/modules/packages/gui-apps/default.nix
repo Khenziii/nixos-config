@@ -61,6 +61,7 @@ in
     ./cpu-x.nix
     ./libremines.nix
     ./aisleriot.nix
+    ./inkscape.nix
   ];
 
   home.packages = [

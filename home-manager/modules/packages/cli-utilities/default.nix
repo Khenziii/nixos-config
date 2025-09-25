@@ -58,6 +58,7 @@ in
 	./rocm-smi.nix
 	./sysbench.nix
 	./alsa-utils.nix
+	./mongodb-tools.nix
   ];
 
   home.packages = [

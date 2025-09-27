@@ -26,7 +26,7 @@ in
 	./wireshark.nix
 	./vscode.nix
 	./lutris.nix
-    # ./google-chrome.nix
+    ./google-chrome.nix
 	./slack.nix
 	./gedit.nix
 	# ./minecraft.nix | minecraft is temporarily marked as broken. 

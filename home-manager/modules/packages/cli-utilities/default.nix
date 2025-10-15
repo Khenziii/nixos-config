@@ -59,6 +59,7 @@ in
 	./sysbench.nix
 	./alsa-utils.nix
 	./mongodb-tools.nix
+	./scdl.nix
   ];
 
   home.packages = [

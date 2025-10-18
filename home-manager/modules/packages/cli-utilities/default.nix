@@ -60,6 +60,7 @@ in
 	./alsa-utils.nix
 	./mongodb-tools.nix
 	./scdl.nix
+	./inetutils.nix
   ];
 
   home.packages = [

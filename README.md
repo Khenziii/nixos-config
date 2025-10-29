@@ -41,6 +41,7 @@ Other than that, this config is also integrated with [catppuccin/nix](https://gi
 - SUPER + J - Fullscreen Active Window,
 - SUPER + RMB - Resize Active Window,
 - SUPER + LMB - Move Active Window,
+- SUPER + SPACE - Switch Keyboard Layout (between Polish and German),
 - CTRL + L - Change Workspace With Active Window (Direction: Right),
 - CTRL + H - Change Workspace With Active Window (Direction: Left),
 

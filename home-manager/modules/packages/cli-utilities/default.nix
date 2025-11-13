@@ -61,6 +61,7 @@ in
 	./mongodb-tools.nix
 	./scdl.nix
 	./inetutils.nix
+    ./github-linguist.nix
   ];
 
   home.packages = [

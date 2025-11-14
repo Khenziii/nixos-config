@@ -28,6 +28,9 @@
     initContent = ''
       # Prompt
       PS1='%F{#cba6f7}%n%F{#b4befe}@%F{#cba6f7}%m %F{#b4befe}%~ %F{#a6e3a1}$ '
+      if [[ -n $IN_NIX_SHELL ]]; then
+        PS1="%F{#b4befe}[󱄅] $PS1"
+      fi
 
       # Bind "'j" to exiting insert mode
       bindkey -M viins "'j" vi-cmd-mode

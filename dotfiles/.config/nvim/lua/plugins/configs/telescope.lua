@@ -13,6 +13,7 @@ local ignored_files_and_dirs = {
     "target",
     "Cargo.lock",
     "*.log",
+    "env",
 };
 
 -- telescope expects ignored files in this format:

@@ -24,6 +24,7 @@
       kill-aw = "~/.config/activitywatch/scripts/kill-aw.sh";
       startaw = "start-aw";
       killaw = "kill-aw";
+      docker-cleanup = "dockercleanup";
 	};
     init-extra = ''
       killport() {
@@ -66,6 +67,11 @@
         fi
 
         NIXPKGS_ALLOW_UNFREE=1 nix-build '<nixpkgs>' --attr $1 && rm result
+      }
+
+      dockercleanup() {
+        docker container prune -f
+        docker image prune -f
       }
     '';
   };

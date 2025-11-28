@@ -25,6 +25,8 @@
       startaw = "start-aw";
       killaw = "kill-aw";
       docker-cleanup = "dockercleanup";
+      mount-android = "mountandroid";
+      umount-android = "umountandroid";
 	};
     init-extra = ''
       killport() {
@@ -72,6 +74,24 @@
       dockercleanup() {
         docker container prune -f
         docker image prune -f
+      }
+
+      mountandroid() {
+        if [ -z "$1" ]; then
+          echo "Usage: mountandroid <mount point>"
+          return 1
+        fi
+
+        sudo jmtpfs $1
+      }
+
+      umountandroid() {
+        if [ -z "$1" ]; then
+          echo "Usage: umountandroid <mount point>"
+          return 1
+        fi
+
+        sudo fusermount -u $1
       }
     '';
   };

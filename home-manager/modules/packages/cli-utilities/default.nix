@@ -62,6 +62,7 @@ in
 	./scdl.nix
 	./inetutils.nix
     ./github-linguist.nix
+    ./jmtpfs.nix
   ];
 
   home.packages = [

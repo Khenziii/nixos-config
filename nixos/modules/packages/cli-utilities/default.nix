@@ -7,6 +7,7 @@
 	./stow.nix
 	./vim.nix
 	./docker.nix
+	./exfatprogs.nix
   ];
 }
 

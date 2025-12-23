@@ -25,4 +25,5 @@
     instructionFormat = (%an <%ae>) %s
 [push]
     autoSetupRemote = true
-
+[advice]
+	defaultBranchName = false

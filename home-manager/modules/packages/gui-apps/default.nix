@@ -62,6 +62,7 @@ in
     ./libremines.nix
     ./aisleriot.nix
     ./inkscape.nix
+    ./audacity.nix
   ];
 
   home.packages = [

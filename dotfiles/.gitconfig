@@ -1,7 +1,7 @@
 [user]
 	email = khenzii@khenzii.dev
 	name = Khenziii
-	signingkey = AB2FD4A1FDBB707D
+	signingkey = 71024D76746FDE06
 [http]
     postBuffer = 2097152000
     # don't close the connecition

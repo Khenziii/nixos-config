@@ -35,7 +35,7 @@ local function setup_vim_settings()
 
 	vim.opt.tabstop = 4
 	vim.opt.shiftwidth = 4
-	vim.opt.expandtab = true
+	vim.opt.expandtab = false
 
 	vim.diagnostic.config {
   		update_in_insert = true,

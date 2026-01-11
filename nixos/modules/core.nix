@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, lib, ... }:
 
 {
   nix.settings.experimental-features = [
@@ -35,7 +35,7 @@
     SUBSYSTEM=="hidraw", MODE="0660", GROUP="input"
   '';
 
-  hardware.graphics.enable = if inputs.stationType == "desktop" then true else null;
-  hardware.amdgpu.initrd.enable = if inputs.stationType == "desktop" then true else null;
+  hardware.graphics.enable = lib.mkIf (inputs.stationType == "desktop") true;
+  hardware.amdgpu.initrd.enable = lib.mkIf (inputs.stationType == "desktop") true;
 }
 

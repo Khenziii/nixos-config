@@ -108,6 +108,16 @@ local format_file = {
     },
 }
 
+local add_missing_typescript_imports = {
+    mode = "n",
+    key = "<LEADER>h",
+    command = ":lua vim.lsp.buf.code_action({ apply = true, context = { only = { 'source.addMissingImports.ts' } } })<CR>",
+    options = {
+        noremap = true,
+        silent = true,
+    },
+};
+
 local open_terminal = {
     mode = "n",
     key = "<LEADER>t",
@@ -140,6 +150,7 @@ return {
     show_full_error,
     open_in_browser,
     format_file,
+	add_missing_typescript_imports,
     open_terminal,
     unfocus_terminal,
 }

@@ -1,5 +1,19 @@
 { lib, ... }:
-
+let
+	scanPaths = path:
+		map(f: (path + "/${f}"))
+		(builtins.attrNames
+			(lib.attrsets.filterAttrs
+				(
+					name: _type:
+						(_type == "directory" && builtins.pathExists (path + "/${name}/default.nix")) # include directories
+						|| (
+							(name != "default.nix") # ignore default.nix
+							&& (lib.strings.hasSuffix ".nix" name) # include .nix files
+						)
+				)
+				(builtins.readDir path)));
+in
 {
-	imports = lib.my.scanPaths ./.; # Import all files in the directory, you might not like it
+	imports = scanPaths ./.; # Import all modules in the directory
 }

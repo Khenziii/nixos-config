@@ -1,13 +1,5 @@
-{ ... }:
+{ lib, ... }:
 
 {
-  imports = [
-    ./git.nix
-	./home-manager.nix
-	./stow.nix
-	./vim.nix
-	./docker.nix
-	./exfatprogs.nix
-  ];
+	imports = lib.my.scanPaths ./.; # Import all files in the directory, you might not like it
 }
-

@@ -1,11 +1,11 @@
 { ... }:
 
 {
-  imports = [
-    ./konsole.nix
-	./steam.nix
-	./gparted.nix
-	./virtualbox.nix
-  ];
+	imports = [
+		./konsole.nix
+		./steam.nix
+		./gparted.nix
+		./virt-manager.nix
+	];
 }
 

@@ -43,6 +43,17 @@
       system = "x86_64-linux";
       stationType = builtins.getEnv "KHENZII_STATION_TYPE";
 	};
+	home-manager-args = {
+		inputs = shared-inputs // home-manager-inputs;
+	};
+	nixos-args = {
+		inputs = shared-inputs // nixos-inputs;
+	};
+	shared-args = {
+		lib = nixpkgs.lib.extend (final: prev:
+			{ internal = import ./shared/lib { lib = final; }; } // home-manager.lib
+		);
+	};
   in {
     nixosConfigurations.${shared-inputs.hostname} = nixpkgs.lib.nixosSystem {
 	  system = shared-inputs.system;
@@ -53,7 +64,7 @@
 		./shared/shared.nix
 	    ./nixos/configuration.nix
 	  ];
-	  specialArgs = { inputs = shared-inputs // nixos-inputs; };
+	  specialArgs = shared-args // nixos-args;
     };
 
     homeConfigurations.${shared-inputs.username} = home-manager.lib.homeManagerConfiguration {
@@ -64,7 +75,7 @@
 		./shared/shared.nix
 	    ./home-manager/home.nix	
 	  ];
-	  extraSpecialArgs = { inputs = shared-inputs // home-manager-inputs; };
+	  extraSpecialArgs = shared-args // home-manager-args;
     };
   };
 }

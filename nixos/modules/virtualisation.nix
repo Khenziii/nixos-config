@@ -1,4 +1,4 @@
-{ pkgs, shared-inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
 	virtualisation = {
@@ -16,7 +16,7 @@
 
 				verbatimConfig = ''
 					s = []
-					user = "+${shared-inputs.username}"
+					user = "+${inputs.username}"
 				'';
 
 				vhostUserPackages = with pkgs; [
@@ -38,5 +38,5 @@
 		];
 	};
 
-	users.users.${shared-inputs.username}.extraGroups = [ "libvirtd" "qemu-libvirtd" ];
+	users.users.${inputs.username}.extraGroups = [ "libvirtd" "qemu-libvirtd" ];
 }

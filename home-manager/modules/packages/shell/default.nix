@@ -27,6 +27,7 @@
       docker-cleanup = "dockercleanup";
       mount-android = "mountandroid";
       umount-android = "umountandroid";
+	  git-ssh-remote = "gitsshremote";
 	};
     init-extra = ''
       killport() {
@@ -93,6 +94,28 @@
 
         sudo fusermount -u $1
       }
+
+	  # Converts git remote of the current repo to SSH.
+	  gitsshremote() {
+		REMOTE_HTTPS_URL=$(git remote get-url origin)
+		
+		if [[ $REMOTE_HTTPS_URL != https://* ]]; then
+		    echo "Origin remote is not HTTPS, nothing to do."
+			return 1
+		fi
+		
+		REMOTE_HOST=$(echo "$REMOTE_HTTPS_URL" | sed -E 's|https://([^/]+)/(.+)|\1|')
+		REMOTE_PATH=$(echo "$REMOTE_HTTPS_URL" | sed -E 's|https://([^/]+)/(.+)|\2|')
+		
+		REMOTE_PATH_WITHOUT_SUFFIX=$(echo "$REMOTE_PATH" | sed 's/\.git$//')
+		
+		REMOTE_SSH_URL="git@$REMOTE_HOST:$REMOTE_PATH_WITHOUT_SUFFIX.git"
+		
+		git remote set-url origin "$REMOTE_SSH_URL"
+		
+		echo "Origin remote changed to SSH:"
+		git remote -v
+	  }
     '';
   };
   

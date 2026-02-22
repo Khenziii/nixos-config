@@ -63,6 +63,7 @@ in
     ./aisleriot.nix
     ./inkscape.nix
     ./audacity.nix
+    ./filezilla.nix
   ];
 
   home.packages = [

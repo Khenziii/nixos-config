@@ -1,18 +1,15 @@
-{ ... }:
-
-{
-  imports = [
-    ./rofi.nix
-	./swww.nix
-	./swaynotificationcenter.nix
-	./hyprshot.nix
-    ./eww.nix	
-    ./hyprcursor.nix
-    ./nerdfonts.nix
-    ./swaylock.nix
-    ./breeze.nix
-    ./comic-relief.nix
-    ./showmethekey.nix
-  ];
+{...}: {
+	imports = [
+		./rofi.nix
+		./swww.nix
+		./swaynotificationcenter.nix
+		./hyprshot.nix
+		./eww.nix
+		./hyprcursor.nix
+		./nerdfonts.nix
+		./swaylock.nix
+		./breeze.nix
+		./comic-relief.nix
+		./showmethekey.nix
+	];
 }
-

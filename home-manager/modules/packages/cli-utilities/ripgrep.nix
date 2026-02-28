@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    ripgrep
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		ripgrep
+	];
 }
-

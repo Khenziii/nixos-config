@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    whatsapp-for-linux
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		whatsapp-for-linux
+	];
 }
-

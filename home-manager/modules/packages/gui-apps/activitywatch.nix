@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    activitywatch
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		activitywatch
+	];
 }
-

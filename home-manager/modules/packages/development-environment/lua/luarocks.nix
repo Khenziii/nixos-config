@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    lua54Packages.luarocks
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		lua54Packages.luarocks
+	];
 }
-

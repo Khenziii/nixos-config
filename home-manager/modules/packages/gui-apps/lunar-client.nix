@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    lunar-client
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		lunar-client
+	];
 }
-

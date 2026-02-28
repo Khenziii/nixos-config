@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    element-desktop
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		element-desktop
+	];
 }
-

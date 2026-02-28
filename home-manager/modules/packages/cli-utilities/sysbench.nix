@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    sysbench
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		sysbench
+	];
 }
-

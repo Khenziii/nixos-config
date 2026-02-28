@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    python312Packages.pip
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		python312Packages.pip
+	];
 }
-

@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    github-linguist
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		github-linguist
+	];
 }
-

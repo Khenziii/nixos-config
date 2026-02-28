@@ -1,8 +1,5 @@
-{ ... }:
-
-{
-  imports = [
-    ./shared
-  ];
+{...}: {
+	imports = [
+		./shared
+	];
 }
-

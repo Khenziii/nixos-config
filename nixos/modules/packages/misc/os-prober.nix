@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  environment.systemPackages = with pkgs; [
-    os-prober
-  ];
+{pkgs, ...}: {
+	environment.systemPackages = with pkgs; [
+		os-prober
+	];
 }
-

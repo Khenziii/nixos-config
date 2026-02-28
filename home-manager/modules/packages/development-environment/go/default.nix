@@ -1,8 +1,5 @@
-{ ... }:
-
-{
-  imports = [
-    ./go.nix
-  ];
+{...}: {
+	imports = [
+		./go.nix
+	];
 }
-

@@ -1,9 +1,6 @@
-{ ... }:
-
-{
-  imports = [
-    # ./cargo.nix | `rustup` also provides the `cargo` binary.
-    ./rustup.nix
-  ];
+{...}: {
+	imports = [
+		# ./cargo.nix | `rustup` also provides the `cargo` binary.
+		./rustup.nix
+	];
 }
-

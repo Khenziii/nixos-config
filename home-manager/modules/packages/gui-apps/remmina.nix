@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    remmina
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		remmina
+	];
 }
-

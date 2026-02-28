@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    rofi-wayland
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		rofi-wayland
+	];
 }
-

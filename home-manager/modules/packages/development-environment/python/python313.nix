@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    python313
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		python313
+	];
 }
-

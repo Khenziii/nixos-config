@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    whois
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		whois
+	];
 }
-

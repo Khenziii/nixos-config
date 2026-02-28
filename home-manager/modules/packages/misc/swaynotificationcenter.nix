@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    swaynotificationcenter
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		swaynotificationcenter
+	];
 }
-

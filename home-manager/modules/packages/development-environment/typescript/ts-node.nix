@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    nodePackages.ts-node
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		nodePackages.ts-node
+	];
 }
-

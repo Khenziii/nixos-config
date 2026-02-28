@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    nix-init 
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		nix-init
+	];
 }
-

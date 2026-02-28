@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    wireshark
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		wireshark
+	];
 }
-

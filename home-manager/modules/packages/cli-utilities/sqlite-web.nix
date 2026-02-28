@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    sqlite-web
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		sqlite-web
+	];
 }
-

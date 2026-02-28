@@ -1,8 +1,5 @@
-{ ... }:
-
-{
-  imports = [
-    ./alejandra.nix
-  ];
+{...}: {
+	imports = [
+		./alejandra.nix
+	];
 }
-

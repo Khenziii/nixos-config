@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    cpu-x
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		cpu-x
+	];
 }
-

@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    mongodb-tools
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		mongodb-tools
+	];
 }
-

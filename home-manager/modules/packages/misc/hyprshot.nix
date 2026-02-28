@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    hyprshot
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		hyprshot
+	];
 }
-

@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    superTuxKart
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		superTuxKart
+	];
 }
-

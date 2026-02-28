@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  environment.systemPackages = with pkgs; [
-    stow
-  ];
+{pkgs, ...}: {
+	environment.systemPackages = with pkgs; [
+		stow
+	];
 }
-

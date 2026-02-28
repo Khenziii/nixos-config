@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    filezilla
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		filezilla
+	];
 }
-

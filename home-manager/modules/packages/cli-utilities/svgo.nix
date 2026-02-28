@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    nodePackages.svgo
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		nodePackages.svgo
+	];
 }
-

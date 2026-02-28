@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    gitleaks 
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		gitleaks
+	];
 }
-

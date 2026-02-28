@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  environment.systemPackages = with pkgs; [
-    vim
-  ];
+{pkgs, ...}: {
+	environment.systemPackages = with pkgs; [
+		vim
+	];
 }
-

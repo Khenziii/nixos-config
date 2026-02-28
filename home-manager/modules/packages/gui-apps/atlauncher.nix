@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    atlauncher
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		atlauncher
+	];
 }
-

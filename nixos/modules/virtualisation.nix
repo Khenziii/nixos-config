@@ -1,6 +1,8 @@
-{ pkgs, inputs, ... }:
-
 {
+	pkgs,
+	inputs,
+	...
+}: {
 	virtualisation = {
 		libvirtd = {
 			enable = true;
@@ -38,5 +40,5 @@
 		];
 	};
 
-	users.users.${inputs.username}.extraGroups = [ "libvirtd" "qemu-libvirtd" ];
+	users.users.${inputs.username}.extraGroups = ["libvirtd" "qemu-libvirtd"];
 }

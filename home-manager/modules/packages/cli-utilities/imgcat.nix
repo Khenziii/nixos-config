@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    imgcat 
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		imgcat
+	];
 }
-

@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    kdePackages.kdenlive
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		kdePackages.kdenlive
+	];
 }
-

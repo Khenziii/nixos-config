@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    hashcat
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		hashcat
+	];
 }
-

@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    git-lfs
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		git-lfs
+	];
 }
-

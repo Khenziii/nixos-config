@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  environment.systemPackages = with pkgs; [
-    lxde.lxsession
-  ];
+{pkgs, ...}: {
+	environment.systemPackages = with pkgs; [
+		lxde.lxsession
+	];
 }
-

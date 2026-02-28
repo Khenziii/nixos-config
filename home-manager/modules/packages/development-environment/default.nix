@@ -11,6 +11,7 @@
 	./typescript
 	./rust
 	./go
+	./nix
 	./misc
   ];
 }

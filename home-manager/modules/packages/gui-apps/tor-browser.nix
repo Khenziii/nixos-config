@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    tor-browser
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		tor-browser
+	];
 }
-

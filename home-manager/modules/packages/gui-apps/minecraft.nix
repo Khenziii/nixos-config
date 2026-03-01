@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    minecraft
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		minecraft
+	];
 }
-

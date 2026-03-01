@@ -1,17 +1,15 @@
-{ ... }:
-
-{
-  imports = [
-    ./c
-	./c-sharp
-	./lua
-	./python
-	./java
-	./javascript
-	./typescript
-	./rust
-	./go
-	./misc
-  ];
+{...}: {
+	imports = [
+		./c
+		./c-sharp
+		./lua
+		./python
+		./java
+		./javascript
+		./typescript
+		./rust
+		./go
+		./nix
+		./misc
+	];
 }
-

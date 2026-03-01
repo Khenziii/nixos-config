@@ -1,11 +1,8 @@
-{ ... }:
-
-{
-  imports = [
-    ./gui-apps
-    ./cli-utilities
-    ./misc
-    ./development-environment
-  ];
+{...}: {
+	imports = [
+		./gui-apps
+		./cli-utilities
+		./misc
+		./development-environment
+	];
 }
-

@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
 	imports = [
 		./bluetooth.nix
 		./boot.nix
@@ -18,4 +16,3 @@
 		./packages
 	];
 }
-

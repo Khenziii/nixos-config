@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    screenkey
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		screenkey
+	];
 }
-

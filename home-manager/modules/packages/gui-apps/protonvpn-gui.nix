@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    protonvpn-gui 
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		protonvpn-gui
+	];
 }
-

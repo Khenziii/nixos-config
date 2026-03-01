@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    slack
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		slack
+	];
 }
-

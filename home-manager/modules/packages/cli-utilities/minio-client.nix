@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    minio-client
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		minio-client
+	];
 }
-

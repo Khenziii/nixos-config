@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    inkscape
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		inkscape
+	];
 }
-

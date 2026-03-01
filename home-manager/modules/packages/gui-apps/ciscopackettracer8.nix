@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    ciscoPacketTracer8
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		ciscoPacketTracer8
+	];
 }
-

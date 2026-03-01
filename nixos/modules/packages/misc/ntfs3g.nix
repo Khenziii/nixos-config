@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  environment.systemPackages = with pkgs; [
-    ntfs3g
-  ];
+{pkgs, ...}: {
+	environment.systemPackages = with pkgs; [
+		ntfs3g
+	];
 }
-

@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    cpulimit
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		cpulimit
+	];
 }
-

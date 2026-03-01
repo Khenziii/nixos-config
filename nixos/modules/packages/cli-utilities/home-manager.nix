@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  environment.systemPackages = with pkgs; [
-    home-manager
-  ];
+{pkgs, ...}: {
+	environment.systemPackages = with pkgs; [
+		home-manager
+	];
 }
-

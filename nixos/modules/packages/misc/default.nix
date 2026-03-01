@@ -1,11 +1,8 @@
-{ ... }:
-
-{
-  imports = [
-    ./gnupg.nix
-	./os-prober.nix
-	./ntfs3g.nix
-	./lxsession.nix
-  ];
+{...}: {
+	imports = [
+		./gnupg.nix
+		./os-prober.nix
+		./ntfs3g.nix
+		./lxsession.nix
+	];
 }
-

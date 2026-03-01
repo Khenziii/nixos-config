@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    libremines
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		libremines
+	];
 }
-

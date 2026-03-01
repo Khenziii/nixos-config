@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    maven
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		maven
+	];
 }
-

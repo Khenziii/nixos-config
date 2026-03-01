@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    gnumake
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		gnumake
+	];
 }
-

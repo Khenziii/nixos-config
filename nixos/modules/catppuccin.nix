@@ -1,10 +1,7 @@
-{ ... }:
-
-{
-  catppuccin = {
-    enable = true;
-    flavor = "mocha";
-    accent = "mauve";
-  }; 
+{...}: {
+	catppuccin = {
+		enable = true;
+		flavor = "mocha";
+		accent = "mauve";
+	};
 }
-

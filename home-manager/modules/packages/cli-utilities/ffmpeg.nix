@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    ffmpeg
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		ffmpeg
+	];
 }
-

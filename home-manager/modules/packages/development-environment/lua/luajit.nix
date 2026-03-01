@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    luajit
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		luajit
+	];
 }
-

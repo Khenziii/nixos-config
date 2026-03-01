@@ -1,5 +1,5 @@
 {...}: {
 	imports = [
-		./go.nix
+		./alejandra.nix
 	];
 }

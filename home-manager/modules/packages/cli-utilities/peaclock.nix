@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    peaclock
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		peaclock
+	];
 }
-

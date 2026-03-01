@@ -1,12 +1,9 @@
-{ pkgs, ... }:
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		btop
+	];
 
-{
-  home.packages = with pkgs; [
-    btop
-  ];
-
-  programs.btop = {
-    enable = true;
-  };
+	programs.btop = {
+		enable = true;
+	};
 }
-

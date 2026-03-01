@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    luaformatter
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		luaformatter
+	];
 }
-

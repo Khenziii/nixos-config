@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    audacity
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		audacity
+	];
 }
-

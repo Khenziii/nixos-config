@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    via
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		via
+	];
 }
-

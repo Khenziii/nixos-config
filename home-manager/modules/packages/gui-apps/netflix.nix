@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    netflix
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		netflix
+	];
 }
-

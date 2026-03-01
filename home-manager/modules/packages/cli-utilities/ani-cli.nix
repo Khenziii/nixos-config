@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    ani-cli
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		ani-cli
+	];
 }
-

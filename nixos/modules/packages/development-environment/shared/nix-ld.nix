@@ -1,11 +1,8 @@
-{ pkgs, ... }:
-
-{
-  programs.nix-ld = { 
-    enable = true;
-    libraries = with pkgs; [
-      aapt
-    ];
-  };
+{pkgs, ...}: {
+	programs.nix-ld = {
+		enable = true;
+		libraries = with pkgs; [
+			aapt
+		];
+	};
 }
-

@@ -1,9 +1,6 @@
-{ ... }:
-
-{
-  imports = [
-	../shared/shared.nix
-	./modules
-  ];
+{...}: {
+	imports = [
+		../shared/shared.nix
+		./modules
+	];
 }
-

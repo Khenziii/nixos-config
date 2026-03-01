@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    fontforge-gtk
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		fontforge-gtk
+	];
 }
-

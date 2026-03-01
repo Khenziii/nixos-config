@@ -1,8 +1,5 @@
-{ inputs, ... }:
-
-{
-  home.packages = [
-    inputs.mnta.packages.${inputs.system}.default
-  ];
+{inputs, ...}: {
+	home.packages = [
+		inputs.mnta.packages.${inputs.system}.default
+	];
 }
-

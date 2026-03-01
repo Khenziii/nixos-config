@@ -1,6 +1,4 @@
-{ ... }:
-
-{
+{...}: {
 	imports = [
 		./konsole.nix
 		./steam.nix
@@ -8,4 +6,3 @@
 		./virt-manager.nix
 	];
 }
-

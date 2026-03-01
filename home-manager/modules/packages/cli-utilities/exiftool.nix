@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    exiftool
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		exiftool
+	];
 }
-

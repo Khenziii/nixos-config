@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    rocmPackages.rocm-smi
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		rocmPackages.rocm-smi
+	];
 }
-

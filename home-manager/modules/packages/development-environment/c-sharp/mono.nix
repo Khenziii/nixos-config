@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    mono
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		mono
+	];
 }
-

@@ -1,12 +1,9 @@
-{ pkgs, ... }:
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		swaylock
+	];
 
-{
-  home.packages = with pkgs; [
-    swaylock
-  ];
-
-  programs.swaylock = {
-    enable = true;
-  };
+	programs.swaylock = {
+		enable = true;
+	};
 }
-

@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  environment.systemPackages = with pkgs; [
-    exfatprogs
-  ];
+{pkgs, ...}: {
+	environment.systemPackages = with pkgs; [
+		exfatprogs
+	];
 }
-

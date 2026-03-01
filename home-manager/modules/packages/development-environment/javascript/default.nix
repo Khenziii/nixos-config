@@ -1,9 +1,6 @@
-{ ... }:
-
-{
-  imports = [
-    ./nodejs_22.nix
-    ./yarn-berry.nix
-  ];
+{...}: {
+	imports = [
+		./nodejs_22.nix
+		./yarn-berry.nix
+	];
 }
-

@@ -1,12 +1,9 @@
-{ pkgs, ... }:
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		fzf
+	];
 
-{
-  home.packages = with pkgs; [
-    fzf
-  ];
-  
-  programs.fzf = {
-    enable = true;
-  };
+	programs.fzf = {
+		enable = true;
+	};
 }
-

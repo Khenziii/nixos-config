@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    gradle 
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		gradle
+	];
 }
-

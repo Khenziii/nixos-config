@@ -1,7 +1,5 @@
-{ lib, ... }: let
+{lib, ...}: let
 	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
-in
-
-{
+in {
 	imports = currentDirectoryPaths;
 }

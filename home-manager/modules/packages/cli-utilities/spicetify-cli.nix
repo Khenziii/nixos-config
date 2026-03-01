@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    spicetify-cli
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		spicetify-cli
+	];
 }
-

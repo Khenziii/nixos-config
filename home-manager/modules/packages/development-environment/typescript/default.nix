@@ -1,9 +1,6 @@
-{ ... }:
-
-{
-  imports = [
-    ./ts-node.nix
-    ./typescript.nix
-  ];
+{...}: {
+	imports = [
+		./ts-node.nix
+		./typescript.nix
+	];
 }
-

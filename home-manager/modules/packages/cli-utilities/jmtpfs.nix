@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    jmtpfs
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		jmtpfs
+	];
 }
-

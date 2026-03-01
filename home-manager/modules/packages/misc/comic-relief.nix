@@ -1,8 +1,5 @@
-{ pkgs, ... }:
-
-{
-  home.packages = with pkgs; [
-    comic-relief
-  ];
+{pkgs, ...}: {
+	home.packages = with pkgs; [
+		comic-relief
+	];
 }
-

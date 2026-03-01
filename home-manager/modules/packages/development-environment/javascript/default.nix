@@ -1,6 +1,5 @@
-{...}: {
-	imports = [
-		./nodejs_22.nix
-		./yarn-berry.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

@@ -1,7 +1,5 @@
-{...}: {
-	imports = [
-		./gdb.nix
-		./google-cloud-sdk.nix
-		./gnumake.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

@@ -1,15 +1,5 @@
-{...}: {
-	imports = [
-		./c
-		./c-sharp
-		./lua
-		./python
-		./java
-		./javascript
-		./typescript
-		./rust
-		./go
-		./nix
-		./misc
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

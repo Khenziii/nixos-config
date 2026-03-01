@@ -1,9 +1,5 @@
-{...}: {
-	imports = [
-		./gcc.nix
-		./clang.nix
-		./cmake.nix
-		./clang-tools.nix
-		./bear.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

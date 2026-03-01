@@ -1,7 +1,5 @@
-{...}: {
-	imports = [
-		./python313.nix
-		./pip312.nix
-		./poetry.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

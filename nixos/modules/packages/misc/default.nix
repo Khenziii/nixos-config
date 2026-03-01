@@ -1,8 +1,5 @@
-{...}: {
-	imports = [
-		./gnupg.nix
-		./os-prober.nix
-		./ntfs3g.nix
-		./lxsession.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

@@ -1,15 +1,5 @@
-{...}: {
-	imports = [
-		./rofi.nix
-		./swww.nix
-		./swaynotificationcenter.nix
-		./hyprshot.nix
-		./eww.nix
-		./hyprcursor.nix
-		./nerdfonts.nix
-		./swaylock.nix
-		./breeze.nix
-		./comic-relief.nix
-		./showmethekey.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

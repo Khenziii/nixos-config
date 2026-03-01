@@ -1,9 +1,5 @@
-{...}: {
-	imports = [
-		./shell
-		./development-environment
-		./cli-utilities
-		./gui-apps
-		./misc
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

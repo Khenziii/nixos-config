@@ -1,8 +1,5 @@
-{...}: {
-	imports = [
-		./konsole.nix
-		./steam.nix
-		./gparted.nix
-		./virt-manager.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

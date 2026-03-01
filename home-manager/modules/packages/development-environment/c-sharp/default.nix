@@ -1,6 +1,5 @@
-{...}: {
-	imports = [
-		./mono.nix
-		./dotnet-sdk_8.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

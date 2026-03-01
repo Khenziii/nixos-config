@@ -1,9 +1,5 @@
-{...}: {
-	imports = [
-		./zulu.nix
-		./gradle.nix
-		./android-studio.nix
-		./maven.nix
-		./android-tools.nix
-	];
+{lib, ...}: let
+	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
+in {
+	imports = currentDirectoryPaths;
 }

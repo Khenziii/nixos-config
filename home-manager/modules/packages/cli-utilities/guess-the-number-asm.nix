@@ -15,43 +15,43 @@ stdenv.mkDerivation {
 		};
 
 	installPhase = ''
-		   mkdir -p $out/bin
+		mkdir -p $out/bin
 
-		   # Add a debug script if attempted to install on an OS different from Linux.
-		   os_name=$(uname -s)
+		# Add a debug script if attempted to install on an OS different from Linux.
+		os_name=$(uname -s)
 		if [ "$os_name" != "Linux" ]; then
-		  echo "
-		       #!/bin/sh
+			echo "
+				#!/bin/sh
 
-		       echo 'This program uses the Linux kernel! It will NOT work on $os_name.'
-		       exit 1
-		     " > guess-the-number-asm
+				echo 'This program uses the Linux kernel! It will NOT work on $os_name.'
+				exit 1
+			" > guess-the-number-asm
 		fi
 
-		   # Add a debug script if attempted to install
-		   # on a CPU architecture different than x86_64.
-		   cpu_architecture=$(uname -m)
-		   if [ "$cpu_architecture" != "x86_64" ]; then
-		  echo "
-		       #!/bin/sh
+		# Add a debug script if attempted to install
+		# on a CPU architecture different than x86_64.
+		cpu_architecture=$(uname -m)
+		if [ "$cpu_architecture" != "x86_64" ]; then
+			echo "
+				#!/bin/sh
 
-		       echo 'This program was made for the x86_64 CPU architecture. You are using: $cpu_architecture.'
-		       exit 1
-		     " > guess-the-number-asm
-		   fi
+				echo 'This program was made for the x86_64 CPU architecture. You are using: $cpu_architecture.'
+				exit 1
+			" > guess-the-number-asm
+		fi
 
-		   if [ -f "guess-the-number-asm" ]; then
-		     chmod +x guess-the-number-asm
-		     mv guess-the-number-asm $out/bin
+		if [ -f "guess-the-number-asm" ]; then
+			chmod +x guess-the-number-asm
+			mv guess-the-number-asm $out/bin
 
-		     exit 0
-		   fi
+			exit 0
+		fi
 
-		   as guess-the-number.s -o guess-the-number.o
-		   ld guess-the-number.o -o guess-the-number
+		as guess-the-number.s -o guess-the-number.o
+		ld guess-the-number.o -o guess-the-number
 
-		   mv guess-the-number guess-the-number-asm
-		   mv guess-the-number-asm $out/bin
+		mv guess-the-number guess-the-number-asm
+		mv guess-the-number-asm $out/bin
 	'';
 
 	meta = {

@@ -35,7 +35,7 @@
 				# Prompt
 				PS1='%F{#cba6f7}%n%F{#b4befe}@%F{#cba6f7}%m %F{#b4befe}%~ %F{#a6e3a1}$ '
 				if [[ -n $IN_NIX_SHELL ]]; then
-				  PS1="%F{#b4befe}[󱄅] $PS1"
+					PS1="%F{#b4befe}[󱄅] $PS1"
 				fi
 
 				# Bind "'j" to exiting insert mode
@@ -45,10 +45,10 @@
 
 				# Auto-run `nix-shell` if `shell.nix` is available after a directory change
 				function auto_nix_shell {
-				  if [[ -f ./shell.nix ]]; then
-				      echo '"shell.nix" spotted, running `nix-shell`..'
-				      nix-shell
-				  fi
+					if [[ -f ./shell.nix ]]; then
+						echo '"shell.nix" spotted, running `nix-shell`..'
+						nix-shell
+					fi
 				}
 
 				chpwd_functions+=("auto_nix_shell")
@@ -57,19 +57,19 @@
 				# https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
 				# Change cursor shape for different vi modes.
 				function zle-keymap-select {
-				  if [[ $KEYMAP == vicmd ]] ||
-				    [[ $1 = 'block' ]]; then
-				    echo -ne '\e[1 q'
-				  elif [[ $KEYMAP == main ]] ||
-				    [[ $KEYMAP == viins ]] ||
-				    [[ $KEYMAP = "" ]] ||
-				    [[ $1 = "beam" ]]; then
-				    echo -ne "\e[5 q"
-				  fi
+					if [[ $KEYMAP == vicmd ]] ||
+						[[ $1 = 'block' ]]; then
+						echo -ne '\e[1 q'
+					elif [[ $KEYMAP == main ]] ||
+						[[ $KEYMAP == viins ]] ||
+						[[ $KEYMAP = "" ]] ||
+						[[ $1 = "beam" ]]; then
+						echo -ne "\e[5 q"
+					fi
 				}
 				zle -N zle-keymap-select
 				zle-line-init() {
-				  echo -ne "\e[5 q"
+					echo -ne "\e[5 q"
 				}
 				zle -N zle-line-init
 				echo -ne '\e[5 q' # Use beam shape cursor on startup.

@@ -24,12 +24,12 @@ stdenv.mkDerivation {
 
 		mv ./sowon $out/bin
 		echo "
-		    [Desktop Entry]
-		    Name=sowon
-		    GenericName=Starting Soon Timer for Tsoding Streams
-		    Keywords=clock;timer;countdown
-		    Exec=sowon
-		    Type=Application
+			[Desktop Entry]
+			Name=sowon
+			GenericName=Starting Soon Timer for Tsoding Streams
+			Keywords=clock;timer;countdown
+			Exec=sowon
+			Type=Application
 		" > $out/share/applications/sowon.desktop
 	'';
 

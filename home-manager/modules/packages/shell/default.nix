@@ -34,92 +34,92 @@
 			git-ssh-remote = "gitsshremote";
 		};
 		init-extra = ''
-			    killport() {
-			      if [ -z "$1" ]; then
-			        echo "Usage: killport <port>"
-			        return 1
-			      fi
-			      kill $(lsof -t -i :"$1")
-			    }
+			killport() {
+				if [ -z "$1" ]; then
+			    	echo "Usage: killport <port>"
+					return 1
+  				fi
+  				kill $(lsof -t -i :"$1")
+			}
 
-			    makebootabledev() {
-			      if [[ -z "$1" || -z "$2" ]]; then
-			        echo "Usage: makebootabledev <path-to-iso-file> <path-to-dev>"
-			        return 1
-			      fi
+			makebootabledev() {
+				if [[ -z "$1" || -z "$2" ]]; then
+					echo "Usage: makebootabledev <path-to-iso-file> <path-to-dev>"
+					return 1
+				fi
 
-			      input_file="$1"
-			      dev="$2"
+				input_file="$1"
+				dev="$2"
 
-			      sudo umount $dev
-			      sudo dd if=$input_file of=$dev bs=4M status=progress
-			      sync
-			      sudo eject $dev
-			    }
+				sudo umount $dev
+				sudo dd if=$input_file of=$dev bs=4M status=progress
+				sync
+				sudo eject $dev
+			}
 
-			    rebuildhome() {
-			      KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
-			      home-manager switch --flake '.#${inputs.username}' -b backup
-			    }
+			rebuildhome() {
+				KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
+  				home-manager switch --flake '.#${inputs.username}' -b backup
+			}
 
-			    rebuildsystem() {
-			      KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
-			      sudo KHENZII_STATION_TYPE="$KHENZII_STATION_TYPE" nixos-rebuild switch --flake '.#${inputs.hostname}' --impure
-			    }
+			rebuildsystem() {
+				KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
+				sudo KHENZII_STATION_TYPE="$KHENZII_STATION_TYPE" nixos-rebuild switch --flake '.#${inputs.hostname}' --impure
+			}
 
-			    getnixpath() {
-			      if [ -z "$1" ]; then
-			        echo "Usage: getnixpath <nix-package>"
-			        return 1
-			      fi
+			getnixpath() {
+				if [ -z "$1" ]; then
+					echo "Usage: getnixpath <nix-package>"
+					return 1
+				fi
 
-			      NIXPKGS_ALLOW_UNFREE=1 nix-build '<nixpkgs>' --attr $1 && rm result
-			    }
+				NIXPKGS_ALLOW_UNFREE=1 nix-build '<nixpkgs>' --attr $1 && rm result
+			}
 
-			    dockercleanup() {
-			      docker container prune -f
-			      docker image prune -f
-			    }
+			dockercleanup() {
+				docker container prune -f
+				docker image prune -f
+			}
 
-			    mountandroid() {
-			      if [ -z "$1" ]; then
-			        echo "Usage: mountandroid <mount point>"
-			        return 1
-			      fi
+			mountandroid() {
+				if [ -z "$1" ]; then
+					echo "Usage: mountandroid <mount point>"
+					return 1
+				fi
 
-			      sudo jmtpfs $1
-			    }
+				sudo jmtpfs $1
+			}
 
-			    umountandroid() {
-			      if [ -z "$1" ]; then
-			        echo "Usage: umountandroid <mount point>"
-			        return 1
-			      fi
+			umountandroid() {
+				if [ -z "$1" ]; then
+					echo "Usage: umountandroid <mount point>"
+					return 1
+				fi
 
-			      sudo fusermount -u $1
-			    }
+				sudo fusermount -u $1
+			}
 
-			 # Converts git remote of the current repo to SSH.
-			 gitsshremote() {
-			REMOTE_HTTPS_URL=$(git remote get-url origin)
+			# Converts git remote of the current repo to SSH.
+			gitsshremote() {
+				REMOTE_HTTPS_URL=$(git remote get-url origin)
 
-			if [[ $REMOTE_HTTPS_URL != https://* ]]; then
-			    echo "Origin remote is not HTTPS, nothing to do."
-				return 1
-			fi
+				if [[ $REMOTE_HTTPS_URL != https://* ]]; then
+					echo "Origin remote is not HTTPS, nothing to do."
+					return 1
+				fi
 
-			REMOTE_HOST=$(echo "$REMOTE_HTTPS_URL" | sed -E 's|https://([^/]+)/(.+)|\1|')
-			REMOTE_PATH=$(echo "$REMOTE_HTTPS_URL" | sed -E 's|https://([^/]+)/(.+)|\2|')
+				REMOTE_HOST=$(echo "$REMOTE_HTTPS_URL" | sed -E 's|https://([^/]+)/(.+)|\1|')
+				REMOTE_PATH=$(echo "$REMOTE_HTTPS_URL" | sed -E 's|https://([^/]+)/(.+)|\2|')
 
-			REMOTE_PATH_WITHOUT_SUFFIX=$(echo "$REMOTE_PATH" | sed 's/\.git$//')
+				REMOTE_PATH_WITHOUT_SUFFIX=$(echo "$REMOTE_PATH" | sed 's/\.git$//')
 
-			REMOTE_SSH_URL="git@$REMOTE_HOST:$REMOTE_PATH_WITHOUT_SUFFIX.git"
+				REMOTE_SSH_URL="git@$REMOTE_HOST:$REMOTE_PATH_WITHOUT_SUFFIX.git"
 
-			git remote set-url origin "$REMOTE_SSH_URL"
+				git remote set-url origin "$REMOTE_SSH_URL"
 
-			echo "Origin remote changed to SSH:"
-			git remote -v
-			 }
+				echo "Origin remote changed to SSH:"
+				git remote -v
+			}
 		'';
 	};
 

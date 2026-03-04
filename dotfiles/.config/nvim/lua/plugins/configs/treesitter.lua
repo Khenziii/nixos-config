@@ -23,6 +23,7 @@ local function setup()
             "bash",
             "json",
             "rust",
+			"go",
 		},
 		auto_install = false,
         highlight = {

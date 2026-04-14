@@ -4,4 +4,6 @@
 		openFirewall = true;
 		vncListenAddr = "0.0.0.0";
 	};
+
+	services.tailscale.enable = true;
 }

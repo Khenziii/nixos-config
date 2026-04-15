@@ -1,4 +1,5 @@
 {inputs, ...}: {
+	services.logmein-hamachi.enable = true;
 	networking.hostName = inputs.hostname;
 	# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 

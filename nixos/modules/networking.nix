@@ -10,8 +10,9 @@
 	# Enable networking
 	networking.networkmanager.enable = true;
 
-	networking.firewall.allowedTCPPorts = [8080 8000];
+	networking.firewall.allowedTCPPorts = [8080 8000 3979];
 	networking.firewall.allowedUDPPorts = [
 		34197 # Factorio.
+		3979 # OpenTTD.
 	];
 }

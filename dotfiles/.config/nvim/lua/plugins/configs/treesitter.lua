@@ -24,6 +24,7 @@ local function setup()
             "json",
             "rust",
 			"go",
+			"templ",
 		},
 		auto_install = false,
         highlight = {

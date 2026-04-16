@@ -31,6 +31,7 @@ local function setup()
         { name = "clangd", additional_settings = {} },
         { name = "rust_analyzer", additional_settings = {} },
         { name = "gopls", additional_settings = {} },
+        { name = "templ", additional_settings = {} },
     }
 
     for _, server in ipairs(servers) do

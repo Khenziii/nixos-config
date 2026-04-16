@@ -35,6 +35,7 @@ local function setup()
 			-- "clangd@20.1.0", | This is installed via home manager's config, as we need the wrapped version of `clangd` to find certain headers.
 			"rust_analyzer@2025-08-25",
 			"gopls@v0.21.1",
+			"templ@v0.3.1001",
 		},
 	})
 end

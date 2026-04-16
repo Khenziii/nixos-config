@@ -6,4 +6,6 @@
 	};
 
 	services.tailscale.enable = true;
+
+	services.zerotierone.enable = true;
 }

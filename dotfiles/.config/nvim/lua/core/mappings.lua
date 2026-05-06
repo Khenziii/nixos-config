@@ -59,9 +59,9 @@ local telescope_find_files = {
 }
 
 local open_tab = {
-    mode = "n",
-    key = "<LEADER>n",
-    command = ":$tabnew<CR>",
+	mode = "n",
+	key = "<LEADER>n",
+	command = ":$tabnew<CR>",
 	options = {
 		noremap = true,
 		silent = true,
@@ -69,9 +69,9 @@ local open_tab = {
 }
 
 local close_tab = {
-    mode = "n",
-    key = "<LEADER>x",
-    command = ":tabclose<CR>",
+	mode = "n",
+	key = "<LEADER>x",
+	command = ":tabclose<CR>",
 	options = {
 		noremap = true,
 		silent = true,
@@ -79,9 +79,9 @@ local close_tab = {
 }
 
 local show_full_error = {
-    mode = "n",
-    key = "<LEADER>z",
-    command = ":lua vim.diagnostic.open_float()<CR>",
+	mode = "n",
+	key = "<LEADER>z",
+	command = ":lua vim.diagnostic.open_float()<CR>",
 	options = {
 		noremap = true,
 		silent = true,
@@ -89,63 +89,73 @@ local show_full_error = {
 }
 
 local open_in_browser = {
-    mode = "n",
-    key = "<LEADER>v",
-    command = ":lua Snacks.gitbrowse()<CR>",
-    options = {
-        noremap = true,
-        silent = true,
-    },
+	mode = "n",
+	key = "<LEADER>v",
+	command = ":lua Snacks.gitbrowse()<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
 }
 
 local format_file = {
-    mode = "n",
-    key = "<LEADER>g",
-    command = ":lua vim.lsp.buf.format()<CR>",
-    options = {
-        noremap = true,
-        silent = true,
-    },
+	mode = "n",
+	key = "<LEADER>g",
+	command = ":lua vim.lsp.buf.format()<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
 }
 
 local add_missing_typescript_imports = {
-    mode = "n",
-    key = "<LEADER>h",
-    command = ":lua vim.lsp.buf.code_action({ apply = true, context = { only = { 'source.addMissingImports.ts' } } })<CR>",
-    options = {
-        noremap = true,
-        silent = true,
-    },
+	mode = "n",
+	key = "<LEADER>h",
+	command = ":lua vim.lsp.buf.code_action({ apply = true, context = { only = { 'source.addMissingImports.ts' } } })<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
 };
 
 local open_terminal = {
-    mode = "n",
-    key = "<LEADER>t",
-    command = ":bot term<CR>",
-    options = {
-        noremap = true,
-        silent = true,
-    },
+	mode = "n",
+	key = "<LEADER>t",
+	command = ":bot term<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
 }
 
 local unfocus_terminal = {
-    mode = "t",
-    key = "<LEADER>r",
-    command = "<C-\\><C-n>",
-    options = {
-        noremap = true,
-        silent = true,
-    },
+	mode = "t",
+	key = "<LEADER>r",
+	command = "<C-\\><C-n>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
 }
 
 local hop = {
-    mode = "n",
-    key = "<LEADER>e",
-    command = ":HopWord<CR>",
-    options = {
-        noremap = true,
-        silent = true,
-    },
+	mode = "n",
+	key = "<LEADER>e",
+	command = ":HopWord<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
+};
+
+local retab = {
+	mode = "n",
+	key = "<LEADER>w",
+	command = ":retab!<CR>",
+	options = {
+		noremap = true,
+		silent = true,
+	},
 };
 
 return {
@@ -161,8 +171,9 @@ return {
 	open_in_browser,
 	format_file,
 	add_missing_typescript_imports,
-    open_terminal,
-    unfocus_terminal,
+	open_terminal,
+	unfocus_terminal,
 	hop,
+	retab,
 }
 

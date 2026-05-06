@@ -38,7 +38,7 @@ local function setup_vim_settings()
 	vim.opt.expandtab = false
 
 	vim.diagnostic.config {
-  		update_in_insert = true,
+		update_in_insert = true,
 	}
 
 	vim.g.mapleader = "'"
@@ -46,6 +46,14 @@ local function setup_vim_settings()
 	vim.opt.updatetime = 250
 
 	vim.o.termguicolors = true
+
+	vim.o.list = true
+	vim.opt.listchars = {
+		tab = "» ",
+		lead = "·",
+		trail = "·",
+		nbsp = "␣",
+	}
 end
 
 return {

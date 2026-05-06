@@ -20,10 +20,11 @@ local plugins = {
 	"yuck",
 	"telescope",
 	"mason-lspconfig",
-    "comment",
-    "snacks",
-    "render-markdown",
-    "lensline",
+	"comment",
+	"snacks",
+	"render-markdown",
+	"lensline",
+	"hop",
 }
 
 local function get_plugins(plugin_names)

@@ -138,6 +138,16 @@ local unfocus_terminal = {
     },
 }
 
+local hop = {
+    mode = "n",
+    key = "<LEADER>e",
+    command = ":HopWord<CR>",
+    options = {
+        noremap = true,
+        silent = true,
+    },
+};
+
 return {
 	tree_focus,
 	exit_insert_mode,
@@ -147,11 +157,12 @@ return {
 	tree_toggle,
 	open_tab,
 	close_tab,
-    show_full_error,
-    open_in_browser,
-    format_file,
+	show_full_error,
+	open_in_browser,
+	format_file,
 	add_missing_typescript_imports,
     open_terminal,
     unfocus_terminal,
+	hop,
 }
 

@@ -32,6 +32,8 @@
 			mount-android = "mountandroid";
 			umount-android = "umountandroid";
 			git-ssh-remote = "gitsshremote";
+			eci-progress = "eciprogress";
+			star-pass-progress = "starpassprogress";
 		};
 		init-extra = ''
 			killport() {
@@ -119,6 +121,22 @@
 
 				echo "Origin remote changed to SSH:"
 				git remote -v
+			}
+
+			eciprogress() {
+				if [ -z "$1" ] || [ -z "$2" ]; then
+					echo "Usage: eciprogress <year> <ECI ID>"
+					return 1
+				fi
+
+				signatures=$(curl -s -X GET "https://register.eci.ec.europa.eu/core/api/register/details/$1/$2" | jq '.sosReport.totalSignatures')
+				percentage=$(awk "BEGIN { printf \"%.2f\", ($signatures / 1000000) * 100 }")
+
+				echo "The ECI has gathered $signatures signatures in total! That's $percentage% of the way there."
+			}
+
+			starpassprogress() {
+				eciprogress 2025 000004
 			}
 		'';
 	};

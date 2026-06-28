@@ -1,13 +1,8 @@
 {inputs, ...}: {
 	services.logmein-hamachi.enable = true;
+
 	networking.hostName = inputs.hostname;
-	# networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-	# Configure network proxy if necessary
-	# networking.proxy.default = "http://user:password@proxy:port/";
-	# networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
-
-	# Enable networking
 	networking.networkmanager.enable = true;
 
 	networking.firewall = {
@@ -18,7 +13,15 @@
 			3979 # OpenTTD.
 			25565 # Minecraft.
 		];
-		trustedInterfaces = [ "ham0" ]; # TODO: do I need this???
+		# Helps with some connectivity issues when hosting a server behind hamachi.
+		trustedInterfaces = [ "ham0" ];
 		checkReversePath = "loose";
+	};
+
+	# Automatic discovery of devices on the network.
+	services.avahi = {
+		enable = true;
+		nssmdns4 = true;
+		openFirewall = true;
 	};
 }

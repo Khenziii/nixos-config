@@ -34,14 +34,15 @@
 			git-ssh-remote = "gitsshremote";
 			eci-progress = "eciprogress";
 			star-pass-progress = "starpassprogress";
+			compress-video = "compressvideo";
 		};
 		init-extra = ''
 			killport() {
 				if [ -z "$1" ]; then
-			    	echo "Usage: killport <port>"
+					echo "Usage: killport <port>"
 					return 1
-  				fi
-  				kill $(lsof -t -i :"$1")
+				fi
+				kill $(lsof -t -i :"$1")
 			}
 
 			makebootabledev() {
@@ -61,7 +62,7 @@
 
 			rebuildhome() {
 				KHENZII_STATION_TYPE=$(cat ~/scripts/rebuild-args/station-type)
-  				home-manager switch --flake '.#${inputs.username}' -b backup
+				home-manager switch --flake '.#${inputs.username}' -b backup
 			}
 
 			rebuildsystem() {
@@ -137,6 +138,23 @@
 
 			starpassprogress() {
 				eciprogress 2025 000004
+			}
+
+			compressvideo() {
+				if [ -z "$1" ] || [ -z "$2" ]; then
+					echo "Usage: compressvideo <path> <size [MB]>"
+					return 1
+				fi
+
+				DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 $1)
+				TARGET_BITS=$(( $2 * 8 * 1000 * 1000 ))
+				# We substract 64 kbits from the bitrate for video's audio path.
+				BITRATE=$(( TARGET_BITS / DURATION / 1000 - 64 ))
+
+				ffmpeg -i $1 -c:v libx264 -b:v "$BITRATE""k" -pass 1 -an -f null /dev/null
+				ffmpeg -i $1 -c:v libx264 -b:v "$BITRATE""k" -pass 2 -c:a aac -b:a 64k output.mp4
+
+				rm ffmpeg2pass-0.log ffmpeg2pass-0.log.mbtree
 			}
 		'';
 	};

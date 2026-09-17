@@ -32,6 +32,18 @@
 		];
 		initContent =
 			''
+				# Code from NixOS' wiki.
+				# https://wiki.nixos.org/wiki/Command_Shell
+				# Automatically changes the shell to zsh if entering a flake.nix development environment.
+				nix() {
+					if [[ $1 == "develop" ]]; then
+						shift
+						command nix develop -c zsh "$@"
+					else
+						command nix "$@"
+					fi
+				}
+
 				# Prompt
 				PS1='%F{#cba6f7}%n%F{#b4befe}@%F{#cba6f7}%m %F{#b4befe}%~ %F{#a6e3a1}$ '
 				if [[ -n $IN_NIX_SHELL ]]; then

@@ -33,7 +33,7 @@ local function setup()
 			"eslint@4.10.0",
 			-- "stylelint_lsp@2.0.0", | This has been deprecated, and now `stylelint-language-server` is installed by name, as it had the same key.
 			-- "clangd@20.1.0", | This is installed via home manager's config, as we need the wrapped version of `clangd` to find certain headers.
-			"rust_analyzer@2025-08-25",
+			-- "rust_analyzer@2025-08-25" | This is installed via home manager's config,
 			"gopls@v0.21.1",
 			"templ@v0.3.1001",
 		},

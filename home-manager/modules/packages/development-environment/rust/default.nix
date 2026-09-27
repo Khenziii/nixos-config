@@ -1,7 +1,7 @@
 {lib, ...}: let
 	currentDirectoryPaths = lib.internal.allPathsByDirectory ./.;
 	pathsToExcludeFromImport = [
-		./cargo.nix # `rustup` also provides the `cargo` binary.
+		./rustup.nix # We're now installing rust-analyzer and cargo separately.
 	];
 	pathsToImport =
 		lib.internal.exclude {

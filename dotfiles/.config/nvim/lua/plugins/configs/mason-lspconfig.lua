@@ -36,6 +36,7 @@ local function setup()
 			-- "rust_analyzer@2025-08-25" | This is installed via home manager's config,
 			"gopls@v0.21.1",
 			"templ@v0.3.1001",
+			"sqls@v0.2.48",
 		},
 	})
 end

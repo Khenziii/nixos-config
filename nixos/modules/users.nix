@@ -12,6 +12,7 @@
 			"wheel"
 			"docker"
 			"input"
+			"dialout"
 		];
 	};
 }

@@ -15,6 +15,7 @@ local ignored_files_and_dirs = {
 	"*.log",
 	"env",
 	"__pycache__",
+	".pio",
 };
 
 -- telescope expects ignored files in this format:

@@ -45,4 +45,11 @@
 
 	hardware.graphics.enable = lib.mkIf (inputs.stationType == "desktop") true;
 	hardware.amdgpu.initrd.enable = lib.mkIf (inputs.stationType == "desktop") true;
+
+	# These have been compromised.
+	# Please read: https://emudhra.we-have-a-problem.com
+	security.pki.caCertificateBlacklist = [
+		"Comodo AAA Services root"
+		"emSign ECC Root CA - G3"
+	];
 }
